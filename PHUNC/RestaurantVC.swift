@@ -397,7 +397,7 @@ class RestaurantVC: UIViewController {
         menu18.textAlignment = .center
         menu18.isEditable = false
         menu18.isScrollEnabled = false
-        		
+        
         let menuLink18 = NSMutableAttributedString(string: menu18.text)
         menuLink18.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/GH8iS3KZwQo", range: NSMakeRange(0, menu18.text.characters.count))
         
