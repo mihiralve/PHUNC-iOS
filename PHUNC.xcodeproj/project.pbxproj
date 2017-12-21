@@ -14,6 +14,18 @@
 		04041A591EF36F2E0030A000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04041A581EF36F2E0030A000 /* Assets.xcassets */; };
 		04041A5C1EF36F2E0030A000 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04041A5A1EF36F2E0030A000 /* LaunchScreen.storyboard */; };
 		04041A671EF36F2E0030A000 /* PHUNCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04041A661EF36F2E0030A000 /* PHUNCTests.swift */; };
+		0410BFF11F042672000B7BC3 /* crisisVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410BFF01F042672000B7BC3 /* crisisVC.swift */; };
+		0410BFF31F045AF4000B7BC3 /* directiveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410BFF21F045AF4000B7BC3 /* directiveVC.swift */; };
+		0410BFF51F049775000B7BC3 /* ppVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410BFF41F049774000B7BC3 /* ppVC.swift */; };
+		0410BFF91F049A61000B7BC3 /* pp_detVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410BFF81F049A61000B7BC3 /* pp_detVC.swift */; };
+		0410BFFB1F049B71000B7BC3 /* schemeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410BFFA1F049B71000B7BC3 /* schemeVC.swift */; };
+		0410BFFD1F049C27000B7BC3 /* passingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410BFFC1F049C27000B7BC3 /* passingVC.swift */; };
+		0410BFFF1F049F75000B7BC3 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410BFFE1F049F74000B7BC3 /* FourthViewController.swift */; };
+		0410C0011F04A167000B7BC3 /* contactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410C0001F04A167000B7BC3 /* contactVC.swift */; };
+		0410C0031F04A17F000B7BC3 /* feedbackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410C0021F04A17F000B7BC3 /* feedbackVC.swift */; };
+		0444CC841F031852004A5A89 /* munVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444CC821F031851004A5A89 /* munVC.swift */; };
+		047380091F00A648009E2F97 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047380081F00A648009E2F97 /* ThirdViewController.swift */; };
+		04EA0E701F9A737000111AB8 /* RestaurantVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA0E6F1F9A737000111AB8 /* RestaurantVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +50,18 @@
 		04041A621EF36F2E0030A000 /* PHUNCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PHUNCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04041A661EF36F2E0030A000 /* PHUNCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHUNCTests.swift; sourceTree = "<group>"; };
 		04041A681EF36F2E0030A000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0410BFF01F042672000B7BC3 /* crisisVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = crisisVC.swift; sourceTree = "<group>"; };
+		0410BFF21F045AF4000B7BC3 /* directiveVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = directiveVC.swift; sourceTree = "<group>"; };
+		0410BFF41F049774000B7BC3 /* ppVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ppVC.swift; sourceTree = "<group>"; };
+		0410BFF81F049A61000B7BC3 /* pp_detVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pp_detVC.swift; sourceTree = "<group>"; };
+		0410BFFA1F049B71000B7BC3 /* schemeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = schemeVC.swift; sourceTree = "<group>"; };
+		0410BFFC1F049C27000B7BC3 /* passingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = passingVC.swift; sourceTree = "<group>"; };
+		0410BFFE1F049F74000B7BC3 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		0410C0001F04A167000B7BC3 /* contactVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contactVC.swift; sourceTree = "<group>"; };
+		0410C0021F04A17F000B7BC3 /* feedbackVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = feedbackVC.swift; sourceTree = "<group>"; };
+		0444CC821F031851004A5A89 /* munVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = munVC.swift; sourceTree = "<group>"; };
+		047380081F00A648009E2F97 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThirdViewController.swift; path = ../ThirdViewController.swift; sourceTree = "<group>"; };
+		04EA0E6F1F9A737000111AB8 /* RestaurantVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +106,18 @@
 				04041A4F1EF36F2E0030A000 /* AppDelegate.swift */,
 				04041A511EF36F2E0030A000 /* FirstViewController.swift */,
 				04041A531EF36F2E0030A000 /* SecondViewController.swift */,
+				047380081F00A648009E2F97 /* ThirdViewController.swift */,
+				0444CC821F031851004A5A89 /* munVC.swift */,
+				0410BFF01F042672000B7BC3 /* crisisVC.swift */,
+				0410BFF21F045AF4000B7BC3 /* directiveVC.swift */,
+				0410BFF41F049774000B7BC3 /* ppVC.swift */,
+				0410BFF81F049A61000B7BC3 /* pp_detVC.swift */,
+				0410BFFA1F049B71000B7BC3 /* schemeVC.swift */,
+				0410BFFC1F049C27000B7BC3 /* passingVC.swift */,
+				0410BFFE1F049F74000B7BC3 /* FourthViewController.swift */,
+				0410C0001F04A167000B7BC3 /* contactVC.swift */,
+				0410C0021F04A17F000B7BC3 /* feedbackVC.swift */,
+				04EA0E6F1F9A737000111AB8 /* RestaurantVC.swift */,
 				04041A551EF36F2E0030A000 /* Main.storyboard */,
 				04041A581EF36F2E0030A000 /* Assets.xcassets */,
 				04041A5A1EF36F2E0030A000 /* LaunchScreen.storyboard */,
@@ -149,6 +185,7 @@
 				TargetAttributes = {
 					04041A4B1EF36F2D0030A000 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = F338P48T6P;
 						ProvisioningStyle = Automatic;
 					};
 					04041A611EF36F2E0030A000 = {
@@ -202,8 +239,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0410BFFF1F049F75000B7BC3 /* FourthViewController.swift in Sources */,
 				04041A541EF36F2E0030A000 /* SecondViewController.swift in Sources */,
+				0410BFFB1F049B71000B7BC3 /* schemeVC.swift in Sources */,
+				0410C0031F04A17F000B7BC3 /* feedbackVC.swift in Sources */,
+				0410BFF91F049A61000B7BC3 /* pp_detVC.swift in Sources */,
+				0410BFFD1F049C27000B7BC3 /* passingVC.swift in Sources */,
+				0410BFF31F045AF4000B7BC3 /* directiveVC.swift in Sources */,
+				0444CC841F031852004A5A89 /* munVC.swift in Sources */,
 				04041A501EF36F2E0030A000 /* AppDelegate.swift in Sources */,
+				0410BFF11F042672000B7BC3 /* crisisVC.swift in Sources */,
+				047380091F00A648009E2F97 /* ThirdViewController.swift in Sources */,
+				0410BFF51F049775000B7BC3 /* ppVC.swift in Sources */,
+				04EA0E701F9A737000111AB8 /* RestaurantVC.swift in Sources */,
+				0410C0011F04A167000B7BC3 /* contactVC.swift in Sources */,
 				04041A521EF36F2E0030A000 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,11 +394,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PHUNC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.PSIADA.PHUNC;
+				PRODUCT_BUNDLE_IDENTIFIER = org.PSIADA.APP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -357,11 +412,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PHUNC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.PSIADA.PHUNC;
+				PRODUCT_BUNDLE_IDENTIFIER = org.PSIADA.APP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -412,6 +473,7 @@
 				04041A6D1EF36F2E0030A000 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04041A6E1EF36F2E0030A000 /* Build configuration list for PBXNativeTarget "PHUNCTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +482,7 @@
 				04041A701EF36F2E0030A000 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
