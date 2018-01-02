@@ -8,6 +8,7 @@
 
 import UIKit
 import Foundation
+import SDWebImage
 
 class RestaurantVC: UIViewController {
 
@@ -32,7 +33,9 @@ class RestaurantVC: UIViewController {
         
         
         
-        let menuImg1 = UIImageView(image: #imageLiteral(resourceName: "IP"))
+        let menuImg1 = UIImageView()
+        
+        menuImg1.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2017/11/india_pavillion.jpeg"), placeholderImage: #imageLiteral(resourceName: "placeholder"))
         menuImg1.contentMode = .scaleAspectFill
         menuImg1.translatesAutoresizingMaskIntoConstraints = false
         menuImg1.clipsToBounds = true
@@ -52,7 +55,10 @@ class RestaurantVC: UIViewController {
         
         
         
-        let menuImg2 = UIImageView(image: #imageLiteral(resourceName: "Pita Cabana"))
+        let menuImg2 = UIImageView()
+        
+        menuImg2.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2017/11/pita_cabana.jpg"), placeholderImage: #imageLiteral(resourceName: "placeholder"))
+        
         menuImg2.contentMode = .scaleAspectFill
         menuImg2.translatesAutoresizingMaskIntoConstraints = false
         menuImg2.clipsToBounds = true
@@ -74,7 +80,9 @@ class RestaurantVC: UIViewController {
         
         
         
-        let menuImg3 = UIImageView(image: #imageLiteral(resourceName: "yallah"))
+        let menuImg3 = UIImageView()
+        
+        menuImg3.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2017/11/yallah.jpg"), placeholderImage: #imageLiteral(resourceName: "placeholder"))
         menuImg3.contentMode = .scaleAspectFill
         menuImg3.translatesAutoresizingMaskIntoConstraints = false
         menuImg3.clipsToBounds = true
@@ -96,7 +104,9 @@ class RestaurantVC: UIViewController {
         
         
         
-        let menuImg4 = UIImageView(image: #imageLiteral(resourceName: "Cozy-Thai-Bistro-01-resize"))
+        let menuImg4 = UIImageView()
+        
+        menuImg4.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2017/11/cozy_thai.jpg"), placeholderImage: #imageLiteral(resourceName: "placeholder"))
         menuImg4.contentMode = .scaleAspectFill
         menuImg4.translatesAutoresizingMaskIntoConstraints = false
         menuImg4.clipsToBounds = true
@@ -116,7 +126,9 @@ class RestaurantVC: UIViewController {
         
         
         
-        let menuImg5 = UIImageView(image: #imageLiteral(resourceName: "Irvings"))
+        let menuImg5 = UIImageView()
+        
+        menuImg5.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2017/11/irvings.jpg"), placeholderImage: #imageLiteral(resourceName: "placeholder"))
         menuImg5.contentMode = .scaleAspectFill
         menuImg5.translatesAutoresizingMaskIntoConstraints = false
         menuImg5.clipsToBounds = true
@@ -138,7 +150,9 @@ class RestaurantVC: UIViewController {
         
         
         
-        let menuImg6 = UIImageView(image: #imageLiteral(resourceName: "Fiddlehead"))
+        let menuImg6 = UIImageView()
+        
+        menuImg6.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2017/11/fiddlehead.jpg"), placeholderImage: #imageLiteral(resourceName: "placeholder"))
         menuImg6.contentMode = .scaleAspectFill
         menuImg6.translatesAutoresizingMaskIntoConstraints = false
         menuImg6.clipsToBounds = true
@@ -161,7 +175,9 @@ class RestaurantVC: UIViewController {
         
         
         
-        let menuImg7 = UIImageView(image: #imageLiteral(resourceName: "Bagel Crust"))
+        let menuImg7 = UIImageView()
+        
+        menuImg7.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2017/11/bagel_crust.jpg"), placeholderImage: #imageLiteral(resourceName: "placeholder"))
         menuImg7.contentMode = .scaleAspectFill
         menuImg7.translatesAutoresizingMaskIntoConstraints = false
         menuImg7.clipsToBounds = true
@@ -183,7 +199,9 @@ class RestaurantVC: UIViewController {
         
         
         
-        let menuImg8 = UIImageView(image: #imageLiteral(resourceName: "little szechuan"))
+        let menuImg8 = UIImageView()
+        
+        menuImg8.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2017/11/little_szechuan.jpg"), placeholderImage: #imageLiteral(resourceName: "placeholder"))
         menuImg8.contentMode = .scaleAspectFill
         menuImg8.translatesAutoresizingMaskIntoConstraints = false
         menuImg8.clipsToBounds = true
@@ -203,7 +221,9 @@ class RestaurantVC: UIViewController {
         
         
         
-        let menuImg9 = UIImageView(image: #imageLiteral(resourceName: "corner room"))
+        let menuImg9 = UIImageView()
+        
+        menuImg9.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2017/11/corner_room.jpg"), placeholderImage: #imageLiteral(resourceName: "placeholder"))
         menuImg9.contentMode = .scaleAspectFill
         menuImg9.translatesAutoresizingMaskIntoConstraints = false
         menuImg9.clipsToBounds = true
@@ -224,7 +244,9 @@ class RestaurantVC: UIViewController {
         
         
         
-        let menuImg10 = UIImageView(image: #imageLiteral(resourceName: "chipotle"))
+        let menuImg10 = UIImageView()
+        
+        menuImg10.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2017/11/chipotle.jpg"), placeholderImage: #imageLiteral(resourceName: "placeholder"))
         menuImg10.contentMode = .scaleAspectFill
         menuImg10.translatesAutoresizingMaskIntoConstraints = false
         menuImg10.clipsToBounds = true
@@ -247,7 +269,10 @@ class RestaurantVC: UIViewController {
         
         
         
-        let menuImg11 = UIImageView(image: #imageLiteral(resourceName: "Pho 11"))
+        let menuImg11 = UIImageView()
+        
+        menuImg11.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2017/11/pho11.jpg"), placeholderImage: #imageLiteral(resourceName: "placeholder"))
+
         menuImg11.contentMode = .scaleAspectFill
         menuImg11.translatesAutoresizingMaskIntoConstraints = false
         menuImg11.clipsToBounds = true
@@ -266,7 +291,9 @@ class RestaurantVC: UIViewController {
         
         
         
-        let menuImg12 = UIImageView(image: #imageLiteral(resourceName: "the deli"))
+        let menuImg12 = UIImageView()
+        
+        menuImg12.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2017/11/deli.jpg"), placeholderImage: #imageLiteral(resourceName: "placeholder"))
         menuImg12.contentMode = .scaleAspectFill
         menuImg12.translatesAutoresizingMaskIntoConstraints = false
         menuImg12.clipsToBounds = true
@@ -288,13 +315,15 @@ class RestaurantVC: UIViewController {
         
         
         
-        let menuImg13 = UIImageView(image: #imageLiteral(resourceName: "Big Bowl"))
+        let menuImg13 = UIImageView()
+        
+        menuImg13.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2017/11/big_bowl.jpg"), placeholderImage: #imageLiteral(resourceName: "placeholder"))
         menuImg13.contentMode = .scaleAspectFill
         menuImg13.translatesAutoresizingMaskIntoConstraints = false
         menuImg13.clipsToBounds = true
         
         let menu13 = UITextView(frame: CGRect(x: 10, y: 10, width: 10, height: 40))
-        menu13.text = "Big Bowl Noodle House (Chinese) 418 E College Ave\n*Cash Only*"
+        menu13.text = "Big Bowl Noodle House (Chinese) 418 E College Ave **Cash Only**"
         menu13.textAlignment = .center
         menu13.isEditable = false
         menu13.isScrollEnabled = false
@@ -309,7 +338,9 @@ class RestaurantVC: UIViewController {
         
         
         
-        let menuImg14 = UIImageView(image: #imageLiteral(resourceName: "Baby's"))
+        let menuImg14 = UIImageView()
+        
+        menuImg14.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2017/11/babys.jpg"), placeholderImage: #imageLiteral(resourceName: "placeholder"))
         menuImg14.contentMode = .scaleAspectFill
         menuImg14.translatesAutoresizingMaskIntoConstraints = false
         menuImg14.clipsToBounds = true
@@ -329,7 +360,9 @@ class RestaurantVC: UIViewController {
         
         
         
-        let menuImg15 = UIImageView(image: #imageLiteral(resourceName: "Green Bowl"))
+        let menuImg15 = UIImageView()
+        
+        menuImg15.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2017/11/green_bowl.jpg"), placeholderImage: #imageLiteral(resourceName: "placeholder"))
         menuImg15.contentMode = .scaleAspectFill
         menuImg15.translatesAutoresizingMaskIntoConstraints = false
         menuImg15.clipsToBounds = true
@@ -350,7 +383,9 @@ class RestaurantVC: UIViewController {
         
         
         
-        let menuImg16 = UIImageView(image: #imageLiteral(resourceName: "underground"))
+        let menuImg16 = UIImageView()
+        
+        menuImg16.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2017/11/underground.jpg"), placeholderImage: #imageLiteral(resourceName: "placeholder"))
         menuImg16.contentMode = .scaleAspectFill
         menuImg16.translatesAutoresizingMaskIntoConstraints = false
         menuImg16.clipsToBounds = true
@@ -368,7 +403,9 @@ class RestaurantVC: UIViewController {
         menu16.dataDetectorTypes = .link
         
         
-        let menuImg17 = UIImageView(image: #imageLiteral(resourceName: "Galanga"))
+        let menuImg17 = UIImageView()
+        
+        menuImg17.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2017/11/galanga.jpg"), placeholderImage: #imageLiteral(resourceName: "placeholder"))
         menuImg17.contentMode = .scaleAspectFill
         menuImg17.translatesAutoresizingMaskIntoConstraints = false
         menuImg17.clipsToBounds = true
@@ -387,7 +424,9 @@ class RestaurantVC: UIViewController {
         
         
         
-        let menuImg18 = UIImageView(image: #imageLiteral(resourceName: "tavern"))
+        let menuImg18 = UIImageView()
+        
+        menuImg18.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2017/11/tavern.jpg"), placeholderImage: #imageLiteral(resourceName: "placeholder"))
         menuImg18.contentMode = .scaleAspectFill
         menuImg18.translatesAutoresizingMaskIntoConstraints = false
         menuImg18.clipsToBounds = true
@@ -548,7 +587,7 @@ class RestaurantVC: UIViewController {
         menuImg12.widthAnchor.constraint(equalToConstant: screenWidth - 16).isActive = true
         menuImg12.heightAnchor.constraint(equalToConstant: 200).isActive = true
         
-        menu13.widthAnchor.constraint(equalToConstant: screenWidth - 16).isActive = true
+        //menu13.widthAnchor.constraint(equalToConstant: screenWidth - 16).isActive = true
         menuImg13.widthAnchor.constraint(equalToConstant: screenWidth - 16).isActive = true
         menuImg13.heightAnchor.constraint(equalToConstant: 200).isActive = true
         
@@ -557,11 +596,11 @@ class RestaurantVC: UIViewController {
         menuImg14.heightAnchor.constraint(equalToConstant: 200).isActive = true
         
         
-        menu15.widthAnchor.constraint(equalToConstant: screenWidth - 16).isActive = true
+        //menu15.widthAnchor.constraint(equalToConstant: screenWidth - 16).isActive = true
         menuImg15.widthAnchor.constraint(equalToConstant: screenWidth - 16).isActive = true
         menuImg15.heightAnchor.constraint(equalToConstant: 200).isActive = true
         
-        menu16.widthAnchor.constraint(equalToConstant: screenWidth - 16).isActive = true
+        //menu16.widthAnchor.constraint(equalToConstant: screenWidth - 16).isActive = true
         menuImg16.widthAnchor.constraint(equalToConstant: screenWidth - 16).isActive = true
         menuImg16.heightAnchor.constraint(equalToConstant: 200).isActive = true
         

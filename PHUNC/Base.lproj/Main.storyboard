@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -37,7 +38,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phunc_v_logo2 (2)" translatesAutoresizingMaskIntoConstraints="NO" id="Efp-b2-5eW">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Efp-b2-5eW">
                                                 <rect key="frame" x="8" y="52" width="359" height="130"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="130" id="DHZ-WQ-L8u"/>
@@ -106,10 +107,10 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="B2B-jo-xtX">
                                                 <rect key="frame" x="8" y="518" width="359" height="150"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CGS logo" translatesAutoresizingMaskIntoConstraints="NO" id="IQP-ij-am2">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IQP-ij-am2">
                                                         <rect key="frame" x="0.0" y="0.0" width="179.5" height="150"/>
                                                     </imageView>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Liberal Arts" translatesAutoresizingMaskIntoConstraints="NO" id="L86-3u-lIb">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L86-3u-lIb">
                                                         <rect key="frame" x="179.5" y="0.0" width="179.5" height="150"/>
                                                     </imageView>
                                                 </subviews>
@@ -173,6 +174,9 @@
                     <tabBarItem key="tabBarItem" title="Announcements" image="ic_announcement" selectedImage="ic_announcement" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="container" destination="ZGE-yi-aw5" id="ZfG-9o-gqv"/>
+                        <outlet property="logoImg" destination="Efp-b2-5eW" id="iXA-8d-hu0"/>
+                        <outlet property="sponsorLeft" destination="IQP-ij-am2" id="Noh-Uu-U2h"/>
+                        <outlet property="sponsorRight" destination="L86-3u-lIb" id="TIT-c8-1jl"/>
                         <outlet property="webView" destination="IUk-CV-5Ed" id="0qk-dV-M0p"/>
                     </connections>
                 </viewController>
@@ -207,8 +211,8 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Schedule" translatesAutoresizingMaskIntoConstraints="NO" id="vBg-uV-FHL">
-                                                <rect key="frame" x="0.0" y="48" width="375" height="602"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vBg-uV-FHL">
+                                                <rect key="frame" x="8" y="48" width="359" height="594"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -216,10 +220,10 @@
                                             <constraint firstAttribute="height" constant="650" id="0RP-zU-xXB"/>
                                             <constraint firstItem="JBO-hg-zbd" firstAttribute="leading" secondItem="fhI-u1-nXA" secondAttribute="leading" id="7Wq-GK-lsB"/>
                                             <constraint firstItem="vBg-uV-FHL" firstAttribute="top" secondItem="JBO-hg-zbd" secondAttribute="bottom" constant="8" id="Kwa-r1-0x3"/>
-                                            <constraint firstAttribute="bottom" secondItem="vBg-uV-FHL" secondAttribute="bottom" id="Pqm-bZ-U8N"/>
-                                            <constraint firstAttribute="trailing" secondItem="vBg-uV-FHL" secondAttribute="trailing" id="SKT-w2-85i"/>
+                                            <constraint firstAttribute="bottom" secondItem="vBg-uV-FHL" secondAttribute="bottom" constant="8" id="Pqm-bZ-U8N"/>
+                                            <constraint firstAttribute="trailing" secondItem="vBg-uV-FHL" secondAttribute="trailing" constant="8" id="SKT-w2-85i"/>
                                             <constraint firstAttribute="trailing" secondItem="JBO-hg-zbd" secondAttribute="trailing" id="YRg-Sr-fs2"/>
-                                            <constraint firstItem="vBg-uV-FHL" firstAttribute="leading" secondItem="fhI-u1-nXA" secondAttribute="leading" id="bA0-u9-End"/>
+                                            <constraint firstItem="vBg-uV-FHL" firstAttribute="leading" secondItem="fhI-u1-nXA" secondAttribute="leading" constant="8" id="bA0-u9-End"/>
                                             <constraint firstItem="JBO-hg-zbd" firstAttribute="top" secondItem="fhI-u1-nXA" secondAttribute="top" id="ipY-ci-iR9"/>
                                         </constraints>
                                     </view>
@@ -244,6 +248,9 @@
                     <tabBarItem key="tabBarItem" title="Schedule" image="ic_schedule" selectedImage="ic_schedule" id="cPa-gy-q4n"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="650"/>
+                    <connections>
+                        <outlet property="scheduleImg" destination="vBg-uV-FHL" id="pOB-jZ-jHN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -742,150 +749,151 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ykb-Hn-vwW">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <stackView opaque="NO" contentMode="top" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bsM-CK-sPq">
+                                <rect key="frame" x="8" y="20" width="359" height="639"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bsM-CK-sPq">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="550"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xCG-8P-jvF">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="154"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xCG-8P-jvF">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
-                                                <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Marta(small)" translatesAutoresizingMaskIntoConstraints="NO" id="wbl-8h-QjA">
-                                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="128"/>
-                                                    </imageView>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" text="Marta Millar Secretary General sg.phunc@psiada.org 814-880-0080" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="L7x-l8-4aF">
-                                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="128"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="128" id="yH2-4I-4KY"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
-                                                    </textView>
-                                                </subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wbl-8h-QjA">
+                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="154"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="bottom" secondItem="wbl-8h-QjA" secondAttribute="bottom" constant="8" id="7xB-7A-5t9"/>
-                                                    <constraint firstItem="L7x-l8-4aF" firstAttribute="leading" secondItem="wbl-8h-QjA" secondAttribute="trailing" constant="8" id="Ebm-hm-463"/>
-                                                    <constraint firstItem="wbl-8h-QjA" firstAttribute="leading" secondItem="xCG-8P-jvF" secondAttribute="leading" constant="8" id="TjI-dA-zHm"/>
-                                                    <constraint firstItem="wbl-8h-QjA" firstAttribute="top" secondItem="xCG-8P-jvF" secondAttribute="top" constant="8" id="bJV-gk-vdc"/>
+                                                    <constraint firstAttribute="width" secondItem="wbl-8h-QjA" secondAttribute="height" multiplier="179:120" id="7z6-jv-iRp"/>
                                                 </constraints>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="MWj-rm-3rg">
-                                                <rect key="frame" x="0.0" y="128" width="375" height="128"/>
-                                                <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tom" translatesAutoresizingMaskIntoConstraints="NO" id="jsG-8M-7V7">
-                                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="128"/>
-                                                    </imageView>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Tom Santee Chief of Staff cos.phunc@psiada.org 610-297-1083" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EWF-Kc-z5x">
-                                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="128"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="128" id="Qo5-mh-4LW"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
-                                                    </textView>
-                                                </subviews>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" text="Marta Millar Secretary General sg.phunc@psiada.org 814-880-0080 " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="L7x-l8-4aF">
+                                                <rect key="frame" x="179.5" y="0.0" width="179.5" height="154"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstItem="jsG-8M-7V7" firstAttribute="top" secondItem="MWj-rm-3rg" secondAttribute="top" constant="8" id="CHO-cq-lPU"/>
-                                                    <constraint firstItem="jsG-8M-7V7" firstAttribute="leading" secondItem="MWj-rm-3rg" secondAttribute="leading" constant="8" id="Rlr-lF-JZa"/>
-                                                    <constraint firstItem="EWF-Kc-z5x" firstAttribute="leading" secondItem="jsG-8M-7V7" secondAttribute="trailing" constant="8" id="ko1-Jd-HpC"/>
-                                                    <constraint firstAttribute="bottom" secondItem="jsG-8M-7V7" secondAttribute="bottom" constant="8" id="trQ-Cs-lqa"/>
+                                                    <constraint firstAttribute="height" constant="120" id="yH2-4I-4KY"/>
                                                 </constraints>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6K9-QK-MFw">
-                                                <rect key="frame" x="0.0" y="256" width="375" height="128"/>
-                                                <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dan" translatesAutoresizingMaskIntoConstraints="NO" id="kVf-Zx-vb8">
-                                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="128"/>
-                                                    </imageView>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Daniel Donaher USG for Crisis and Committee Development crisis.phunc@psiada.org 610-316-7074" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ngs-mG-Wqe">
-                                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="128"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="128" id="flt-ub-7X4"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
-                                                    </textView>
-                                                </subviews>
-                                                <constraints>
-                                                    <constraint firstItem="kVf-Zx-vb8" firstAttribute="leading" secondItem="6K9-QK-MFw" secondAttribute="leading" constant="8" id="YY2-v8-w7l"/>
-                                                    <constraint firstItem="kVf-Zx-vb8" firstAttribute="top" secondItem="6K9-QK-MFw" secondAttribute="top" constant="8" id="cUY-vH-h8l"/>
-                                                    <constraint firstAttribute="bottom" secondItem="kVf-Zx-vb8" secondAttribute="bottom" constant="8" id="mTW-fU-2A6"/>
-                                                    <constraint firstItem="ngs-mG-Wqe" firstAttribute="leading" secondItem="kVf-Zx-vb8" secondAttribute="trailing" constant="8" id="uRg-7w-6hU"/>
-                                                </constraints>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LI2-MY-dYw">
-                                                <rect key="frame" x="0.0" y="384" width="375" height="166"/>
-                                                <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="anna" translatesAutoresizingMaskIntoConstraints="NO" id="CUz-Mv-yYJ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="166"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="128" id="OJD-Vz-rI7"/>
-                                                        </constraints>
-                                                    </imageView>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Anna Lin Chargée d'Affaires charge.phunc@psiada.org 973-868-2671" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ag6-WN-Uyx">
-                                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="166"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="128" id="9im-8E-aK4"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
-                                                    </textView>
-                                                </subviews>
-                                                <constraints>
-                                                    <constraint firstItem="ag6-WN-Uyx" firstAttribute="leading" secondItem="CUz-Mv-yYJ" secondAttribute="trailing" constant="8" id="D2j-mB-zpA"/>
-                                                    <constraint firstItem="CUz-Mv-yYJ" firstAttribute="leading" secondItem="LI2-MY-dYw" secondAttribute="leading" constant="8" id="M5q-uX-FQ4"/>
-                                                    <constraint firstItem="CUz-Mv-yYJ" firstAttribute="top" secondItem="LI2-MY-dYw" secondAttribute="top" constant="8" id="eHi-J2-Vx2"/>
-                                                    <constraint firstAttribute="bottom" secondItem="CUz-Mv-yYJ" secondAttribute="bottom" constant="8" id="jak-VQ-ohw"/>
-                                                </constraints>
-                                            </stackView>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                                            </textView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="6K9-QK-MFw" firstAttribute="leading" secondItem="bsM-CK-sPq" secondAttribute="leading" id="1Rh-56-9RV"/>
-                                            <constraint firstItem="MWj-rm-3rg" firstAttribute="leading" secondItem="bsM-CK-sPq" secondAttribute="leading" id="3bt-pC-Ylf"/>
-                                            <constraint firstItem="MWj-rm-3rg" firstAttribute="top" secondItem="xCG-8P-jvF" secondAttribute="bottom" id="4J1-yN-Mgi"/>
-                                            <constraint firstItem="xCG-8P-jvF" firstAttribute="top" secondItem="bsM-CK-sPq" secondAttribute="top" id="8aB-RY-Ad4"/>
-                                            <constraint firstItem="LI2-MY-dYw" firstAttribute="top" secondItem="6K9-QK-MFw" secondAttribute="bottom" id="Jby-pN-j9v"/>
-                                            <constraint firstItem="LI2-MY-dYw" firstAttribute="top" secondItem="6K9-QK-MFw" secondAttribute="bottom" id="N0k-na-IhS"/>
-                                            <constraint firstItem="6K9-QK-MFw" firstAttribute="top" secondItem="MWj-rm-3rg" secondAttribute="bottom" id="OdX-hZ-zd0"/>
-                                            <constraint firstAttribute="trailing" secondItem="MWj-rm-3rg" secondAttribute="trailing" id="RHV-58-m80"/>
-                                            <constraint firstAttribute="trailing" secondItem="6K9-QK-MFw" secondAttribute="trailing" id="VB2-Hs-MQk"/>
-                                            <constraint firstAttribute="trailing" secondItem="LI2-MY-dYw" secondAttribute="trailing" id="cBV-VE-xbA"/>
-                                            <constraint firstItem="LI2-MY-dYw" firstAttribute="leading" secondItem="bsM-CK-sPq" secondAttribute="leading" id="cin-mM-5Jx"/>
-                                            <constraint firstItem="xCG-8P-jvF" firstAttribute="leading" secondItem="bsM-CK-sPq" secondAttribute="leading" id="d0v-No-osd"/>
-                                            <constraint firstAttribute="bottom" secondItem="LI2-MY-dYw" secondAttribute="bottom" id="g8l-vb-ITU"/>
-                                            <constraint firstItem="6K9-QK-MFw" firstAttribute="top" secondItem="MWj-rm-3rg" secondAttribute="bottom" id="pcb-sa-HTf"/>
-                                            <constraint firstItem="MWj-rm-3rg" firstAttribute="top" secondItem="xCG-8P-jvF" secondAttribute="bottom" id="rL9-1P-gmi"/>
-                                            <constraint firstAttribute="height" constant="550" id="s17-KR-QsR"/>
-                                            <constraint firstAttribute="trailing" secondItem="xCG-8P-jvF" secondAttribute="trailing" id="y2K-Hc-MuV"/>
+                                            <constraint firstItem="L7x-l8-4aF" firstAttribute="leading" secondItem="wbl-8h-QjA" secondAttribute="trailing" constant="8" id="XNh-r4-aID"/>
+                                            <constraint firstItem="wbl-8h-QjA" firstAttribute="leading" secondItem="xCG-8P-jvF" secondAttribute="leading" id="YD0-BZ-iVu"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="MWj-rm-3rg">
+                                        <rect key="frame" x="0.0" y="162" width="359" height="153.5"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jsG-8M-7V7">
+                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="153.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="jsG-8M-7V7" secondAttribute="height" multiplier="179:120" id="kQU-n1-ZWN"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Tom Santee Chief of Staff cos.phunc@psiada.org 610-297-1083 " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EWF-Kc-z5x">
+                                                <rect key="frame" x="179.5" y="0.0" width="179.5" height="153.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="Qo5-mh-4LW"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                                            </textView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="jsG-8M-7V7" firstAttribute="leading" secondItem="MWj-rm-3rg" secondAttribute="leading" id="0qk-fE-nnM"/>
+                                            <constraint firstItem="EWF-Kc-z5x" firstAttribute="leading" secondItem="jsG-8M-7V7" secondAttribute="trailing" constant="8" id="iCc-M5-oHW"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6K9-QK-MFw">
+                                        <rect key="frame" x="0.0" y="323.5" width="359" height="154"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kVf-Zx-vb8">
+                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="154"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="kVf-Zx-vb8" secondAttribute="height" multiplier="179:120" id="eYA-YR-OyZ"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Daniel Donaher USG for Crisis and Committee Development crisis.phunc@psiada.org 610-316-7074" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ngs-mG-Wqe">
+                                                <rect key="frame" x="179.5" y="0.0" width="179.5" height="154"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="flt-ub-7X4"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                                            </textView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="ngs-mG-Wqe" firstAttribute="leading" secondItem="kVf-Zx-vb8" secondAttribute="trailing" constant="8" id="BVL-DC-MaZ"/>
+                                            <constraint firstItem="kVf-Zx-vb8" firstAttribute="leading" secondItem="6K9-QK-MFw" secondAttribute="leading" id="L8U-EU-qbb"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LI2-MY-dYw">
+                                        <rect key="frame" x="0.0" y="485.5" width="359" height="153.5"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CUz-Mv-yYJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="153.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="CUz-Mv-yYJ" secondAttribute="height" multiplier="179:120" id="TyC-rl-W7R"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Anna Lin Chargée d'Affaires charge.phunc@psiada.org 973-868-2671 " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ag6-WN-Uyx">
+                                                <rect key="frame" x="179.5" y="0.0" width="179.5" height="153.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="9im-8E-aK4"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                                            </textView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="ag6-WN-Uyx" firstAttribute="leading" secondItem="CUz-Mv-yYJ" secondAttribute="trailing" constant="8" id="K5v-9t-CCy"/>
+                                            <constraint firstItem="CUz-Mv-yYJ" firstAttribute="leading" secondItem="LI2-MY-dYw" secondAttribute="leading" id="rl7-pe-KUE"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="bsM-CK-sPq" secondAttribute="bottom" id="AiP-O6-St6"/>
-                                    <constraint firstItem="bsM-CK-sPq" firstAttribute="top" secondItem="ykb-Hn-vwW" secondAttribute="top" id="HO7-be-ndY"/>
-                                    <constraint firstItem="bsM-CK-sPq" firstAttribute="leading" secondItem="ykb-Hn-vwW" secondAttribute="leading" id="ejs-ec-HPN"/>
-                                    <constraint firstAttribute="trailing" secondItem="bsM-CK-sPq" secondAttribute="trailing" id="trS-vM-Eux"/>
-                                    <constraint firstItem="bsM-CK-sPq" firstAttribute="centerX" secondItem="ykb-Hn-vwW" secondAttribute="centerX" id="wRQ-IB-tc4"/>
+                                    <constraint firstItem="MWj-rm-3rg" firstAttribute="leading" secondItem="bsM-CK-sPq" secondAttribute="leading" id="3ys-VD-JDa"/>
+                                    <constraint firstItem="6K9-QK-MFw" firstAttribute="leading" secondItem="bsM-CK-sPq" secondAttribute="leading" id="6nT-nf-chO"/>
+                                    <constraint firstItem="LI2-MY-dYw" firstAttribute="leading" secondItem="bsM-CK-sPq" secondAttribute="leading" id="88M-Dh-luu"/>
+                                    <constraint firstAttribute="trailing" secondItem="MWj-rm-3rg" secondAttribute="trailing" id="GaZ-pR-Euj"/>
+                                    <constraint firstAttribute="trailing" secondItem="6K9-QK-MFw" secondAttribute="trailing" id="HRl-xe-9dc"/>
+                                    <constraint firstAttribute="bottom" secondItem="LI2-MY-dYw" secondAttribute="bottom" id="Hay-74-Uw4"/>
+                                    <constraint firstItem="xCG-8P-jvF" firstAttribute="top" secondItem="bsM-CK-sPq" secondAttribute="top" id="I9J-fk-jaB"/>
+                                    <constraint firstItem="xCG-8P-jvF" firstAttribute="leading" secondItem="bsM-CK-sPq" secondAttribute="leading" id="IT1-w9-g2t"/>
+                                    <constraint firstAttribute="trailing" secondItem="xCG-8P-jvF" secondAttribute="trailing" id="Qc3-3Y-WX9"/>
+                                    <constraint firstItem="6K9-QK-MFw" firstAttribute="top" secondItem="MWj-rm-3rg" secondAttribute="bottom" id="Wub-Kj-Tig"/>
+                                    <constraint firstAttribute="trailing" secondItem="LI2-MY-dYw" secondAttribute="trailing" id="cuD-Xh-SNF"/>
+                                    <constraint firstItem="MWj-rm-3rg" firstAttribute="top" secondItem="xCG-8P-jvF" secondAttribute="bottom" id="eHK-4Y-sXq"/>
+                                    <constraint firstItem="6K9-QK-MFw" firstAttribute="top" secondItem="MWj-rm-3rg" secondAttribute="bottom" id="gFO-W9-qm1"/>
+                                    <constraint firstItem="LI2-MY-dYw" firstAttribute="top" secondItem="6K9-QK-MFw" secondAttribute="bottom" id="ifn-q4-R2s"/>
+                                    <constraint firstItem="LI2-MY-dYw" firstAttribute="top" secondItem="6K9-QK-MFw" secondAttribute="bottom" id="lI5-2w-HGC"/>
+                                    <constraint firstItem="MWj-rm-3rg" firstAttribute="top" secondItem="xCG-8P-jvF" secondAttribute="bottom" id="nSc-1X-NG2"/>
                                 </constraints>
-                            </scrollView>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="ykb-Hn-vwW" secondAttribute="trailing" id="2vR-Jy-YjQ"/>
-                            <constraint firstItem="ykb-Hn-vwW" firstAttribute="leading" secondItem="Ecu-9N-I7C" secondAttribute="leading" id="gMP-GJ-wNc"/>
-                            <constraint firstItem="ykb-Hn-vwW" firstAttribute="top" secondItem="Ecu-9N-I7C" secondAttribute="top" id="iCM-RZ-u40"/>
-                            <constraint firstItem="qKa-CB-ubh" firstAttribute="top" secondItem="ykb-Hn-vwW" secondAttribute="bottom" id="yxL-ZN-16B"/>
+                            <constraint firstAttribute="trailing" secondItem="bsM-CK-sPq" secondAttribute="trailing" constant="8" id="0qP-8T-Iah"/>
+                            <constraint firstItem="qKa-CB-ubh" firstAttribute="top" secondItem="bsM-CK-sPq" secondAttribute="bottom" constant="8" id="10I-nX-cRL"/>
+                            <constraint firstItem="bsM-CK-sPq" firstAttribute="top" secondItem="xWf-ZY-bXd" secondAttribute="bottom" id="Xi7-Rc-eBC"/>
+                            <constraint firstItem="bsM-CK-sPq" firstAttribute="leading" secondItem="Ecu-9N-I7C" secondAttribute="leading" constant="8" id="vSN-V4-wj6"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="contact1" destination="wbl-8h-QjA" id="HRr-j8-BZy"/>
+                        <outlet property="contact2" destination="jsG-8M-7V7" id="UA6-LW-0nk"/>
+                        <outlet property="contact3" destination="kVf-Zx-vb8" id="Rki-5W-yPm"/>
+                        <outlet property="contact4" destination="CUz-Mv-yYJ" id="BSh-0m-Bbc"/>
+                        <outlet property="parentStack" destination="bsM-CK-sPq" id="Nwc-Y6-Kcu"/>
+                        <outlet property="parentView" destination="Ecu-9N-I7C" id="PoT-O2-5dy"/>
+                        <outlet property="stack1" destination="xCG-8P-jvF" id="qAc-7b-q7Q"/>
+                        <outlet property="stack2" destination="MWj-rm-3rg" id="mIp-Zc-Q1z"/>
+                        <outlet property="stack3" destination="6K9-QK-MFw" id="aEN-jW-SMN"/>
+                        <outlet property="stack4" destination="LI2-MY-dYw" id="VBD-8T-9GA"/>
+                        <outlet property="view" destination="Ecu-9N-I7C" id="Hfm-T6-oKH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="roS-iW-qE9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -998,17 +1006,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="CGS logo" width="409" height="401"/>
-        <image name="Dan" width="1024" height="768"/>
-        <image name="Liberal Arts" width="1642" height="367"/>
-        <image name="Marta(small)" width="960" height="720"/>
-        <image name="Schedule" width="1440" height="2475"/>
-        <image name="Tom" width="1024" height="768"/>
-        <image name="anna" width="1024" height="768"/>
         <image name="ic_announcement" width="24" height="24"/>
         <image name="ic_build" width="24" height="24"/>
         <image name="ic_restaurant_menu" width="24" height="24"/>
         <image name="ic_schedule" width="24" height="24"/>
-        <image name="phunc_v_logo2 (2)" width="999" height="310"/>
     </resources>
 </document>

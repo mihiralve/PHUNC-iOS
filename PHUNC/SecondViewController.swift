@@ -8,11 +8,17 @@
 
 import UIKit
 
+import SDWebImage
+
 class SecondViewController: UIViewController {
 
+    @IBOutlet weak var scheduleImg: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        scheduleImg.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2018/01/Schedule.png"))
+        
     }
 
     override func didReceiveMemoryWarning() {

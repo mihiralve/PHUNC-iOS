@@ -8,6 +8,7 @@
 
 import UIKit
 import WebKit
+import SDWebImage
 
 class FirstViewController: UIViewController, UIWebViewDelegate {
 
@@ -17,8 +18,12 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
     
     @IBOutlet weak var container: UIView!
     
+    @IBOutlet weak var logoImg: UIImageView!
     
+    @IBOutlet weak var sponsorLeft: UIImageView!
    
+    @IBOutlet weak var sponsorRight: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -41,7 +46,11 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
         
         webView.loadRequest(URLReq)
         
+        logoImg.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2017/12/phunc_v_logo2.png"))
         
+        sponsorLeft.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2017/12/CGS-logo.png"))
+        
+        sponsorRight.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2017/12/Liberal-Arts.png"))
         
         
         
