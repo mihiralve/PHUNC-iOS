@@ -40,13 +40,15 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
 
         
         
-        let url = URL(string:"http://phunc.psiada.org/2669-2/")
+        let url = URL(string:"http://punc.psiada.org/app-announcements/")
         
         let URLReq = URLRequest(url: url!)
         
         webView.loadRequest(URLReq)
         
-        logoImg.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2017/12/phunc_v_logo2.png"))
+        logoImg.sd_setImage(with: URL(string: "http://punc.psiada.org/wp-content/uploads/2018/02/PUNC-logo.png"), placeholderImage:#imageLiteral(resourceName: "Applogo"))
+        //logoImg.sd_set
+        logoImg.contentMode = .scaleAspectFit
         
         sponsorLeft.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2017/12/CGS-logo.png"))
         

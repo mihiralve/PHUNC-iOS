@@ -13,9 +13,9 @@ class FourthViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
     @IBOutlet weak var tableView: UITableView!
     
-    var moreOptions = ["Contact", "Feedback"]
+    var moreOptions = ["Contact", "Feedback", "Transportation"]
     
-    var identities = ["contact", "feedback"]
+    var identities = ["contact", "feedback", "transportation"]
     
     
     

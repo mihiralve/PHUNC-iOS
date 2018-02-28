@@ -15,6 +15,7 @@ class contactVC: UIViewController {
     @IBOutlet weak var contact2: UIImageView!
     @IBOutlet weak var contact3: UIImageView!
     @IBOutlet weak var contact4: UIImageView!
+    @IBOutlet weak var groupImage: UIImageView!
     
     @IBOutlet var parentView: UIView!
     @IBOutlet weak var parentStack: UIStackView!
@@ -68,30 +69,36 @@ class contactVC: UIViewController {
 //        stack4.layoutMargins = UIEdgeInsets(top: 8, left: 0, bottom: 8, right: 0)
 //        stack4.isLayoutMarginsRelativeArrangement = true
         
-        contact1.sd_setImage(with: URL(string:"http://phunc.psiada.org/wp-content/uploads/2016/08/IMG_20170502_120350_1.jpg"))
+        contact1.sd_setImage(with: URL(string:"http://punc.psiada.org/wp-content/uploads/2017/10/IMG_1149.jpg"))
         contact1.contentMode = .scaleAspectFill
         
         contact1.topAnchor.constraint(equalTo: stack1.topAnchor, constant:8).isActive = true
+        contact1.leadingAnchor.constraint(equalTo: stack1.leadingAnchor, constant:8).isActive = true
         contact1.bottomAnchor.constraint(equalTo: stack1.bottomAnchor, constant:8).isActive = true
         
-        contact2.sd_setImage(with: URL(string:"http://phunc.psiada.org/wp-content/uploads/2016/08/IMG_20170502_120140.jpg"))
+        contact2.sd_setImage(with: URL(string:"http://punc.psiada.org/wp-content/uploads/2017/10/IMG_1132.jpg"))
         contact2.contentMode = .scaleAspectFill
         
         contact2.topAnchor.constraint(equalTo: stack2.topAnchor, constant:8).isActive = true
         contact2.bottomAnchor.constraint(equalTo: stack2.bottomAnchor, constant:8).isActive = true
         
-        contact3.sd_setImage(with: URL(string:"http://phunc.psiada.org/wp-content/uploads/2016/08/IMG_20170502_120030.jpg"))
+        contact3.sd_setImage(with: URL(string:"http://punc.psiada.org/wp-content/uploads/2017/10/IMG_1221.jpg"))
         contact3.contentMode = .scaleAspectFill
         
         contact3.topAnchor.constraint(equalTo: stack3.topAnchor, constant:8).isActive = true
         contact3.bottomAnchor.constraint(equalTo: stack3.bottomAnchor, constant:8).isActive = true
         
-        contact4.sd_setImage(with: URL(string:"http://phunc.psiada.org/wp-content/uploads/2016/08/IMG_20170502_114030.jpg"))
-        contact4.contentMode = .scaleAspectFill
+//        contact4.sd_setImage(with: URL(string:"http://phunc.psiada.org/wp-content/uploads/2016/08/IMG_20170502_114030.jpg"))
+//        contact4.contentMode = .scaleAspectFill
+//
+//        contact4.topAnchor.constraint(equalTo: stack4.topAnchor, constant:8).isActive = true
+//        contact4.bottomAnchor.constraint(equalTo: stack4.bottomAnchor, constant:8).isActive = true
         
-        contact4.topAnchor.constraint(equalTo: stack4.topAnchor, constant:8).isActive = true
-        contact4.bottomAnchor.constraint(equalTo: stack4.bottomAnchor, constant:8).isActive = true
+            groupImage.sd_setImage(with: URL(string:"http://punc.psiada.org/wp-content/uploads/2018/02/IMG_1155.jpg"))
+            groupImage.contentMode = .scaleAspectFit
         
+            groupImage.topAnchor.constraint(equalTo: stack4.topAnchor, constant:8).isActive = true
+            groupImage.bottomAnchor.constraint(equalTo: stack4.bottomAnchor, constant:8).isActive = true
         
         
         
