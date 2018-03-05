@@ -22,7 +22,7 @@ class passingVC: UIViewController, UIWebViewDelegate {
         webView.delegate = self
         
         
-        let url = URL(string:"http://phunc.psiada.org/wp-content/uploads/2017/05/Passing-and-Defeating-Motions.pdf")
+        let url = URL(string:"https://docs.google.com/viewer?embedded=true&url=http://phunc.psiada.org/wp-content/uploads/2017/05/Passing-and-Defeating-Motions.pdf")
         
         let URLReq = URLRequest(url: url!)
         

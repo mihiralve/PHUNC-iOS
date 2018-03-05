@@ -22,7 +22,7 @@ class ppVC: UIViewController, UIWebViewDelegate {
         webView.delegate = self
         
         
-        let url = URL(string:"http://phunc.psiada.org/wp-content/uploads/2017/05/Parliamentary-Procedure.pdf")
+        let url = URL(string:"https://docs.google.com/viewer?embedded=true&url=http://phunc.psiada.org/wp-content/uploads/2017/05/Parliamentary-Procedure.pdf")
         
         let URLReq = URLRequest(url: url!)
         

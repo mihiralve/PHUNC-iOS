@@ -21,9 +21,9 @@ class directiveVC: UIViewController, UIWebViewDelegate {
         webView = UIWebView(frame: view.bounds)
         webView.delegate = self
         
-        //let url = URL(string:"https://docs.google.com/viewer?embedded=true&url=http://phunc.psiada.org/wp-content/uploads/2017/05/Directive-Writing-101.pdf")
+        let url = URL(string:"https://docs.google.com/viewer?embedded=true&url=http://phunc.psiada.org/wp-content/uploads/2017/05/Directive-Writing-101.pdf")
         
-        let url = URL(string:"http://phunc.psiada.org/wp-content/uploads/2017/05/Directive-Writing-101.pdf")
+        //let url = URL(string:"http://phunc.psiada.org/wp-content/uploads/2017/05/Directive-Writing-101.pdf")
         
         let URLReq = URLRequest(url: url!)
         

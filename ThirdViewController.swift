@@ -12,9 +12,9 @@ class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     @IBOutlet weak var tableView: UITableView!
     
-    var resourceNames = ["MUN 101", "Crisis Strategy 101", "Directive Writing 101", "Parliamentary Procedure", "Parliamentary Procedure (In-Depth)", "Scheme of Events", "Passing and Defeating Motions"]
+    var resourceNames = ["Conference Guide","MUN 101", "Crisis Strategy 101", "Directive Writing 101", "Parliamentary Procedure", "Parliamentary Procedure (In-Depth)", "Scheme of Events", "Passing and Defeating Motions"]
     
-    var identities = ["mun", "crisis", "directive", "pp", "pp(i-d)", "scheme", "passing"]
+    var identities = ["guide", "mun", "crisis", "directive", "pp", "pp(i-d)", "scheme", "passing"]
     
     
     override func viewDidLoad() {

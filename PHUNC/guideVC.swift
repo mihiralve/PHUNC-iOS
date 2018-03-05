@@ -1,28 +1,27 @@
 //
-//  pp_detVC.swift
+//  guideVC.swift
 //  PHUNC
 //
-//  Created by Mihir Alve on 6/28/17.
-//  Copyright © 2017 PSIADA. All rights reserved.
+//  Created by Mihir Alve on 3/4/18.
+//  Copyright © 2018 PSIADA. All rights reserved.
 //
 
 import UIKit
 
-class pp_detVC: UIViewController, UIWebViewDelegate {
+class guideVC: UIViewController, UIWebViewDelegate {
 
     @IBOutlet var webView: UIWebView!
     
-    
-    override func viewDidLoad() {
+    override func viewDidLoad(){
         super.viewDidLoad()
-
+        
         self.navigationController!.navigationBar.isTranslucent = false
         
         webView = UIWebView(frame: view.bounds)
         webView.delegate = self
         
         
-        let url = URL(string:"https://docs.google.com/viewer?embedded=true&url=http://phunc.psiada.org/wp-content/uploads/2017/05/Rules-of-Procedure-PUNC-2008.pdf")
+        let url = URL(string:"https://docs.google.com/viewer?embedded=true&url=http://punc.psiada.org/wp-content/uploads/2018/03/PUNC-XI-Conference-Guide.pdf")
         
         let URLReq = URLRequest(url: url!)
         

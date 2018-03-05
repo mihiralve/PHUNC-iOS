@@ -13,6 +13,10 @@ target 'PHUNC' do
   
   pod 'SDWebImage', '~> 4.0'
   
+  pod 'ImageSlideshow', '~> 1.0'
+  
+  pod 'ImageSlideshow/SDWebImage'
+  
   target 'PHUNCTests' do
     inherit! :search_paths
     # Pods for testing
