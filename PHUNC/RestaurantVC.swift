@@ -675,6 +675,399 @@ class RestaurantVC: UIViewController {
         stackView.removeFromSuperview()
         stackViewC.removeFromSuperview()
         stackViewB.removeFromSuperview()
+        
+        let screenSize = UIScreen.main.bounds
+        let screenWidth = screenSize.width
+        
+        let menuImg1 = UIImageView()
+        menuImg1.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2018/03/abba-java.jpg"), placeholderImage: #imageLiteral(resourceName: "placeholder"))
+        menuImg1.contentMode = .scaleAspectFill
+        menuImg1.translatesAutoresizingMaskIntoConstraints = false
+        menuImg1.clipsToBounds = true
+        
+        let menu1 = UITextView(frame: CGRect(x: 10, y: 10, width: 10, height: 40))
+        menu1.text = "Abba Java Coffee House 299 Locust Ln"
+        //        menu1.textAlignment = .center
+        menu1.isEditable = false
+        menu1.isScrollEnabled = false
+        
+        
+        let menuLink1 = NSMutableAttributedString(string: menu1.text)
+        menuLink1.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/YeJapfc1aJ42", range: NSMakeRange(0, menu1.text.count))
+        
+        menu1.attributedText = menuLink1
+        menu1.dataDetectorTypes = .link
+        
+        let menuImg2 = UIImageView()
+        
+        menuImg2.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2018/03/Au-Bon-Pain-Coffee.png"), placeholderImage: #imageLiteral(resourceName: "placeholder"))
+        
+        menuImg2.contentMode = .scaleAspectFill
+        menuImg2.translatesAutoresizingMaskIntoConstraints = false
+        menuImg2.clipsToBounds = true
+        
+        
+        let menu2 = UITextView(frame: CGRect(x: 10, y: 10, width: 10, height: 40))
+        menu2.text = "Au Bon Pain Kern Building"
+        //        menu2.textAlignment = .center
+        menu2.isEditable = false
+        menu2.isScrollEnabled = false
+        
+        let menuLink2 = NSMutableAttributedString(string: menu2.text)
+        menuLink2.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/UgbprziLYfG2", range: NSMakeRange(0, menu2.text.count))
+        
+        menu2.attributedText = menuLink2
+        menu2.dataDetectorTypes = .link
+        
+        let menu2b = UITextView(frame: CGRect(x: 10, y: 10, width: 10, height: 40))
+        menu2b.text = "Au Bon Pain Information Sciences and Technology (Westgate) Building"
+        //        menu2.textAlignment = .center
+        menu2b.isEditable = false
+        menu2b.isScrollEnabled = false
+        
+        let menuLink2b = NSMutableAttributedString(string: menu2b.text)
+        menuLink2b.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/uvzLAFDDEWq", range: NSMakeRange(0, menu2b.text.count))
+        
+        menu2b.attributedText = menuLink2b
+        menu2b.dataDetectorTypes = .link
+        
+        
+        let menuImg3 = UIImageView()
+        
+        menuImg3.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2018/03/CheeseShoppe.jpg"), placeholderImage: #imageLiteral(resourceName: "placeholder"))
+        menuImg3.contentMode = .scaleAspectFill
+        menuImg3.translatesAutoresizingMaskIntoConstraints = false
+        menuImg3.clipsToBounds = true
+        
+        let menu3 = UITextView(frame: CGRect(x: 10, y: 10, width: 10, height: 40))
+        menu3.text = "Cheese Shoppe 234 E Calder Way"
+        //        menu3.textAlignment = .center
+        menu3.isEditable = false
+        menu3.isScrollEnabled = false
+        
+        let menuLink3 = NSMutableAttributedString(string: menu3.text)
+        menuLink3.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/SD8VivhbwGE2", range: NSMakeRange(0, menu3.text.count))
+        
+        menu3.attributedText = menuLink3
+        menu3.dataDetectorTypes = .link
+        
+        
+        
+        
+        
+        
+        let menuImg4 = UIImageView()
+        
+        menuImg4.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2018/03/Dukin-donuts-donut.jpg"), placeholderImage: #imageLiteral(resourceName: "placeholder"))
+        menuImg4.contentMode = .scaleAspectFill
+        menuImg4.translatesAutoresizingMaskIntoConstraints = false
+        menuImg4.clipsToBounds = true
+        
+        let menu4 = UITextView(frame: CGRect(x: 10, y: 10, width: 10, height: 40))
+        menu4.text = "Dunkin Donuts 200 W College Ave"
+        //        menu4.textAlignment = .center
+        menu4.isEditable = false
+        menu4.isScrollEnabled = false
+        
+        let menuLink4 = NSMutableAttributedString(string: menu4.text)
+        menuLink4.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/WVVBSx95Zek", range: NSMakeRange(0, menu4.text.count))
+        
+        menu4.attributedText = menuLink4
+        menu4.dataDetectorTypes = .link
+        
+        
+        
+        
+        let menuImg5 = UIImageView()
+        
+        menuImg5.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2018/03/irvings_bagels.jpeg"), placeholderImage: #imageLiteral(resourceName: "placeholder"))
+        menuImg5.contentMode = .scaleAspectFill
+        menuImg5.translatesAutoresizingMaskIntoConstraints = false
+        menuImg5.clipsToBounds = true
+        
+        let menu5 = UITextView(frame: CGRect(x: 10, y: 10, width: 10, height: 40))
+        menu5.text = "Irving’s Bagels 110 E College Ave"
+        //        menu5.textAlignment = .center
+        menu5.isEditable = false
+        menu5.isScrollEnabled = false
+        
+        let menuLink5 = NSMutableAttributedString(string: menu5.text)
+        menuLink5.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/RHzwpDGCE7S2", range: NSMakeRange(0, menu5.text.count))
+        
+        menu5.attributedText = menuLink5
+        menu5.dataDetectorTypes = .link
+        
+        
+        
+        
+        
+        
+        let menuImg6 = UIImageView()
+        
+        menuImg6.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2018/03/panera-bread.jpg"), placeholderImage: #imageLiteral(resourceName: "placeholder"))
+        menuImg6.contentMode = .scaleAspectFill
+        menuImg6.translatesAutoresizingMaskIntoConstraints = false
+        menuImg6.clipsToBounds = true
+        
+        let menu6 = UITextView(frame: CGRect(x: 10, y: 10, width: 10, height: 40))
+        menu6.text = "Panera Bread 148 S Allen St"
+        //        menu6.textAlignment = .center
+        menu6.isEditable = false
+        menu6.isScrollEnabled = false
+        
+        let menuLink6 = NSMutableAttributedString(string: menu6.text)
+        menuLink6.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/Wg3YQ9JeU772", range: NSMakeRange(0, menu6.text.count))
+        
+        menu6.attributedText = menuLink6
+        menu6.dataDetectorTypes = .link
+        
+        
+        
+        
+        
+        
+        
+        let menuImg7 = UIImageView()
+        
+        menuImg7.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2018/03/penn-state-creamery.jpg"), placeholderImage: #imageLiteral(resourceName: "placeholder"))
+        menuImg7.contentMode = .scaleAspectFill
+        menuImg7.translatesAutoresizingMaskIntoConstraints = false
+        menuImg7.clipsToBounds = true
+        
+        let menu7 = UITextView(frame: CGRect(x: 10, y: 10, width: 10, height: 40))
+        menu7.text = "Penn State Creamery Food Science Building"
+        //        menu7.textAlignment = .center
+        menu7.isEditable = false
+        menu7.isScrollEnabled = false
+        
+        let menuLink7 = NSMutableAttributedString(string: menu7.text)
+        menuLink7.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/xiKUQJo3QnQ2", range: NSMakeRange(0, menu7.text.count))
+        
+        menu7.attributedText = menuLink7
+        menu7.dataDetectorTypes = .link
+        
+        
+        
+        
+        
+        
+        let menuImg8 = UIImageView()
+        
+        menuImg8.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2018/03/saints-cafe.jpg"), placeholderImage: #imageLiteral(resourceName: "placeholder"))
+        menuImg8.contentMode = .scaleAspectFill
+        menuImg8.translatesAutoresizingMaskIntoConstraints = false
+        menuImg8.clipsToBounds = true
+        
+        let menu8 = UITextView(frame: CGRect(x: 10, y: 10, width: 10, height: 40))
+        menu8.text = "Saint’s Cafe 123 W Beaver Ave"
+        //        menu8.textAlignment = .center
+        menu8.isEditable = false
+        menu8.isScrollEnabled = false
+        
+        let menuLink8 = NSMutableAttributedString(string: menu8.text)
+        menuLink8.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/XnnntWPmTQm", range: NSMakeRange(0, menu8.text.count))
+        
+        menu8.attributedText = menuLink8
+        menu8.dataDetectorTypes = .link
+        
+        
+        
+        
+        let menuImg9 = UIImageView()
+        
+        menuImg9.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2018/03/sowers-harvest-cafe.jpg"), placeholderImage: #imageLiteral(resourceName: "placeholder"))
+        menuImg9.contentMode = .scaleAspectFill
+        menuImg9.translatesAutoresizingMaskIntoConstraints = false
+        menuImg9.clipsToBounds = true
+        
+        let menu9 = UITextView(frame: CGRect(x: 10, y: 10, width: 10, height: 40))
+        menu9.text = "Sowers Harvest Café 421 E Beaver Ave"
+        //        menu9.textAlignment = .center
+        menu9.isEditable = false
+        menu9.isScrollEnabled = false
+        
+        let menuLink9 = NSMutableAttributedString(string: menu9.text)
+        menuLink9.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/GLiDpFxjeMs", range: NSMakeRange(0, menu9.text.count))
+        
+        menu9.attributedText = menuLink9
+        menu9.dataDetectorTypes = .link
+        
+        
+        
+        
+        let menuImg10 = UIImageView()
+        
+        menuImg10.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2018/03/starbucks.jpg"), placeholderImage: #imageLiteral(resourceName: "placeholder"))
+        menuImg10.contentMode = .scaleAspectFill
+        menuImg10.translatesAutoresizingMaskIntoConstraints = false
+        menuImg10.clipsToBounds = true
+        
+        let menu10 = UITextView(frame: CGRect(x: 10, y: 10, width: 10, height: 40))
+        menu10.text = "Starbucks HUB"
+        //        menu10.textAlignment = .center
+        menu10.isEditable = false
+        menu10.isScrollEnabled = false
+        
+        let menuLink10 = NSMutableAttributedString(string: menu10.text)
+        menuLink10.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/z6CDyDQsQTF2", range: NSMakeRange(0, menu10.text.count))
+        
+        menu10.attributedText = menuLink10
+        menu10.dataDetectorTypes = .link
+        
+        let menu10b = UITextView(frame: CGRect(x: 10, y: 10, width: 10, height: 40))
+        menu10b.text = "Starbucks 232 W College Ave"
+        //        menu10.textAlignment = .center
+        menu10b.isEditable = false
+        menu10b.isScrollEnabled = false
+        
+        let menuLink10b = NSMutableAttributedString(string: menu10b.text)
+        menuLink10b.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/eGJTMaSmp3T2", range: NSMakeRange(0, menu10b.text.count))
+        
+        menu10b.attributedText = menuLink10b
+        menu10b.dataDetectorTypes = .link
+        
+        
+    
+        
+        let menuImg11 = UIImageView()
+        
+        menuImg11.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2018/03/websters.jpg"), placeholderImage: #imageLiteral(resourceName: "placeholder"))
+        
+        menuImg11.contentMode = .scaleAspectFill
+        menuImg11.translatesAutoresizingMaskIntoConstraints = false
+        menuImg11.clipsToBounds = true
+        
+        let menu11 = UITextView(frame: CGRect(x: 10, y: 10, width: 10, height: 40))
+        menu11.text = "Webster’s Bookstore Cafe 133 E Beaver Ave"
+        //        menu11.textAlignment = .center
+        menu11.isEditable = false
+        menu11.isScrollEnabled = false
+        
+        let menuLink11 = NSMutableAttributedString(string: menu11.text)
+        menuLink11.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/wNjCUdNPxAm", range: NSMakeRange(0, menu11.text.count))
+        
+        menu11.attributedText = menuLink11
+        menu11.dataDetectorTypes = .link
+        
+        let menu19 = UITextView(frame: CGRect(x: 10, y: 10, width: 10, height: 40))
+        menu19.text = ""
+        menu19.textAlignment = .center
+        menu19.isEditable = false
+        menu19.isScrollEnabled = false
+        
+        
+        
+        
+        stackViewC.translatesAutoresizingMaskIntoConstraints = false
+        stackViewC.axis = .vertical
+        stackViewC.alignment = .center
+        stackViewC.spacing = 15
+        stackViewC.distribution = .fill
+        
+        
+        stackViewC.addArrangedSubview(menuImg1)
+        stackViewC.addArrangedSubview(menu1)
+        
+        stackViewC.addArrangedSubview(menuImg2)
+        stackViewC.addArrangedSubview(menu2)
+        stackViewC.addArrangedSubview(menu2b)
+        
+        stackViewC.addArrangedSubview(menuImg3)
+        stackViewC.addArrangedSubview(menu3)
+        
+        stackViewC.addArrangedSubview(menuImg4)
+        stackViewC.addArrangedSubview(menu4)
+        
+        stackViewC.addArrangedSubview(menuImg5)
+        stackViewC.addArrangedSubview(menu5)
+        
+        stackViewC.addArrangedSubview(menuImg6)
+        stackViewC.addArrangedSubview(menu6)
+        
+        stackViewC.addArrangedSubview(menuImg7)
+        stackViewC.addArrangedSubview(menu7)
+        
+        stackViewC.addArrangedSubview(menuImg8)
+        stackViewC.addArrangedSubview(menu8)
+        
+        stackViewC.addArrangedSubview(menuImg9)
+        stackViewC.addArrangedSubview(menu9)
+        
+        stackViewC.addArrangedSubview(menuImg10)
+        stackViewC.addArrangedSubview(menu10)
+        stackViewC.addArrangedSubview(menu10b)
+        
+        stackViewC.addArrangedSubview(menuImg11)
+        stackViewC.addArrangedSubview(menu11)
+        
+        stackViewC.addArrangedSubview(menu19)
+        
+        scrollView.addSubview(stackViewC)
+        
+        stackViewC.leftAnchor.constraint(equalTo: scrollView.leftAnchor, constant: 8).isActive = true
+        stackViewC.rightAnchor.constraint(equalTo: scrollView.rightAnchor, constant: 8).isActive = true
+        stackViewC.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor, constant: 16).isActive = true
+        stackViewC.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 8).isActive = true
+        
+        menu1.widthAnchor.constraint(equalToConstant: screenWidth - 24).isActive = true
+        menuImg1.widthAnchor.constraint(equalToConstant: screenWidth - 16).isActive = true
+        menuImg1.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        menu1.textAlignment = .center
+        
+        menu2.widthAnchor.constraint(equalToConstant: screenWidth - 24).isActive = true
+        menu2b.widthAnchor.constraint(equalToConstant: screenWidth - 24).isActive = true
+        menuImg2.widthAnchor.constraint(equalToConstant: screenWidth - 16).isActive = true
+        menuImg2.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        menu2.textAlignment = .center
+        menu2b.textAlignment = .center
+        
+        menu3.widthAnchor.constraint(equalToConstant: screenWidth - 24).isActive = true
+        menuImg3.widthAnchor.constraint(equalToConstant: screenWidth - 16).isActive = true
+        menuImg3.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        menu3.textAlignment = .center
+        
+        menu4.widthAnchor.constraint(equalToConstant: screenWidth - 24).isActive = true
+        menuImg4.widthAnchor.constraint(equalToConstant: screenWidth - 16).isActive = true
+        menuImg4.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        menu4.textAlignment = .center
+        
+        menu5.widthAnchor.constraint(equalToConstant: screenWidth - 24).isActive = true
+        menuImg5.widthAnchor.constraint(equalToConstant: screenWidth - 16).isActive = true
+        menuImg5.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        menu5.textAlignment = .center
+        
+        menu6.widthAnchor.constraint(equalToConstant: screenWidth - 24).isActive = true
+        menuImg6.widthAnchor.constraint(equalToConstant: screenWidth - 16).isActive = true
+        menuImg6.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        menu6.textAlignment = .center
+        
+        menu7.widthAnchor.constraint(equalToConstant: screenWidth - 24).isActive = true
+        menuImg7.widthAnchor.constraint(equalToConstant: screenWidth - 16).isActive = true
+        menuImg7.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        menu7.textAlignment = .center
+        
+        menu8.widthAnchor.constraint(equalToConstant: screenWidth - 24).isActive = true
+        menuImg8.widthAnchor.constraint(equalToConstant: screenWidth - 16).isActive = true
+        menuImg8.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        menu8.textAlignment = .center
+        
+        menu9.widthAnchor.constraint(equalToConstant: screenWidth - 24).isActive = true
+        menuImg9.widthAnchor.constraint(equalToConstant: screenWidth - 16).isActive = true
+        menuImg9.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        menu9.textAlignment = .center
+        
+        menu10.widthAnchor.constraint(equalToConstant: screenWidth - 24).isActive = true
+        menu10b.widthAnchor.constraint(equalToConstant: screenWidth - 24).isActive = true
+        menuImg10.widthAnchor.constraint(equalToConstant: screenWidth - 16).isActive = true
+        menuImg10.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        menu10.textAlignment = .center
+        menu10b.textAlignment = .center
+        
+        menu11.widthAnchor.constraint(equalToConstant: screenWidth - 24).isActive = true
+        menuImg11.widthAnchor.constraint(equalToConstant: screenWidth - 16).isActive = true
+        menuImg11.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        menu11.textAlignment = .center
+        
     }
     
     func loadBars() {

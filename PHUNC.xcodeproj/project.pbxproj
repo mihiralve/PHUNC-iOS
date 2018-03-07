@@ -11,7 +11,6 @@
 		0400DB3D1FEC4D9800C96690 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0400DB3B1FEC4D9800C96690 /* GoogleService-Info.plist */; };
 		04041A501EF36F2E0030A000 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04041A4F1EF36F2E0030A000 /* AppDelegate.swift */; };
 		04041A521EF36F2E0030A000 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04041A511EF36F2E0030A000 /* FirstViewController.swift */; };
-		04041A541EF36F2E0030A000 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04041A531EF36F2E0030A000 /* SecondViewController.swift */; };
 		04041A571EF36F2E0030A000 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04041A551EF36F2E0030A000 /* Main.storyboard */; };
 		04041A591EF36F2E0030A000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04041A581EF36F2E0030A000 /* Assets.xcassets */; };
 		04041A5C1EF36F2E0030A000 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04041A5A1EF36F2E0030A000 /* LaunchScreen.storyboard */; };
@@ -51,7 +50,6 @@
 		04041A4C1EF36F2D0030A000 /* PHUNC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PHUNC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04041A4F1EF36F2E0030A000 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04041A511EF36F2E0030A000 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		04041A531EF36F2E0030A000 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		04041A561EF36F2E0030A000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04041A581EF36F2E0030A000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04041A5B1EF36F2E0030A000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -129,7 +127,6 @@
 				04041A4F1EF36F2E0030A000 /* AppDelegate.swift */,
 				04041A511EF36F2E0030A000 /* FirstViewController.swift */,
 				0447D4E6204DCC030045ED1F /* ScheduleVC.swift */,
-				04041A531EF36F2E0030A000 /* SecondViewController.swift */,
 				047380081F00A648009E2F97 /* ThirdViewController.swift */,
 				0444CC821F031851004A5A89 /* munVC.swift */,
 				0410BFF01F042672000B7BC3 /* crisisVC.swift */,
@@ -404,7 +401,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0410BFFF1F049F75000B7BC3 /* FourthViewController.swift in Sources */,
-				04041A541EF36F2E0030A000 /* SecondViewController.swift in Sources */,
 				0473E51C203A80F000A9062A /* TransportationVC.swift in Sources */,
 				048D2867203E5485007BBB7E /* BusVC.swift in Sources */,
 				0410BFFB1F049B71000B7BC3 /* schemeVC.swift in Sources */,

@@ -20,6 +20,7 @@ class ScheduleVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        loadSchedule()
     }
 
     @IBAction func indexChanged(_ sender: Any) {
