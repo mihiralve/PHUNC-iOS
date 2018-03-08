@@ -194,26 +194,13 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YPM-vn-Gmr">
-                                <rect key="frame" x="0.0" y="28" width="375" height="573"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="537"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z2j-Nz-0Pg">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1028"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                                         <subviews>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hu5-q6-KVd">
-                                                <rect key="frame" x="57" y="16" width="261" height="29"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="28" id="4s4-yG-r0c"/>
-                                                </constraints>
-                                                <segments>
-                                                    <segment title="Schedule"/>
-                                                    <segment title="Room Assignments"/>
-                                                </segments>
-                                                <connections>
-                                                    <action selector="indexChanged:" destination="8rJ-Kc-sve" eventType="valueChanged" id="Wcd-Kx-Soc"/>
-                                                </connections>
-                                            </segmentedControl>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="97x-M2-b6m">
-                                                <rect key="frame" x="8" y="52" width="359" height="1000"/>
+                                                <rect key="frame" x="8" y="0.0" width="359" height="1000"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="359" id="IAM-W3-bDO"/>
                                                     <constraint firstAttribute="height" constant="1000" id="xEZ-su-x8p"/>
@@ -225,11 +212,7 @@
                                             <constraint firstAttribute="trailing" secondItem="97x-M2-b6m" secondAttribute="trailing" constant="8" id="0Gh-2Z-ZZw"/>
                                             <constraint firstAttribute="bottom" secondItem="97x-M2-b6m" secondAttribute="bottom" id="HNq-pS-hW9"/>
                                             <constraint firstItem="97x-M2-b6m" firstAttribute="leading" secondItem="z2j-Nz-0Pg" secondAttribute="leading" constant="8" id="HdL-1H-yZn"/>
-                                            <constraint firstItem="hu5-q6-KVd" firstAttribute="top" secondItem="z2j-Nz-0Pg" secondAttribute="topMargin" constant="8" id="Li2-BD-yhP"/>
-                                            <constraint firstItem="hu5-q6-KVd" firstAttribute="centerX" secondItem="z2j-Nz-0Pg" secondAttribute="centerX" id="UeJ-9r-V1V"/>
-                                            <constraint firstAttribute="height" constant="1028" id="dJM-O7-KaU"/>
-                                            <constraint firstItem="97x-M2-b6m" firstAttribute="top" secondItem="hu5-q6-KVd" secondAttribute="bottom" constant="8" id="hVq-2t-Qcl"/>
-                                            <constraint firstItem="hu5-q6-KVd" firstAttribute="leading" secondItem="z2j-Nz-0Pg" secondAttribute="leading" constant="57" id="nxe-ZZ-5Ah"/>
+                                            <constraint firstAttribute="height" constant="1000" id="dJM-O7-KaU"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -240,16 +223,29 @@
                                     <constraint firstItem="z2j-Nz-0Pg" firstAttribute="top" secondItem="YPM-vn-Gmr" secondAttribute="top" id="of8-TM-oc0"/>
                                 </constraints>
                             </scrollView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hu5-q6-KVd">
+                                <rect key="frame" x="57" y="28" width="261" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="28" id="3Dx-oZ-6V4"/>
+                                    <constraint firstAttribute="height" constant="28" id="4s4-yG-r0c"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Schedule"/>
+                                    <segment title="Room Assignments"/>
+                                </segments>
+                                <connections>
+                                    <action selector="indexChanged:" destination="8rJ-Kc-sve" eventType="valueChanged" id="Wcd-Kx-Soc"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="YPM-vn-Gmr" firstAttribute="top" secondItem="SL8-yd-Fye" secondAttribute="top" id="0hA-8i-Lmo"/>
-                            <constraint firstAttribute="trailing" secondItem="YPM-vn-Gmr" secondAttribute="trailing" id="Cbg-ed-zGh"/>
-                            <constraint firstItem="YPM-vn-Gmr" firstAttribute="top" secondItem="Qvq-6N-Ib2" secondAttribute="bottom" constant="8" id="GG9-Fp-Zdq"/>
-                            <constraint firstItem="YPM-vn-Gmr" firstAttribute="leading" secondItem="SL8-yd-Fye" secondAttribute="leading" id="XCD-FW-YwF"/>
-                            <constraint firstItem="YPM-vn-Gmr" firstAttribute="top" secondItem="Qvq-6N-Ib2" secondAttribute="bottom" constant="8" id="ZRE-oR-lEQ"/>
+                            <constraint firstItem="hu5-q6-KVd" firstAttribute="leading" secondItem="SL8-yd-Fye" secondAttribute="leadingMargin" constant="41" id="73x-G6-QwX"/>
+                            <constraint firstItem="YPM-vn-Gmr" firstAttribute="top" secondItem="hu5-q6-KVd" secondAttribute="bottom" constant="8" id="9Bj-e5-hLV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hu5-q6-KVd" secondAttribute="trailing" constant="41" id="MOt-wc-R7F"/>
                             <constraint firstAttribute="trailing" secondItem="YPM-vn-Gmr" secondAttribute="trailing" id="bKl-ZC-uc8"/>
                             <constraint firstItem="YPM-vn-Gmr" firstAttribute="leading" secondItem="SL8-yd-Fye" secondAttribute="leading" id="bp4-K7-8SU"/>
+                            <constraint firstItem="hu5-q6-KVd" firstAttribute="top" secondItem="Qvq-6N-Ib2" secondAttribute="bottom" constant="8" id="oOg-fU-n1Q"/>
                             <constraint firstItem="kCY-Rd-i6x" firstAttribute="top" secondItem="YPM-vn-Gmr" secondAttribute="bottom" id="ovs-BN-UUo"/>
                         </constraints>
                     </view>
@@ -1119,8 +1115,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="368" id="RVz-8T-fux"/>
                                 </constraints>
-                                <mutableString key="text">United Nations Campus Advocates is a campus chapter of a nation wide movement to rally support for the work of the United Nations. At Penn State, we advocate to our peers about all the good that the UN accomplishes. This year we are supporting a campaign by the UN Foundation called Shot@Life.  Funds raised through Shot@Life aid Unicef, the World Health Organization and Gavi, the Vaccine Alliance, in the coordination, purchase, delivery and administering
-of vaccines to children in developing countries. To get an idea of the impact of  donations on this effort, just $25 provides a vaccine for one child against polio, measles, diarrheal disease, and pneumonia for life.  Lean more at ShotatLife.org.</mutableString>
+                                <string key="text">United Nations Campus Advocates is a campus chapter of a nation wide movement to rally support for the work of the United Nations. At Penn State, we advocate to our peers about all the good that the UN accomplishes. This year we are supporting a campaign by the UN Foundation called Shot@Life.  Funds raised through Shot@Life aid Unicef, the World Health Organization and Gavi, the Vaccine Alliance, in the coordination, purchase, delivery and administering
+of vaccines to children in developing countries. To get an idea of the impact of  donations on this effort, just $25 provides a vaccine for one child against polio, measles, diarrheal disease, and pneumonia for life.  Lean more at ShotatLife.org.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
