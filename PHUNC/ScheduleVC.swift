@@ -9,6 +9,7 @@
 import UIKit
 import SDWebImage
 
+
 class ScheduleVC: UIViewController {
 
     @IBOutlet weak var segmentedControl: UISegmentedControl!
@@ -35,17 +36,25 @@ class ScheduleVC: UIViewController {
     }
     
     func loadSchedule(){
-        imgHeight.constant = 1700
-        containerHeight.constant = 1728
+        let screenSize = UIScreen.main.bounds
+        let screenWidth = screenSize.width
+        
+        imgHeight.constant = (screenWidth - 24) * 4.66
+        containerHeight.constant = (screenWidth - 24) * 4.66
         scheduleImg.sd_setImage(with: URL(string: "http://punc.psiada.org/wp-content/uploads/2018/03/PUNCschedule.png"))
         scheduleImg.contentMode = .scaleAspectFit
+        scheduleImg.widthAnchor.constraint(equalToConstant: screenWidth - 24).isActive = true
     }
     
     func loadRooms(){
-        imgHeight.constant = 1100
-        containerHeight.constant = 1128
+        let screenSize = UIScreen.main.bounds
+        let screenWidth = screenSize.width
+        
+        imgHeight.constant = (screenWidth - 24) * 2.93
+        containerHeight.constant = (screenWidth - 24) * 2.93
         scheduleImg.sd_setImage(with: URL(string: "http://punc.psiada.org/wp-content/uploads/2018/03/room_Assignments.png"))
         scheduleImg.contentMode = .scaleAspectFit
+        scheduleImg.widthAnchor.constraint(equalToConstant: screenWidth - 24).isActive = true
     }
     
     

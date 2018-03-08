@@ -21,15 +21,11 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
     
     @IBOutlet weak var logoImg: UIImageView!
     
-    @IBOutlet weak var sponsorLeft: UIImageView!
-   
-    @IBOutlet weak var sponsorRight: UIImageView!
-    
     @IBOutlet weak var sponsors: ImageSlideshow!
     
     //let sponsorSource = [SDWebImageSource(urlString: "")!, SDWebImageSource(urlString: "")!]
     
-    let sponsonSource = [ImageSource(image: #imageLiteral(resourceName: "pla_logo")), ImageSource(image: #imageLiteral(resourceName: "seven_sage")), ImageSource(image: #imageLiteral(resourceName: "seton_hall")), ImageSource(image: #imageLiteral(resourceName: "SIA-logo")), ImageSource(image: #imageLiteral(resourceName: "Schreyer-Logo"))]
+    let sponsorSource = [ImageSource(image: #imageLiteral(resourceName: "pla_logo")), ImageSource(image: #imageLiteral(resourceName: "seven_sage")), ImageSource(image: #imageLiteral(resourceName: "seton_hall")), ImageSource(image: #imageLiteral(resourceName: "SIA-logo")), ImageSource(image: #imageLiteral(resourceName: "Schreyer-Logo"))]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +33,7 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
         
         
       
-        sponsors.setImageInputs(sponsonSource)
+        sponsors.setImageInputs(sponsorSource)
         sponsors.slideshowInterval = 5
         sponsors.pageControlPosition = .hidden
         
