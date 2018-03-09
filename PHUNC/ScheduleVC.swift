@@ -47,7 +47,11 @@ class ScheduleVC: UIViewController {
         imgHeight.constant = (screenWidth - 24) * 4.66
         containerHeight.constant = (screenWidth - 24) * 4.66
         
-        scheduleImg.sd_setImage(with: URL(string: "http://punc.psiada.org/wp-content/uploads/2018/03/PUNCschedule.png"))
+        scheduleImg.sd_setShowActivityIndicatorView(true)
+        scheduleImg.sd_setIndicatorStyle(.gray)
+        
+        
+        scheduleImg.sd_setImage(with: URL(string: "http://punc.psiada.org/wp-content/uploads/2018/03/PUNCschedule.png"), placeholderImage: #imageLiteral(resourceName: "Blank_button.svg"), options:.refreshCached)
         scheduleImg.contentMode = .scaleAspectFit
         scheduleImg.widthAnchor.constraint(equalToConstant: screenWidth - 24).isActive = true
     }
@@ -62,8 +66,11 @@ class ScheduleVC: UIViewController {
         
         imgHeight.constant = (screenWidth - 24) * 2.93
         containerHeight.constant = (screenWidth - 24) * 2.93
-         
-        scheduleImg.sd_setImage(with: URL(string: "http://punc.psiada.org/wp-content/uploads/2018/03/room_Assignments.png"))
+        
+        scheduleImg.sd_setShowActivityIndicatorView(true)
+        scheduleImg.sd_setIndicatorStyle(.gray)
+        
+        scheduleImg.sd_setImage(with: URL(string: "http://punc.psiada.org/wp-content/uploads/2018/03/room_Assignments.png"), placeholderImage: #imageLiteral(resourceName: "Blank_button.svg"), options:.refreshCached)
         scheduleImg.contentMode = .scaleAspectFit
         scheduleImg.widthAnchor.constraint(equalToConstant: screenWidth - 24).isActive = true
 

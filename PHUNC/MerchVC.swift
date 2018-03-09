@@ -24,13 +24,13 @@ class MerchVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        merchImg1.sd_setImage(with: URL(string:"http://punc.psiada.org/wp-content/uploads/2018/03/shot-glass.png"))
+        merchImg1.sd_setImage(with: URL(string:"http://punc.psiada.org/wp-content/uploads/2018/03/shot-glass.png"), placeholderImage: #imageLiteral(resourceName: "Applogo"), options:.refreshCached)
         merchImg1.contentMode = .scaleAspectFit
         
-        merchImg2.sd_setImage(with: URL(string:"http://punc.psiada.org/wp-content/uploads/2018/03/phone-wallet.jpg"))
+        merchImg2.sd_setImage(with: URL(string:"http://punc.psiada.org/wp-content/uploads/2018/03/phone-wallet.jpg"), placeholderImage: #imageLiteral(resourceName: "Applogo"), options:.refreshCached)
         merchImg2.contentMode = .scaleAspectFit
         
-        merchImg3.sd_setImage(with: URL(string:"http://punc.psiada.org/wp-content/uploads/2018/03/bottle-opener.jpg"))
+        merchImg3.sd_setImage(with: URL(string:"http://punc.psiada.org/wp-content/uploads/2018/03/bottle-opener.jpg"), placeholderImage: #imageLiteral(resourceName: "Applogo"), options:.refreshCached)
         merchImg3.contentMode = .scaleAspectFit
         
         
