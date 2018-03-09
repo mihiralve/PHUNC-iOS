@@ -12,6 +12,7 @@ import SDWebImage
 
 class ScheduleVC: UIViewController {
 
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var scheduleImg: UIImageView!
 
@@ -36,6 +37,10 @@ class ScheduleVC: UIViewController {
     }
     
     func loadSchedule(){
+        
+        scrollView.scrollRectToVisible(CGRect(x: 0, y: 0, width: 1, height:
+            1), animated: false)
+        
         let screenSize = UIScreen.main.bounds
         let screenWidth = screenSize.width
         
@@ -48,6 +53,10 @@ class ScheduleVC: UIViewController {
     }
     
     func loadRooms(){
+        
+        scrollView.scrollRectToVisible(CGRect(x: 0, y: 0, width: 1, height:
+            1), animated: false)
+        
         let screenSize = UIScreen.main.bounds
         let screenWidth = screenSize.width
         

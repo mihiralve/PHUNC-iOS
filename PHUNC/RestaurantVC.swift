@@ -58,6 +58,8 @@ class RestaurantVC: UIViewController {
     }
     
     func loadRestaurants(){
+        scrollView.scrollRectToVisible(CGRect(x: 0, y: 0, width: 1, height:
+            1), animated: false)
         
         stackView.removeFromSuperview()
         stackViewC.removeFromSuperview()
@@ -676,6 +678,9 @@ class RestaurantVC: UIViewController {
         stackViewC.removeFromSuperview()
         stackViewB.removeFromSuperview()
         
+        scrollView.scrollRectToVisible(CGRect(x: 0, y: 0, width: 1, height:
+            1), animated: false)
+        
         let screenSize = UIScreen.main.bounds
         let screenWidth = screenSize.width
         
@@ -1074,6 +1079,9 @@ class RestaurantVC: UIViewController {
         stackView.removeFromSuperview()
         stackViewC.removeFromSuperview()
         stackViewB.removeFromSuperview()
+        
+        scrollView.scrollRectToVisible(CGRect(x: 0, y: 0, width: 1, height:
+            1), animated: false)
         
         let screenSize = UIScreen.main.bounds
         let screenWidth = screenSize.width

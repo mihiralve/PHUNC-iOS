@@ -207,7 +207,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YPM-vn-Gmr">
-                                <rect key="frame" x="8" y="64" width="359" height="537"/>
+                                <rect key="frame" x="0.0" y="64" width="359" height="537"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z2j-Nz-0Pg">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
@@ -239,13 +239,13 @@
                                     <constraint firstAttribute="bottom" secondItem="z2j-Nz-0Pg" secondAttribute="bottom" id="WTr-sa-oya"/>
                                     <constraint firstAttribute="trailing" secondItem="z2j-Nz-0Pg" secondAttribute="trailing" id="bTD-Wg-gRF"/>
                                     <constraint firstAttribute="width" constant="359" id="fq1-Mu-qko"/>
+                                    <constraint firstItem="z2j-Nz-0Pg" firstAttribute="centerX" secondItem="YPM-vn-Gmr" secondAttribute="centerX" id="h9O-Rc-Kxx"/>
                                     <constraint firstItem="z2j-Nz-0Pg" firstAttribute="top" secondItem="YPM-vn-Gmr" secondAttribute="top" id="of8-TM-oc0"/>
                                 </constraints>
                             </scrollView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hu5-q6-KVd">
                                 <rect key="frame" x="57" y="28" width="261" height="29"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="28" id="3Dx-oZ-6V4"/>
                                     <constraint firstAttribute="height" constant="28" id="4s4-yG-r0c"/>
                                 </constraints>
                                 <segments>
@@ -259,11 +259,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="YPM-vn-Gmr" secondAttribute="trailing" constant="8" id="4i8-wJ-L4c"/>
+                            <constraint firstAttribute="trailing" secondItem="YPM-vn-Gmr" secondAttribute="trailing" id="4i8-wJ-L4c"/>
                             <constraint firstItem="hu5-q6-KVd" firstAttribute="leading" secondItem="SL8-yd-Fye" secondAttribute="leadingMargin" constant="41" id="73x-G6-QwX"/>
                             <constraint firstItem="YPM-vn-Gmr" firstAttribute="top" secondItem="hu5-q6-KVd" secondAttribute="bottom" constant="8" id="9Bj-e5-hLV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hu5-q6-KVd" secondAttribute="trailing" constant="41" id="MOt-wc-R7F"/>
-                            <constraint firstItem="YPM-vn-Gmr" firstAttribute="leading" secondItem="SL8-yd-Fye" secondAttribute="leading" constant="8" id="o00-zW-0NM"/>
+                            <constraint firstItem="YPM-vn-Gmr" firstAttribute="leading" secondItem="SL8-yd-Fye" secondAttribute="leading" id="o00-zW-0NM"/>
                             <constraint firstItem="hu5-q6-KVd" firstAttribute="top" secondItem="Qvq-6N-Ib2" secondAttribute="bottom" constant="8" id="oOg-fU-n1Q"/>
                             <constraint firstItem="kCY-Rd-i6x" firstAttribute="top" secondItem="YPM-vn-Gmr" secondAttribute="bottom" id="ovs-BN-UUo"/>
                         </constraints>
@@ -275,6 +275,7 @@
                         <outlet property="containerHeight" destination="dJM-O7-KaU" id="ACw-ly-eCi"/>
                         <outlet property="imgHeight" destination="xEZ-su-x8p" id="fQa-Tz-MOq"/>
                         <outlet property="scheduleImg" destination="97x-M2-b6m" id="Uu4-ut-bvI"/>
+                        <outlet property="scrollView" destination="YPM-vn-Gmr" id="U3M-5V-g18"/>
                         <outlet property="segmentedControl" destination="hu5-q6-KVd" id="yfj-aO-VWU"/>
                     </connections>
                 </viewController>
