@@ -23,6 +23,8 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
     
     @IBOutlet weak var sponsors: ImageSlideshow!
     
+    @IBOutlet var Parent: UIView!
+    @IBOutlet weak var webViewWidth: NSLayoutConstraint!
     //let sponsorSource = [SDWebImageSource(urlString: "")!, SDWebImageSource(urlString: "")!]
     
     let sponsorSource = [ImageSource(image: #imageLiteral(resourceName: "pla_logo")), ImageSource(image: #imageLiteral(resourceName: "seven_sage")), ImageSource(image: #imageLiteral(resourceName: "seton_hall")), ImageSource(image: #imageLiteral(resourceName: "SIA-logo")), ImageSource(image: #imageLiteral(resourceName: "Schreyer-Logo"))]
@@ -44,7 +46,7 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
 
         
         
-        let url = URL(string:"http://punc.psiada.org/app-announcements/")
+        let url = URL(string:"http://punc.psiada.org/app-updates/")
         
         let URLReq = URLRequest(url: url!)
         
@@ -77,9 +79,13 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
         webView.isHidden = false
         container.addSubview(webView)
         
-    
+        let screenSize = UIScreen.main.bounds
+        let screenWidth = screenSize.width
         
-        
+        webViewWidth.constant = screenWidth
+        webView.center.x = Parent.center.x
+        webView.isOpaque = false
+        webView.clipsToBounds = true
         
     }
  

@@ -14,7 +14,7 @@ class ScheduleVC: UIViewController {
 
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var scheduleImg: UIImageView!
-    
+
     @IBOutlet weak var imgHeight: NSLayoutConstraint!
     @IBOutlet weak var containerHeight: NSLayoutConstraint!
     override func viewDidLoad() {
@@ -41,6 +41,7 @@ class ScheduleVC: UIViewController {
         
         imgHeight.constant = (screenWidth - 24) * 4.66
         containerHeight.constant = (screenWidth - 24) * 4.66
+        
         scheduleImg.sd_setImage(with: URL(string: "http://punc.psiada.org/wp-content/uploads/2018/03/PUNCschedule.png"))
         scheduleImg.contentMode = .scaleAspectFit
         scheduleImg.widthAnchor.constraint(equalToConstant: screenWidth - 24).isActive = true
@@ -52,9 +53,11 @@ class ScheduleVC: UIViewController {
         
         imgHeight.constant = (screenWidth - 24) * 2.93
         containerHeight.constant = (screenWidth - 24) * 2.93
+         
         scheduleImg.sd_setImage(with: URL(string: "http://punc.psiada.org/wp-content/uploads/2018/03/room_Assignments.png"))
         scheduleImg.contentMode = .scaleAspectFit
         scheduleImg.widthAnchor.constraint(equalToConstant: screenWidth - 24).isActive = true
+
     }
     
     
