@@ -13,7 +13,7 @@ target 'PHUNC' do
   
   pod 'Firebase/Messaging'
   
-  pod 'SDWebImage', '~> 3.7'
+  pod 'SDWebImage', '~> 4.0'
   
   pod 'ImageSlideshow', '~> 1.0'
   
