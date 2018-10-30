@@ -1052,16 +1052,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JXw-nO-BHV">
-                                <rect key="frame" x="8" y="28" width="359" height="446"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JXw-nO-BHV">
+                                <rect key="frame" x="8" y="28" width="359" height="482"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MVP-os-r6i">
                                         <rect key="frame" x="0.0" y="0.0" width="359" height="300"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eSY-Pj-JxG">
-                                                <rect key="frame" x="0.0" y="0.0" width="359" height="300"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eSY-Pj-JxG">
+                                                <rect key="frame" x="-1" y="8" width="360" height="300"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="width" constant="360" id="Q4y-WE-lcY"/>
                                                     <constraint firstAttribute="height" constant="300" id="UpZ-m6-F2x"/>
                                                 </constraints>
                                             </imageView>
@@ -1073,8 +1073,17 @@
                                             <constraint firstItem="eSY-Pj-JxG" firstAttribute="top" secondItem="MVP-os-r6i" secondAttribute="top" constant="8" id="gs2-ID-aVD"/>
                                         </constraints>
                                     </scrollView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Willard Building" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="csc-lp-Jgf">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Campus Map (Zoom for more detail)" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hit-WS-w5U">
                                         <rect key="frame" x="0.0" y="300" width="359" height="36"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="djX-r7-3bV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Willard Building" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="csc-lp-Jgf">
+                                        <rect key="frame" x="0.0" y="336" width="359" height="36"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="XE2-5w-BzT"/>
@@ -1082,8 +1091,8 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Atherton Hotel" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QKM-Hg-IFT">
-                                        <rect key="frame" x="0.0" y="336" width="359" height="34"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Atherton Hotel" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QKM-Hg-IFT">
+                                        <rect key="frame" x="0.0" y="372" width="359" height="34"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="Det-li-UFC"/>
@@ -1092,8 +1101,8 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Sparks Building" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mCH-ne-V3x">
-                                        <rect key="frame" x="0.0" y="370" width="359" height="36"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Sparks Building" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mCH-ne-V3x">
+                                        <rect key="frame" x="0.0" y="406" width="359" height="36"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="WYh-QG-Egw"/>
@@ -1101,8 +1110,8 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Biobehavioral Health Building" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="P7P-EN-uZ4">
-                                        <rect key="frame" x="0.0" y="406" width="359" height="40"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Biobehavioral Health Building" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="P7P-EN-uZ4">
+                                        <rect key="frame" x="0.0" y="442" width="359" height="40"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="xpb-l5-Ggg"/>
@@ -1111,9 +1120,20 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="MVP-os-r6i" firstAttribute="leading" secondItem="JXw-nO-BHV" secondAttribute="leadingMargin" constant="8" id="4XP-O7-yoB"/>
+                                    <constraint firstItem="csc-lp-Jgf" firstAttribute="top" secondItem="hit-WS-w5U" secondAttribute="bottom" constant="8" id="M9S-hF-tUb"/>
+                                    <constraint firstItem="MVP-os-r6i" firstAttribute="top" secondItem="JXw-nO-BHV" secondAttribute="topMargin" constant="8" id="bfh-Uq-v32"/>
+                                    <constraint firstItem="MVP-os-r6i" firstAttribute="trailing" secondItem="JXw-nO-BHV" secondAttribute="trailingMargin" constant="8" id="ooF-PL-oNl"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="JXw-nO-BHV" secondAttribute="trailing" constant="8" id="UHf-yY-LWb"/>
+                            <constraint firstItem="JXw-nO-BHV" firstAttribute="leading" secondItem="oA5-sl-v79" secondAttribute="leading" constant="8" id="k8Y-J2-u7s"/>
+                            <constraint firstItem="JXw-nO-BHV" firstAttribute="top" secondItem="Jfg-CC-BR0" secondAttribute="bottom" constant="8" id="nGp-8k-Ew6"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="loc1" destination="csc-lp-Jgf" id="43X-qy-bxC"/>
@@ -1198,9 +1218,6 @@ Visit https://shesthefirst.org for more information on how to support She’s th
                             <constraint firstItem="SDY-r9-4n1" firstAttribute="leading" secondItem="frx-wI-xLI" secondAttribute="leading" id="hiD-aU-RFd"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="textView" destination="Lwd-aU-mmB" id="jJh-ic-aDD"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yHm-F6-GFx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

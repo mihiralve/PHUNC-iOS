@@ -22,8 +22,16 @@ class TransportationVC: UIViewController, UIWebViewDelegate, UIScrollViewDelegat
         // Do any additional setup after loading the view.
         self.navigationController!.navigationBar.isTranslucent = false
         
+        let screenSize = UIScreen.main.bounds
+        let screenWidth = screenSize.width
+        
         mapPic.sd_setImage(with: URL(string:"https://phunc.psiada.org/wp-content/uploads/2018/10/campus-map.jpg"))
         mapPic.contentMode = .scaleAspectFit
+        mapView.minimumZoomScale = 1.0;
+        mapView.maximumZoomScale = 6.0;
+        mapView.contentSize = mapPic.frame.size;
+        mapView.delegate = self;
+        mapView.heightAnchor.constraint(equalToConstant: screenWidth)
         
         let locLink1 = NSMutableAttributedString(string: loc1.text)
         locLink1.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/3qaCPkPKb1w", range: NSMakeRange(0, loc1.text.count))
@@ -57,6 +65,11 @@ class TransportationVC: UIViewController, UIWebViewDelegate, UIScrollViewDelegat
         loc4.isScrollEnabled = false
         loc4.font = loc4.font?.withSize(16)
         
+    }
+    
+    func viewForZooming(in mapView: UIScrollView) -> UIView? {
+        
+        return mapPic
     }
     
     override func didReceiveMemoryWarning() {

@@ -26,10 +26,11 @@
 		0447D4E7204DCC030045ED1F /* ScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447D4E6204DCC030045ED1F /* ScheduleVC.swift */; };
 		046F00CE204F90E800E20603 /* CharityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F00CD204F90E800E20603 /* CharityVC.swift */; };
 		046F00D2204F919000E20603 /* MerchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F00D1204F919000E20603 /* MerchVC.swift */; };
+		047094772187EBDC003BB259 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 047094762187EBDB003BB259 /* GoogleService-Info.plist */; };
 		047380091F00A648009E2F97 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047380081F00A648009E2F97 /* ThirdViewController.swift */; };
 		0473E51C203A80F000A9062A /* TransportationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473E51B203A80F000A9062A /* TransportationVC.swift */; };
 		048F67CF204CC88100A967C3 /* guideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F67CE204CC88100A967C3 /* guideVC.swift */; };
-		049ADBCB205376C000085329 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 049ADBCA205376C000085329 /* GoogleService-Info.plist */; };
+		049ADBCB205376C000085329 /* GoogleService-Info-punc.plist in Resources */ = {isa = PBXBuildFile; fileRef = 049ADBCA205376C000085329 /* GoogleService-Info-punc.plist */; };
 		04EA0E701F9A737000111AB8 /* RestaurantVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA0E6F1F9A737000111AB8 /* RestaurantVC.swift */; };
 		33305CE20903E5FF2BC3D602 /* Pods_PHUNC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5293CCD5BE1C7524AFAA6B /* Pods_PHUNC.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		EBC3C3BB5B914347B19CAE29 /* Pods_PHUNCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69CF0EE781C2CA2D30AFB2D3 /* Pods_PHUNCTests.framework */; };
@@ -69,10 +70,11 @@
 		0447D4E6204DCC030045ED1F /* ScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleVC.swift; sourceTree = "<group>"; };
 		046F00CD204F90E800E20603 /* CharityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityVC.swift; sourceTree = "<group>"; };
 		046F00D1204F919000E20603 /* MerchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchVC.swift; sourceTree = "<group>"; };
+		047094762187EBDB003BB259 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Users/mihir/Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		047380081F00A648009E2F97 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThirdViewController.swift; path = ../ThirdViewController.swift; sourceTree = "<group>"; };
 		0473E51B203A80F000A9062A /* TransportationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportationVC.swift; sourceTree = "<group>"; };
 		048F67CE204CC88100A967C3 /* guideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = guideVC.swift; sourceTree = "<group>"; };
-		049ADBCA205376C000085329 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		049ADBCA205376C000085329 /* GoogleService-Info-punc.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-punc.plist"; sourceTree = "<group>"; };
 		04C40E21553B9FF9A01E9074 /* Pods-PHUNCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PHUNCTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PHUNCTests/Pods-PHUNCTests.release.xcconfig"; sourceTree = "<group>"; };
 		04EA0E6F1F9A737000111AB8 /* RestaurantVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantVC.swift; sourceTree = "<group>"; };
 		10DB27E7F82F55A968FCF17A /* Pods-PHUNC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PHUNC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PHUNC/Pods-PHUNC.debug.xcconfig"; sourceTree = "<group>"; };
@@ -148,7 +150,8 @@
 				04041A581EF36F2E0030A000 /* Assets.xcassets */,
 				04041A5A1EF36F2E0030A000 /* LaunchScreen.storyboard */,
 				04041A5D1EF36F2E0030A000 /* Info.plist */,
-				049ADBCA205376C000085329 /* GoogleService-Info.plist */,
+				047094762187EBDB003BB259 /* GoogleService-Info.plist */,
+				049ADBCA205376C000085329 /* GoogleService-Info-punc.plist */,
 			);
 			path = PHUNC;
 			sourceTree = "<group>";
@@ -278,7 +281,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				04041A5C1EF36F2E0030A000 /* LaunchScreen.storyboard in Resources */,
-				049ADBCB205376C000085329 /* GoogleService-Info.plist in Resources */,
+				049ADBCB205376C000085329 /* GoogleService-Info-punc.plist in Resources */,
+				047094772187EBDC003BB259 /* GoogleService-Info.plist in Resources */,
 				04041A591EF36F2E0030A000 /* Assets.xcassets in Resources */,
 				04041A571EF36F2E0030A000 /* Main.storyboard in Resources */,
 			);
