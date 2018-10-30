@@ -1168,6 +1168,8 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="41" id="Tia-2E-8G5"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="359" id="qp7-ZM-v3P"/>
+                                            <constraint firstAttribute="width" constant="359" id="yWA-mV-A1a"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1177,6 +1179,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="390" id="3so-aj-Cwc"/>
+                                            <constraint firstAttribute="width" constant="359" id="FLU-AJ-E2y"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="390" id="x79-6h-d6b"/>
                                         </constraints>
                                         <string key="text">She’s the First (STF) is a not-for-profit organization that sponsors programs to support girls education across the world. According to their website, She's the First strives to fight gender inequality by supporting girls who will be the first in their families to graduate high school and by training students everywhere to be global citizens.
@@ -1218,6 +1221,9 @@ Visit https://shesthefirst.org for more information on how to support She’s th
                             <constraint firstItem="SDY-r9-4n1" firstAttribute="leading" secondItem="frx-wI-xLI" secondAttribute="leading" id="hiD-aU-RFd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="Lwd-aU-mmB" id="I7p-VN-mZk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yHm-F6-GFx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
