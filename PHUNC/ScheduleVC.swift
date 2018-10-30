@@ -44,14 +44,14 @@ class ScheduleVC: UIViewController {
         let screenSize = UIScreen.main.bounds
         let screenWidth = screenSize.width
         
-        imgHeight.constant = (screenWidth - 24) * 4.66
-        containerHeight.constant = (screenWidth - 24) * 4.66
+        imgHeight.constant = (screenWidth - 24) * 1.75
+        containerHeight.constant = (screenWidth - 24) * 1.75
         
 //        scheduleImg.setShowActivityIndicator(true)
 //        scheduleImg.setIndicatorStyle(.gray)
         
         
-        scheduleImg.sd_setImage(with: URL(string: "http://punc.psiada.org/wp-content/uploads/2018/03/PUNCschedule.png"), placeholderImage: #imageLiteral(resourceName: "Blank_button.svg"), options:.refreshCached)
+        scheduleImg.sd_setImage(with: URL(string: "https://phunc.psiada.org/wp-content/uploads/2018/01/Schedule.png"), placeholderImage: #imageLiteral(resourceName: "Blank_button.svg"), options:.refreshCached)
         scheduleImg.contentMode = .scaleAspectFit
         scheduleImg.widthAnchor.constraint(equalToConstant: screenWidth - 24).isActive = true
     }
@@ -64,13 +64,13 @@ class ScheduleVC: UIViewController {
         let screenSize = UIScreen.main.bounds
         let screenWidth = screenSize.width
         
-        imgHeight.constant = (screenWidth - 24) * 2.93
-        containerHeight.constant = (screenWidth - 24) * 2.93
+        imgHeight.constant = (screenWidth - 24) * 2
+        containerHeight.constant = (screenWidth - 24) * 2
         
 //        scheduleImg.setShowActivityIndicator(true)
 //        scheduleImg.setIndicatorStyle(.gray)
 //        
-        scheduleImg.sd_setImage(with: URL(string: "http://punc.psiada.org/wp-content/uploads/2018/03/room_Assignments.png"), placeholderImage: #imageLiteral(resourceName: "Blank_button.svg"), options:.refreshCached)
+        scheduleImg.sd_setImage(with: URL(string: "https://phunc.psiada.org/wp-content/uploads/2018/10/Room-Assignments.png"), placeholderImage: #imageLiteral(resourceName: "Blank_button.svg"), options:.refreshCached)
         scheduleImg.contentMode = .scaleAspectFit
         scheduleImg.widthAnchor.constraint(equalToConstant: screenWidth - 24).isActive = true
 

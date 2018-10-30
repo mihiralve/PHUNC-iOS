@@ -72,7 +72,6 @@
 		047380081F00A648009E2F97 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThirdViewController.swift; path = ../ThirdViewController.swift; sourceTree = "<group>"; };
 		0473E51B203A80F000A9062A /* TransportationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportationVC.swift; sourceTree = "<group>"; };
 		048F67CE204CC88100A967C3 /* guideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = guideVC.swift; sourceTree = "<group>"; };
-		049ADBC7205353CC00085329 /* PHUNC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PHUNC.entitlements; sourceTree = "<group>"; };
 		049ADBCA205376C000085329 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		04C40E21553B9FF9A01E9074 /* Pods-PHUNCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PHUNCTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PHUNCTests/Pods-PHUNCTests.release.xcconfig"; sourceTree = "<group>"; };
 		04EA0E6F1F9A737000111AB8 /* RestaurantVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantVC.swift; sourceTree = "<group>"; };
@@ -126,7 +125,6 @@
 		04041A4E1EF36F2D0030A000 /* PHUNC */ = {
 			isa = PBXGroup;
 			children = (
-				049ADBC7205353CC00085329 /* PHUNC.entitlements */,
 				04041A4F1EF36F2E0030A000 /* AppDelegate.swift */,
 				04041A511EF36F2E0030A000 /* FirstViewController.swift */,
 				0447D4E6204DCC030045ED1F /* ScheduleVC.swift */,
@@ -545,7 +543,7 @@
 				INFOPLIST_FILE = PHUNC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.PSIADA.PUNC;
+				PRODUCT_BUNDLE_IDENTIFIER = org.PSIADA.PHUNC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
@@ -566,7 +564,7 @@
 				INFOPLIST_FILE = PHUNC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.PSIADA.PUNC;
+				PRODUCT_BUNDLE_IDENTIFIER = org.PSIADA.PHUNC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;

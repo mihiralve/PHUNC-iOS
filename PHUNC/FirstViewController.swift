@@ -25,9 +25,9 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
     
     @IBOutlet var Parent: UIView!
     @IBOutlet weak var webViewWidth: NSLayoutConstraint!
-    //let sponsorSource = [SDWebImageSource(urlString: "")!, SDWebImageSource(urlString: "")!]
+    let sponsorSource = [SDWebImageSource(urlString: "https://phunc.psiada.org/wp-content/uploads/2017/12/CGS-logo.png")!, SDWebImageSource(urlString: "https://phunc.psiada.org/wp-content/uploads/2018/10/O_lSUAaA_400x400.jpg")!, SDWebImageSource(urlString: "https://phunc.psiada.org/wp-content/uploads/2018/10/c6IsO5zb_400x400.jpg")!, SDWebImageSource(urlString: "https://phunc.psiada.org/wp-content/uploads/2018/10/psu-agsciences-logo.png")!, SDWebImageSource(urlString: "https://phunc.psiada.org/wp-content/uploads/2018/10/German_Header_Responsive_stacked-2.png")!, SDWebImageSource(urlString: "https://phunc.psiada.org/wp-content/uploads/2018/10/logo_sia_retina.png")!, SDWebImageSource(urlString: "https://phunc.psiada.org/wp-content/uploads/2018/10/psu-agsciences-logo.png")!, SDWebImageSource(urlString: "https://phunc.psiada.org/wp-content/uploads/2018/10/PSUIST.png")!, SDWebImageSource(urlString: "https://phunc.psiada.org/wp-content/uploads/2018/10/psu_bwo_rgb_2c_3x_1.png")!,]
     
-    let sponsorSource = [ImageSource(image: #imageLiteral(resourceName: "pla_logo")), ImageSource(image: #imageLiteral(resourceName: "seven_sage")), ImageSource(image: #imageLiteral(resourceName: "seton_hall")), ImageSource(image: #imageLiteral(resourceName: "SIA-logo")), ImageSource(image: #imageLiteral(resourceName: "Schreyer-Logo"))]
+    //let sponsorSource = [ImageSource(image: #imageLiteral(resourceName: "pla_logo")), ImageSource(image: #imageLiteral(resourceName: "seven_sage")), ImageSource(image: #imageLiteral(resourceName: "seton_hall")), ImageSource(image: #imageLiteral(resourceName: "SIA-logo")), ImageSource(image: #imageLiteral(resourceName: "Schreyer-Logo"))]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +37,7 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
       
         sponsors.setImageInputs(sponsorSource)
         sponsors.slideshowInterval = 5
-        sponsors.pageControlPosition = .hidden
+        sponsors.pageIndicator = nil
         
         webView = UIWebView(frame: container.bounds)
         webView.delegate = self
@@ -46,31 +46,21 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
 
         
         
-        let url = URL(string:"http://punc.psiada.org/app-updates/")
+        let url = URL(string:"https://phunc.psiada.org/app-announcements/")
         
         let URLReq = URLRequest(url: url!)
         
         webView.loadRequest(URLReq)
         
-        logoImg.sd_setImage(with: URL(string: "http://punc.psiada.org/wp-content/uploads/2018/02/PUNC-logo.png"), placeholderImage:#imageLiteral(resourceName: "Applogo"))
-        //logoImg.sd_set
+        logoImg.sd_setImage(with: URL(string: "https://phunc.psiada.org/wp-content/uploads/2018/03/final-logo--300x300.png"), placeholderImage:#imageLiteral(resourceName: "Applogo"))
+
         logoImg.contentMode = .scaleAspectFit
-//
-//        sponsorLeft.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2017/12/CGS-logo.png"))
-//
-//        sponsorRight.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2017/12/Liberal-Arts.png"))
-//
-//
-        
+
     }
     
     
     func webViewDidStartLoad(_ webView: UIWebView) {
         webView.isHidden = true
-        
-        
-        
-        
         
         
     }
@@ -86,8 +76,16 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
         webView.center.x = Parent.center.x
         webView.isOpaque = false
         webView.clipsToBounds = true
+        let result = webView.stringByEvaluatingJavaScript(from: "document.body.offsetHeight;")
         
-    }
+        webView.stringByEvaluatingJavaScript(from: "document.body.offsetHeight;")
+        if let n = NumberFormatter().number(from: result!) {
+            let f = CGFloat(n) + 20/*margin*/
+            webView.heightAnchor.constraint(equalToConstant: f)
+            }
+        }
+        
+    
  
 
     override func didReceiveMemoryWarning() {

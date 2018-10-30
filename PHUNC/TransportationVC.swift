@@ -7,36 +7,26 @@
 //
 
 import UIKit
+import SDWebImage
 
-class TransportationVC: UIViewController, UIWebViewDelegate{
+class TransportationVC: UIViewController, UIWebViewDelegate, UIScrollViewDelegate {
 
-//    @IBOutlet var busRoutes: UITextView!
-//
-//    @IBOutlet weak var webViewHeight: NSLayoutConstraint!
-//    @IBOutlet var webView: UIWebView!
-//
-//    @IBOutlet var container: UIView!
+    @IBOutlet weak var mapView: UIScrollView!
+    @IBOutlet weak var mapPic: UIImageView!
     @IBOutlet weak var loc1: UITextView!
     @IBOutlet weak var loc2: UITextView!
     @IBOutlet weak var loc3: UITextView!
     @IBOutlet weak var loc4: UITextView!
-    @IBOutlet weak var routes: UITextView!
     override func viewDidLoad() {
         
         // Do any additional setup after loading the view.
         self.navigationController!.navigationBar.isTranslucent = false
         
-//        webView = UIWebView(frame: container.bounds)
-//        webView.delegate = self
-//
-//        let url = URL(string:"http://realtime.catabus.com/InfoPoint/?mobile=True#route_page")
-//
-//        let URLReq = URLRequest(url: url!)
-//
-//        webView.loadRequest(URLReq)
+        mapPic.sd_setImage(with: URL(string:"https://phunc.psiada.org/wp-content/uploads/2018/10/campus-map.jpg"))
+        mapPic.contentMode = .scaleAspectFit
         
         let locLink1 = NSMutableAttributedString(string: loc1.text)
-        locLink1.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/5T6NXGRMEiH2", range: NSMakeRange(0, loc1.text.count))
+        locLink1.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/3qaCPkPKb1w", range: NSMakeRange(0, loc1.text.count))
         loc1.attributedText = locLink1
         loc1.dataDetectorTypes = .link
         loc1.isEditable = false
@@ -44,7 +34,7 @@ class TransportationVC: UIViewController, UIWebViewDelegate{
         loc1.font = loc1.font?.withSize(16)
         
         let locLink2 = NSMutableAttributedString(string: loc2.text)
-        locLink2.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/MFuUjedDMHS2", range: NSMakeRange(0, loc2.text.count))
+        locLink2.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/Mk1xcLb3BzE2", range: NSMakeRange(0, loc2.text.count))
         loc2.attributedText = locLink2
         loc2.dataDetectorTypes = .link
         loc2.isEditable = false
@@ -52,7 +42,7 @@ class TransportationVC: UIViewController, UIWebViewDelegate{
         loc2.font = loc2.font?.withSize(16)
         
         let locLink3 = NSMutableAttributedString(string: loc3.text)
-        locLink3.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/8BkYe5v2sv72", range: NSMakeRange(0, loc3.text.count))
+        locLink3.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/f9KAmjtqpCC2", range: NSMakeRange(0, loc3.text.count))
         loc3.attributedText = locLink3
         loc3.dataDetectorTypes = .link
         loc3.isEditable = false
@@ -60,20 +50,12 @@ class TransportationVC: UIViewController, UIWebViewDelegate{
         loc3.font = loc3.font?.withSize(16)
         
         let locLink4 = NSMutableAttributedString(string: loc4.text)
-        locLink4.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/KkT742wnkBK2", range: NSMakeRange(0, loc4.text.count))
+        locLink4.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/2VMprkrE94o", range: NSMakeRange(0, loc4.text.count))
         loc4.attributedText = locLink4
         loc4.dataDetectorTypes = .link
         loc4.isEditable = false
         loc4.isScrollEnabled = false
         loc4.font = loc4.font?.withSize(16)
-        
-        let routesLink = NSMutableAttributedString(string: routes.text)
-        routesLink.addAttribute(NSLinkAttributeName, value: "http://realtime.catabus.com/InfoPoint/?mobile=True#route_page", range: NSMakeRange(0, routes.text.count))
-        routes.attributedText = routesLink
-        routes.dataDetectorTypes = .link
-        routes.isEditable = false
-        routes.isScrollEnabled = false
-        routes.font = routes.font?.withSize(16)
         
     }
     

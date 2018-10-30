@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -27,9 +27,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Vy-xV-ep7">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="840"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="850"/>
                                         <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Welcome to PUNC XI!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XBb-mI-Fe5">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Welcome to PHUNC VI!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XBb-mI-Fe5">
                                                 <rect key="frame" x="16" y="0.0" width="343" height="44"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
@@ -44,7 +44,7 @@
                                                     <constraint firstAttribute="height" constant="200" id="KDV-vc-Vv0"/>
                                                 </constraints>
                                             </imageView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Eye of the Storm" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Zb7-fA-rao">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="A Timeline of Exploration" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Zb7-fA-rao">
                                                 <rect key="frame" x="16" y="252" width="343" height="32"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
@@ -63,22 +63,22 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CSc-aE-V5G">
-                                                <rect key="frame" x="0.0" y="340" width="375" height="300"/>
+                                                <rect key="frame" x="0.0" y="340" width="375" height="350"/>
                                                 <subviews>
-                                                    <webView userInteractionEnabled="NO" contentMode="center" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gp4-mw-fRs">
+                                                    <webView contentMode="center" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gp4-mw-fRs">
                                                         <rect key="frame" x="8" y="0.0" width="352" height="300"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="352" id="rKw-It-bJ7"/>
-                                                            <constraint firstAttribute="height" constant="300" id="ziU-Pa-gEZ"/>
+                                                            <constraint firstAttribute="height" constant="350" id="ziU-Pa-gEZ"/>
                                                         </constraints>
                                                     </webView>
                                                     <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" text="Loading..." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kT1-NC-iNV">
                                                         <rect key="frame" x="8" y="0.0" width="352" height="300"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="300" id="0tR-8y-aI9"/>
+                                                            <constraint firstAttribute="height" constant="350" id="0tR-8y-aI9"/>
                                                             <constraint firstAttribute="width" constant="359" id="rHU-17-mDD"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -105,7 +105,7 @@
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="FGf-hw-Nxe">
-                                                <rect key="frame" x="8" y="696" width="359" height="150"/>
+                                                <rect key="frame" x="8" y="698" width="359" height="150"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6yQ-bn-M34" customClass="ImageSlideshow" customModule="ImageSlideshow">
                                                         <rect key="frame" x="0.0" y="0.0" width="359" height="150"/>
@@ -139,11 +139,10 @@
                                             <constraint firstItem="XBb-mI-Fe5" firstAttribute="leading" secondItem="4Vy-xV-ep7" secondAttribute="leadingMargin" constant="8" id="6Zm-MR-djp"/>
                                             <constraint firstItem="CSc-aE-V5G" firstAttribute="top" secondItem="zCv-gg-yQO" secondAttribute="bottom" constant="8" symbolic="YES" id="9Aw-2p-bry"/>
                                             <constraint firstItem="MZ9-nD-XIN" firstAttribute="leading" secondItem="4Vy-xV-ep7" secondAttribute="leadingMargin" id="B14-gA-6fN"/>
-                                            <constraint firstAttribute="bottom" secondItem="CSc-aE-V5G" secondAttribute="bottom" constant="200" id="DPg-Nw-Bym"/>
                                             <constraint firstItem="XBb-mI-Fe5" firstAttribute="top" secondItem="4Vy-xV-ep7" secondAttribute="top" id="ECd-ok-p6f"/>
                                             <constraint firstAttribute="width" constant="375" id="I4L-jw-3s2"/>
                                             <constraint firstItem="MZ9-nD-XIN" firstAttribute="top" secondItem="CSc-aE-V5G" secondAttribute="bottom" constant="8" symbolic="YES" id="Jnc-Fv-Sy9"/>
-                                            <constraint firstAttribute="height" constant="840" id="MfG-Uf-jdV"/>
+                                            <constraint firstAttribute="height" constant="850" id="MfG-Uf-jdV"/>
                                             <constraint firstItem="FGf-hw-Nxe" firstAttribute="leading" secondItem="4Vy-xV-ep7" secondAttribute="leading" constant="8" id="NMG-5P-hhB"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="MZ9-nD-XIN" secondAttribute="trailing" id="OTO-pG-1dF"/>
                                             <constraint firstItem="zCv-gg-yQO" firstAttribute="leading" secondItem="4Vy-xV-ep7" secondAttribute="leadingMargin" constant="8" id="PfB-QG-zKJ"/>
@@ -153,6 +152,7 @@
                                             <constraint firstAttribute="trailingMargin" secondItem="zCv-gg-yQO" secondAttribute="trailing" constant="8" id="X0v-dj-S1g"/>
                                             <constraint firstItem="FGf-hw-Nxe" firstAttribute="centerX" secondItem="4Vy-xV-ep7" secondAttribute="centerX" id="XEG-4H-XoE"/>
                                             <constraint firstItem="XBb-mI-Fe5" firstAttribute="trailing" secondItem="4Vy-xV-ep7" secondAttribute="trailingMargin" constant="-8" id="aYz-Wt-O6G"/>
+                                            <constraint firstItem="FGf-hw-Nxe" firstAttribute="top" secondItem="CSc-aE-V5G" secondAttribute="bottom" constant="8" id="eA2-em-vht"/>
                                             <constraint firstItem="Zb7-fA-rao" firstAttribute="leading" secondItem="4Vy-xV-ep7" secondAttribute="leadingMargin" constant="8" id="h4z-8w-LDX"/>
                                             <constraint firstItem="Zb7-fA-rao" firstAttribute="top" secondItem="aqV-uc-9Eh" secondAttribute="bottom" id="jou-cP-SWw"/>
                                             <constraint firstItem="zCv-gg-yQO" firstAttribute="top" secondItem="Zb7-fA-rao" secondAttribute="bottom" constant="8" id="maX-vi-hLB"/>
@@ -737,11 +737,10 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                             </scrollView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Aoy-EC-ld2">
-                                <rect key="frame" x="104" y="28" width="167" height="29"/>
+                                <rect key="frame" x="132" y="28" width="111" height="29"/>
                                 <segments>
                                     <segment title="Food"/>
                                     <segment title="Coffee"/>
-                                    <segment title="Bars"/>
                                 </segments>
                                 <connections>
                                     <action selector="indexChanged:" destination="qwN-bP-crE" eventType="valueChanged" id="EHQ-vC-vVd"/>
@@ -858,7 +857,7 @@
                                                     <constraint firstAttribute="width" secondItem="wbl-8h-QjA" secondAttribute="height" multiplier="179:120" id="7z6-jv-iRp"/>
                                                 </constraints>
                                             </imageView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" text="William Juppenlatz Secretary General sg.punc@psiada.org 717-813-9518 " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="L7x-l8-4aF">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" text="Meghan McNicholas Secretary General sg.phunc@psiada.org 484-832-9276 " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="L7x-l8-4aF">
                                                 <rect key="frame" x="179.5" y="0.0" width="179.5" height="154"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
@@ -883,13 +882,12 @@
                                                     <constraint firstAttribute="width" secondItem="jsG-8M-7V7" secondAttribute="height" multiplier="179:120" id="kQU-n1-ZWN"/>
                                                 </constraints>
                                             </imageView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EWF-Kc-z5x">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Katie Bartuska Chief of Staff cos.phunc@psiada.org 570-709-9446 " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EWF-Kc-z5x">
                                                 <rect key="frame" x="179.5" y="0.0" width="179.5" height="153.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="120" id="Qo5-mh-4LW"/>
                                                 </constraints>
-                                                <string key="text">Kayla Wendt Chief of Staff cos.punc@psiada.org 215-896-7195	 </string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
@@ -909,7 +907,7 @@
                                                     <constraint firstAttribute="width" secondItem="kVf-Zx-vb8" secondAttribute="height" multiplier="179:120" id="eYA-YR-OyZ"/>
                                                 </constraints>
                                             </imageView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Kelly Harrington USG for Crisis and Committee Development crisis.punc@psiada.org " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ngs-mG-Wqe">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Grace Eppinger USG for Crisis and Committee Development crisis.phunc@psiada.org 610-608-8467" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ngs-mG-Wqe">
                                                 <rect key="frame" x="179.5" y="0.0" width="179.5" height="154"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
@@ -928,18 +926,26 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LI2-MY-dYw">
                                         <rect key="frame" x="0.0" y="485.5" width="359" height="153.5"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6rn-n4-5EH">
-                                                <rect key="frame" x="0.0" y="0.0" width="359" height="153.5"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f96-gv-h64">
+                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="153.5"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="153.5" id="Io5-ni-8SX"/>
+                                                    <constraint firstAttribute="width" secondItem="f96-gv-h64" secondAttribute="height" multiplier="179:120" id="If7-kg-NSm"/>
                                                 </constraints>
                                             </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Milan Liu Charge d'Affaires charge.phunc@psiada.org 814-933-2989" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EN4-3Z-XNO">
+                                                <rect key="frame" x="179.5" y="0.0" width="179.5" height="153.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="7S8-v5-icO"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                                            </textView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="6rn-n4-5EH" firstAttribute="leading" secondItem="LI2-MY-dYw" secondAttribute="leading" constant="8" id="C6p-RC-SYW"/>
-                                            <constraint firstAttribute="bottom" secondItem="6rn-n4-5EH" secondAttribute="bottom" constant="8" id="ZSK-3k-vYg"/>
-                                            <constraint firstAttribute="trailing" secondItem="6rn-n4-5EH" secondAttribute="trailing" constant="8" id="mMi-cg-pJ2"/>
-                                            <constraint firstItem="6rn-n4-5EH" firstAttribute="top" secondItem="LI2-MY-dYw" secondAttribute="top" constant="8" id="nWi-0o-Hbj"/>
+                                            <constraint firstItem="f96-gv-h64" firstAttribute="leading" secondItem="LI2-MY-dYw" secondAttribute="leading" constant="8" id="Af4-ew-iIP"/>
+                                            <constraint firstItem="EN4-3Z-XNO" firstAttribute="leading" secondItem="f96-gv-h64" secondAttribute="trailing" constant="8" id="th0-fG-WDv"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
@@ -975,7 +981,7 @@
                         <outlet property="contact1" destination="wbl-8h-QjA" id="HRr-j8-BZy"/>
                         <outlet property="contact2" destination="jsG-8M-7V7" id="UA6-LW-0nk"/>
                         <outlet property="contact3" destination="kVf-Zx-vb8" id="Rki-5W-yPm"/>
-                        <outlet property="groupImage" destination="6rn-n4-5EH" id="J68-DL-74C"/>
+                        <outlet property="contact4" destination="f96-gv-h64" id="XQk-Ei-7Z6"/>
                         <outlet property="parentStack" destination="bsM-CK-sPq" id="Nwc-Y6-Kcu"/>
                         <outlet property="parentView" destination="Ecu-9N-I7C" id="PoT-O2-5dy"/>
                         <outlet property="stack1" destination="xCG-8P-jvF" id="qAc-7b-q7Q"/>
@@ -1047,11 +1053,28 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JXw-nO-BHV">
-                                <rect key="frame" x="8" y="28" width="359" height="291"/>
+                                <rect key="frame" x="8" y="28" width="359" height="446"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Atherton Hotel" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="csc-lp-Jgf">
-                                        <rect key="frame" x="0.0" y="0.0" width="359" height="36"/>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MVP-os-r6i">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="300"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eSY-Pj-JxG">
+                                                <rect key="frame" x="0.0" y="0.0" width="359" height="300"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="300" id="UpZ-m6-F2x"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="eSY-Pj-JxG" firstAttribute="leading" secondItem="MVP-os-r6i" secondAttribute="leading" constant="8" id="4NV-eK-iyj"/>
+                                            <constraint firstAttribute="trailing" secondItem="eSY-Pj-JxG" secondAttribute="trailing" constant="8" id="9Xg-WB-brc"/>
+                                            <constraint firstAttribute="height" constant="300" id="BkA-jz-cQn"/>
+                                            <constraint firstItem="eSY-Pj-JxG" firstAttribute="top" secondItem="MVP-os-r6i" secondAttribute="top" constant="8" id="gs2-ID-aVD"/>
+                                        </constraints>
+                                    </scrollView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Willard Building" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="csc-lp-Jgf">
+                                        <rect key="frame" x="0.0" y="300" width="359" height="36"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="XE2-5w-BzT"/>
@@ -1059,8 +1082,8 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Business Building" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QKM-Hg-IFT">
-                                        <rect key="frame" x="0.0" y="36" width="359" height="34"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Atherton Hotel" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QKM-Hg-IFT">
+                                        <rect key="frame" x="0.0" y="336" width="359" height="34"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="Det-li-UFC"/>
@@ -1069,8 +1092,8 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Golden Wok" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mCH-ne-V3x">
-                                        <rect key="frame" x="0.0" y="70" width="359" height="36"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Sparks Building" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mCH-ne-V3x">
+                                        <rect key="frame" x="0.0" y="370" width="359" height="36"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="WYh-QG-Egw"/>
@@ -1078,30 +1101,11 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Icy Snow" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="P7P-EN-uZ4">
-                                        <rect key="frame" x="0.0" y="106" width="359" height="40"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Biobehavioral Health Building" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="P7P-EN-uZ4">
+                                        <rect key="frame" x="0.0" y="406" width="359" height="40"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="xpb-l5-Ggg"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="l5S-Sl-JiH">
-                                        <rect key="frame" x="0.0" y="146" width="359" height="104"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="104" id="cFw-0d-0Mm"/>
-                                        </constraints>
-                                        <string key="text">Uber, Lyft, and the Penn State Cata Buses can be used for transportation. Use the Blue Loop (BL) and the White Loop (WL) to get around downtown, and the campus. </string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="View Bus Routes" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zbf-wO-J09">
-                                        <rect key="frame" x="0.0" y="250" width="359" height="41"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="41" id="gxA-pS-ZSM"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1116,7 +1120,8 @@
                         <outlet property="loc2" destination="QKM-Hg-IFT" id="1Uv-bZ-jU1"/>
                         <outlet property="loc3" destination="mCH-ne-V3x" id="anb-0O-5ZS"/>
                         <outlet property="loc4" destination="P7P-EN-uZ4" id="p12-bT-ytd"/>
-                        <outlet property="routes" destination="zbf-wO-J09" id="0RH-VO-u7P"/>
+                        <outlet property="mapPic" destination="eSY-Pj-JxG" id="8gZ-GZ-XWa"/>
+                        <outlet property="mapView" destination="MVP-os-r6i" id="bPl-9s-M0A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ZX-Xj-fWF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1138,7 +1143,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SDY-r9-4n1">
                                 <rect key="frame" x="0.0" y="8" width="375" height="659"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Shot@Life " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8xb-HQ-nvS">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="She's the First" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8xb-HQ-nvS">
                                         <rect key="frame" x="8" y="20" width="359" height="41"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -1147,42 +1152,39 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Lwd-aU-mmB">
-                                        <rect key="frame" x="8" y="69" width="359" height="390"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lwd-aU-mmB">
+                                        <rect key="frame" x="8" y="69" width="359" height="582"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="390" id="3so-aj-Cwc"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="390" id="x79-6h-d6b"/>
                                         </constraints>
-                                        <string key="text">United Nations Campus Advocates is a campus chapter of a nation wide movement to rally support for the work of the United Nations. At Penn State, we advocate to our peers about all the good that the UN accomplishes. This year we are supporting a campaign by the UN Foundation called Shot@Life.  Funds raised through Shot@Life aid Unicef, the World Health Organization and Gavi, the Vaccine Alliance, in the coordination, purchase, delivery and administering
-of vaccines to children in developing countries. To get an idea of the impact of  donations on this effort, just $25 provides a vaccine for one child against polio, measles, diarrheal disease, and pneumonia for life.  Lean more at ShotatLife.org.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You can donate to Shot@Life campaign with cash or Venmo @William-Juppenlatz with the message &quot;Shot@Life Donation&quot;." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="a44-Uf-zK4">
-                                        <rect key="frame" x="8" y="467" width="359" height="96"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="96" id="bYJ-nT-V5o"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="96" id="pNJ-HY-YgW"/>
-                                        </constraints>
+                                        <string key="text">She’s the First (STF) is a not-for-profit organization that sponsors programs to support girls education across the world. According to their website, She's the First strives to fight gender inequality by supporting girls who will be the first in their families to graduate high school and by training students everywhere to be global citizens.
+	
+The organization takes a three-pronged approach to shape young women into changemakers: education, mentorship, and global leadership training. By providing first-generation high school students with funding and leadership training organized through local-level NGOs, connecting students and Campus Chapter Members to trained mentors, and implementing global leadership curriculum for students and Campus Chapters, She’s the First is working to make educated girls the norm, not the exception. In 2017 alone, She’s the First raised over $1.5 million for girls around the world.
+	
+What can I do to help?
+	
+Throughout the weekend, we will be hosting Penny Wars! The top three winning committees will have the opportunity to pie both their Head of Committee and Chair during the Delegate Social on Saturday Night. Additionally, staffers will compete to pie one of the Secretariat members. Don’t forget to bring your coins and dollar bills to participate!
+	
+Questions? Ask your Chair or Head of Committee for more information!
+	
+How can I support STF after PHUNC VI is over?
+Visit https://shesthefirst.org for more information on how to support She’s the First’s mission to promote girls education across the globe!
+</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="8xb-HQ-nvS" firstAttribute="leading" secondItem="a44-Uf-zK4" secondAttribute="leading" id="3Yb-iW-sPE"/>
+                                    <constraint firstAttribute="bottom" secondItem="Lwd-aU-mmB" secondAttribute="bottom" constant="8" id="4U7-uY-C2d"/>
                                     <constraint firstItem="Lwd-aU-mmB" firstAttribute="top" secondItem="8xb-HQ-nvS" secondAttribute="bottom" constant="8" id="Dlt-C4-6T4"/>
                                     <constraint firstAttribute="bottom" secondItem="8xb-HQ-nvS" secondAttribute="bottom" constant="598" id="FOw-cy-za7"/>
                                     <constraint firstItem="8xb-HQ-nvS" firstAttribute="centerX" secondItem="SDY-r9-4n1" secondAttribute="centerX" id="FfR-KI-NBF"/>
                                     <constraint firstItem="Lwd-aU-mmB" firstAttribute="top" secondItem="8xb-HQ-nvS" secondAttribute="bottom" constant="8" id="Fwh-n8-weg"/>
                                     <constraint firstItem="8xb-HQ-nvS" firstAttribute="leading" secondItem="Lwd-aU-mmB" secondAttribute="leading" id="MHa-EC-V24"/>
                                     <constraint firstItem="8xb-HQ-nvS" firstAttribute="trailing" secondItem="SDY-r9-4n1" secondAttribute="trailingMargin" id="TRf-5e-qnV"/>
-                                    <constraint firstItem="a44-Uf-zK4" firstAttribute="top" secondItem="Lwd-aU-mmB" secondAttribute="bottom" constant="8" id="XfU-Hx-r0c"/>
                                     <constraint firstItem="8xb-HQ-nvS" firstAttribute="leading" secondItem="SDY-r9-4n1" secondAttribute="leadingMargin" id="ZdJ-7J-PtZ"/>
-                                    <constraint firstItem="a44-Uf-zK4" firstAttribute="top" secondItem="Lwd-aU-mmB" secondAttribute="bottom" constant="8" id="b4x-aa-YAF"/>
-                                    <constraint firstItem="a44-Uf-zK4" firstAttribute="top" secondItem="Lwd-aU-mmB" secondAttribute="bottom" constant="8" id="jMD-iy-iIv"/>
-                                    <constraint firstItem="8xb-HQ-nvS" firstAttribute="trailing" secondItem="a44-Uf-zK4" secondAttribute="trailing" id="kiw-is-HHE"/>
                                     <constraint firstItem="8xb-HQ-nvS" firstAttribute="trailing" secondItem="Lwd-aU-mmB" secondAttribute="trailing" id="mtl-mE-cJx"/>
                                     <constraint firstItem="8xb-HQ-nvS" firstAttribute="top" secondItem="SDY-r9-4n1" secondAttribute="topMargin" id="prB-ER-HFl"/>
                                 </constraints>
@@ -1196,6 +1198,9 @@ of vaccines to children in developing countries. To get an idea of the impact of
                             <constraint firstItem="SDY-r9-4n1" firstAttribute="leading" secondItem="frx-wI-xLI" secondAttribute="leading" id="hiD-aU-RFd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="Lwd-aU-mmB" id="jJh-ic-aDD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yHm-F6-GFx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1230,6 +1235,7 @@ of vaccines to children in developing countries. To get an idea of the impact of
                     <tabBarItem key="tabBarItem" title="Resources" image="ic_build" selectedImage="ic_build" id="u8R-YP-tf1"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4p9-yL-Dm1">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1248,6 +1254,7 @@ of vaccines to children in developing countries. To get an idea of the impact of
                     <tabBarItem key="tabBarItem" systemItem="more" id="DAB-NG-yfD"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="f3Q-Kv-MRo">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1271,11 +1278,11 @@ of vaccines to children in developing countries. To get an idea of the impact of
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rd8-ld-1IT">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rd8-ld-1IT">
+                                <rect key="frame" x="0.0" y="20" width="375" height="800"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lch-ES-G94">
-                                        <rect key="frame" x="0.0" y="20" width="375" height="627"/>
+                                        <rect key="frame" x="0.0" y="20" width="375" height="660"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="top" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OjM-ru-WXI">
                                                 <rect key="frame" x="8" y="8" width="359" height="600"/>
@@ -1289,11 +1296,11 @@ of vaccines to children in developing countries. To get an idea of the impact of
                                                                     <constraint firstAttribute="width" secondItem="ll1-VN-LRA" secondAttribute="height" multiplier="179:120" id="5iS-3D-p0w"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" text="Shot Glass $3 " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="deI-w2-dXi">
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" text="Tee $15 " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="deI-w2-dXi">
                                                                 <rect key="frame" x="179.5" y="0.0" width="179.5" height="144"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="120" id="oKp-be-m1C"/>
+                                                                    <constraint firstAttribute="height" constant="180" id="oKp-be-m1C"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1301,7 +1308,7 @@ of vaccines to children in developing countries. To get an idea of the impact of
                                                             </textView>
                                                         </subviews>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="144" id="CmZ-VX-Oba"/>
+                                                            <constraint firstAttribute="height" constant="200" id="CmZ-VX-Oba"/>
                                                             <constraint firstItem="deI-w2-dXi" firstAttribute="leading" secondItem="ll1-VN-LRA" secondAttribute="trailing" constant="8" id="UcF-Fc-34I"/>
                                                             <constraint firstItem="ll1-VN-LRA" firstAttribute="leading" secondItem="Qcv-6d-nxI" secondAttribute="leading" constant="8" id="qpf-i3-O9n"/>
                                                         </constraints>
@@ -1315,11 +1322,11 @@ of vaccines to children in developing countries. To get an idea of the impact of
                                                                     <constraint firstAttribute="width" secondItem="WIY-ct-olT" secondAttribute="height" multiplier="179:120" id="pSh-MH-sIz"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Phone Wallet $3 " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="47J-tf-HO4">
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Pocket Tee $15 " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="47J-tf-HO4">
                                                                 <rect key="frame" x="179.5" y="0.0" width="179.5" height="144"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="120" id="qzY-It-vbB"/>
+                                                                    <constraint firstAttribute="height" constant="180" id="qzY-It-vbB"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1327,7 +1334,7 @@ of vaccines to children in developing countries. To get an idea of the impact of
                                                             </textView>
                                                         </subviews>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="144" id="4Xb-YI-Uq8"/>
+                                                            <constraint firstAttribute="height" constant="200" id="4Xb-YI-Uq8"/>
                                                             <constraint firstItem="47J-tf-HO4" firstAttribute="leading" secondItem="WIY-ct-olT" secondAttribute="trailing" constant="8" id="JIS-F1-i8r"/>
                                                             <constraint firstItem="WIY-ct-olT" firstAttribute="leading" secondItem="Swx-vt-5YQ" secondAttribute="leading" constant="8" id="lcL-iu-5tj"/>
                                                         </constraints>
@@ -1341,11 +1348,11 @@ of vaccines to children in developing countries. To get an idea of the impact of
                                                                     <constraint firstAttribute="width" secondItem="CC7-U1-edM" secondAttribute="height" multiplier="179:120" id="rL3-mn-mfw"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Bottle Opener $3" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mFo-pE-uk6">
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Back (Both Shirts)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mFo-pE-uk6">
                                                                 <rect key="frame" x="179.5" y="0.0" width="179.5" height="144"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="120" id="wuT-St-mFY"/>
+                                                                    <constraint firstAttribute="height" constant="180" id="wuT-St-mFY"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1355,26 +1362,31 @@ of vaccines to children in developing countries. To get an idea of the impact of
                                                         <constraints>
                                                             <constraint firstItem="mFo-pE-uk6" firstAttribute="leading" secondItem="CC7-U1-edM" secondAttribute="trailing" constant="8" id="WrX-L4-C2U"/>
                                                             <constraint firstItem="CC7-U1-edM" firstAttribute="leading" secondItem="fPS-zh-Buj" secondAttribute="leading" constant="8" id="h7L-vl-Q9s"/>
-                                                            <constraint firstAttribute="height" constant="144" id="uLg-zf-eSC"/>
+                                                            <constraint firstAttribute="height" constant="200" id="uLg-zf-eSC"/>
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="UoQ-9B-7KE">
                                                         <rect key="frame" x="0.0" y="456" width="359" height="144"/>
                                                         <subviews>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uYC-gI-FEJ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="359" height="144"/>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fsj-oa-Y66">
+                                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="144"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="Fsj-oa-Y66" secondAttribute="height" multiplier="179:120" id="XyM-od-vqO"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Sticker" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qVh-Vs-mvn">
+                                                                <rect key="frame" x="179.5" y="0.0" width="179.5" height="144"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                <string key="text">Venmo us @William-Juppenlatz or pay with cash! Please include "PUNC Merch", your name, and your committee name in the message if you use Venmo.</string>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="180" id="few-zJ-jEY"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
                                                             </textView>
                                                         </subviews>
                                                         <constraints>
-                                                            <constraint firstAttribute="bottom" secondItem="uYC-gI-FEJ" secondAttribute="bottom" constant="8" id="6hg-DZ-kMX"/>
-                                                            <constraint firstItem="uYC-gI-FEJ" firstAttribute="top" secondItem="UoQ-9B-7KE" secondAttribute="top" constant="8" id="BLe-Y6-lgu"/>
-                                                            <constraint firstAttribute="height" constant="144" id="RHl-k1-yea"/>
-                                                            <constraint firstAttribute="trailing" secondItem="uYC-gI-FEJ" secondAttribute="trailing" constant="8" id="d5e-bc-sHp"/>
-                                                            <constraint firstItem="uYC-gI-FEJ" firstAttribute="leading" secondItem="UoQ-9B-7KE" secondAttribute="leading" constant="8" id="u0a-1H-PAp"/>
+                                                            <constraint firstAttribute="height" constant="200" id="RHl-k1-yea"/>
                                                         </constraints>
                                                     </stackView>
                                                 </subviews>
@@ -1410,6 +1422,7 @@ of vaccines to children in developing countries. To get an idea of the impact of
                                 <constraints>
                                     <constraint firstItem="lch-ES-G94" firstAttribute="centerY" secondItem="Rd8-ld-1IT" secondAttribute="centerY" id="Hjw-Ff-qJj"/>
                                     <constraint firstAttribute="bottom" secondItem="lch-ES-G94" secondAttribute="bottom" constant="20" id="NRg-aD-Dkh"/>
+                                    <constraint firstAttribute="height" constant="700" id="hE2-x2-fX7"/>
                                     <constraint firstAttribute="trailing" secondItem="lch-ES-G94" secondAttribute="trailing" id="jOK-Sx-oZP"/>
                                     <constraint firstItem="lch-ES-G94" firstAttribute="top" secondItem="Rd8-ld-1IT" secondAttribute="top" constant="20" id="viP-7f-Rtm"/>
                                     <constraint firstItem="lch-ES-G94" firstAttribute="leading" secondItem="Rd8-ld-1IT" secondAttribute="leading" id="yof-Ft-vLY"/>
@@ -1428,6 +1441,7 @@ of vaccines to children in developing countries. To get an idea of the impact of
                         <outlet property="merchImg1" destination="ll1-VN-LRA" id="dLM-V8-vIT"/>
                         <outlet property="merchImg2" destination="WIY-ct-olT" id="ESK-nA-SLI"/>
                         <outlet property="merchImg3" destination="CC7-U1-edM" id="fbo-cV-SFV"/>
+                        <outlet property="merchImg4" destination="Fsj-oa-Y66" id="HL2-nB-3kl"/>
                         <outlet property="parentStack" destination="OjM-ru-WXI" id="1lV-ql-YUS"/>
                         <outlet property="parentView" destination="lch-ES-G94" id="laa-M6-Bq3"/>
                         <outlet property="stack1" destination="Qcv-6d-nxI" id="bV7-GY-c8i"/>
