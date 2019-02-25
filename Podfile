@@ -11,6 +11,8 @@ target 'PHUNC' do
   
   pod 'Firebase/Core'
   
+  pod 'FirebaseInstanceID', '2.0.0'
+  
   pod 'Firebase/Messaging'
   
   pod 'SDWebImage', '~> 4.0'

@@ -25,18 +25,18 @@ class MerchVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        merchImg1.sd_setImage(with: URL(string:"https://phunc.psiada.org/wp-content/uploads/2018/07/Tee.jpg"), placeholderImage: #imageLiteral(resourceName: "Applogo"), options:.refreshCached)
+        merchImg1.sd_setImage(with: URL(string:"https://phunc.psiada.org/wp-content/uploads/2018/07/Pocket-Tee-1.jpg"), placeholderImage: #imageLiteral(resourceName: "Applogo"), options:.refreshCached)
         merchImg1.contentMode = .scaleAspectFit
         
-        merchImg2.sd_setImage(with: URL(string:"https://phunc.psiada.org/wp-content/uploads/2018/07/Pocket-Tee-1.jpg"), placeholderImage: #imageLiteral(resourceName: "Applogo"), options:.refreshCached)
+        merchImg2.sd_setImage(with: URL(string:"https://phunc.psiada.org/wp-content/uploads/2018/07/Tee.jpg"), placeholderImage: #imageLiteral(resourceName: "Applogo"), options:.refreshCached)
         merchImg2.contentMode = .scaleAspectFit
         
         merchImg3.sd_setImage(with: URL(string:"https://phunc.psiada.org/wp-content/uploads/2018/07/Tee-back-1.jpg"), placeholderImage: #imageLiteral(resourceName: "Applogo"), options:.refreshCached)
         merchImg3.contentMode = .scaleAspectFit
-        
-        merchImg4.sd_setImage(with: URL(string:"https://phunc.psiada.org/wp-content/uploads/2018/07/Tee-back-1.jpg"), placeholderImage: #imageLiteral(resourceName: "Applogo"), options:.refreshCached)
+
+        merchImg4.sd_setImage(with: URL(string:"https://phunc.psiada.org/wp-content/uploads/2018/03/final-logo--300x300.png"), placeholderImage: #imageLiteral(resourceName: "Applogo"), options:.refreshCached)
         merchImg4.contentMode = .scaleAspectFit
-        
+
         
     }
     override func didReceiveMemoryWarning() {

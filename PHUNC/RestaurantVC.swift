@@ -136,9 +136,6 @@ class RestaurantVC: UIViewController {
         
         
         
-        
-        
-        
         let menuImg4 = UIImageView()
         
         menuImg4.sd_setImage(with: URL(string: "http://phunc.psiada.org/wp-content/uploads/2017/11/cozy_thai.jpg"), placeholderImage: #imageLiteral(resourceName: "placeholder"))
@@ -157,6 +154,26 @@ class RestaurantVC: UIViewController {
         
         menu4.attributedText = menuLink4
         menu4.dataDetectorTypes = .link
+        
+        
+        let menuImg20 = UIImageView()
+        
+        menuImg20.sd_setImage(with: URL(string: "https://phunc.psiada.org/wp-content/uploads/2018/10/snap.jpg"), placeholderImage: #imageLiteral(resourceName: "placeholder"))
+        menuImg20.contentMode = .scaleAspectFill
+        menuImg20.translatesAutoresizingMaskIntoConstraints = false
+        menuImg20.clipsToBounds = true
+        
+        let menu20 = UITextView(frame: CGRect(x: 10, y: 10, width: 10, height: 40))
+        menu20.text = "Snap Pizza (Pizza) 132 W. College Ave"
+        //        menu4.textAlignment = .center
+        menu20.isEditable = false
+        menu20.isScrollEnabled = false
+        
+        let menuLink20 = NSMutableAttributedString(string: menu20.text)
+        menuLink20.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/VG4RM5JQ3Ft", range: NSMakeRange(0, menu20.text.count))
+        
+        menu20.attributedText = menuLink20
+        menu20.dataDetectorTypes = .link
         
         
         
@@ -511,6 +528,9 @@ class RestaurantVC: UIViewController {
         stackView.addArrangedSubview(menuImg4)
         stackView.addArrangedSubview(menu4)
         
+        stackView.addArrangedSubview(menuImg20)
+        stackView.addArrangedSubview(menu20)
+        
         stackView.addArrangedSubview(menuImg5)
         stackView.addArrangedSubview(menu5)
         
@@ -588,6 +608,9 @@ class RestaurantVC: UIViewController {
         menuImg4.widthAnchor.constraint(equalToConstant: screenWidth - 16).isActive = true
         menuImg4.heightAnchor.constraint(equalToConstant: 200).isActive = true
         
+        menu20.widthAnchor.constraint(equalToConstant: screenWidth - 24).isActive = true
+        menuImg20.widthAnchor.constraint(equalToConstant: screenWidth - 16).isActive = true
+        menuImg20.heightAnchor.constraint(equalToConstant: 200).isActive = true
         
         menu5.widthAnchor.constraint(equalToConstant: screenWidth - 24).isActive = true
         menuImg5.widthAnchor.constraint(equalToConstant: screenWidth - 16).isActive = true
@@ -654,6 +677,7 @@ class RestaurantVC: UIViewController {
         menu2.textAlignment = .center
         menu3.textAlignment = .center
         menu4.textAlignment = .center
+        menu20.textAlignment = .center
         menu5.textAlignment = .center
         menu6.textAlignment = .center
         menu7.textAlignment = .center
@@ -781,6 +805,24 @@ class RestaurantVC: UIViewController {
         menu4.dataDetectorTypes = .link
         
         
+        let menuImg12 = UIImageView()
+        
+        menuImg12.sd_setImage(with: URL(string: "https://phunc.psiada.org/wp-content/uploads/2018/10/duckdonutsFB.jpg"), placeholderImage: #imageLiteral(resourceName: "placeholder"))
+        menuImg12.contentMode = .scaleAspectFill
+        menuImg12.translatesAutoresizingMaskIntoConstraints = false
+        menuImg12.clipsToBounds = true
+        
+        let menu12 = UITextView(frame: CGRect(x: 10, y: 10, width: 10, height: 40))
+        menu12.text = "Duck Donuts 125 S Fraser St"
+        //        menu12.textAlignment = .center
+        menu12.isEditable = false
+        menu12.isScrollEnabled = false
+        
+        let menuLink12 = NSMutableAttributedString(string: menu12.text)
+        menuLink12.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/8LegtvWLsg12", range: NSMakeRange(0, menu12.text.count))
+        
+        menu12.attributedText = menuLink12
+        menu12.dataDetectorTypes = .link
         
         
         let menuImg5 = UIImageView()
@@ -983,6 +1025,9 @@ class RestaurantVC: UIViewController {
         stackViewC.addArrangedSubview(menuImg4)
         stackViewC.addArrangedSubview(menu4)
         
+        stackViewC.addArrangedSubview(menuImg12)
+        stackViewC.addArrangedSubview(menu12)
+        
         stackViewC.addArrangedSubview(menuImg5)
         stackViewC.addArrangedSubview(menu5)
         
@@ -1035,6 +1080,11 @@ class RestaurantVC: UIViewController {
         menuImg4.widthAnchor.constraint(equalToConstant: screenWidth - 16).isActive = true
         menuImg4.heightAnchor.constraint(equalToConstant: 200).isActive = true
         menu4.textAlignment = .center
+        
+        menu12.widthAnchor.constraint(equalToConstant: screenWidth - 24).isActive = true
+        menuImg12.widthAnchor.constraint(equalToConstant: screenWidth - 16).isActive = true
+        menuImg12.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        menu12.textAlignment = .center
         
         menu5.widthAnchor.constraint(equalToConstant: screenWidth - 24).isActive = true
         menuImg5.widthAnchor.constraint(equalToConstant: screenWidth - 16).isActive = true
