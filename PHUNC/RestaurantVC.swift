@@ -83,7 +83,7 @@ class RestaurantVC: UIViewController {
         
         
         let menuLink1 = NSMutableAttributedString(string: menu1.text)
-        menuLink1.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/ffQeJwYN2tH2", range: NSMakeRange(0, menu1.text.count))
+        menuLink1.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/ffQeJwYN2tH2", range: NSMakeRange(0, menu1.text.count))
         
         menu1.attributedText = menuLink1
         menu1.dataDetectorTypes = .link
@@ -106,7 +106,7 @@ class RestaurantVC: UIViewController {
         menu2.isScrollEnabled = false
         
         let menuLink2 = NSMutableAttributedString(string: menu2.text)
-        menuLink2.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/AjWY4baa3Tz", range: NSMakeRange(0, menu2.text.count))
+        menuLink2.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/AjWY4baa3Tz", range: NSMakeRange(0, menu2.text.count))
         
         menu2.attributedText = menuLink2
         menu2.dataDetectorTypes = .link
@@ -129,7 +129,7 @@ class RestaurantVC: UIViewController {
         menu3.isScrollEnabled = false
         
         let menuLink3 = NSMutableAttributedString(string: menu3.text)
-        menuLink3.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/yaVAn26TgAQ2", range: NSMakeRange(0, menu3.text.count))
+        menuLink3.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/yaVAn26TgAQ2", range: NSMakeRange(0, menu3.text.count))
         
         menu3.attributedText = menuLink3
         menu3.dataDetectorTypes = .link
@@ -150,7 +150,7 @@ class RestaurantVC: UIViewController {
         menu4.isScrollEnabled = false
         
         let menuLink4 = NSMutableAttributedString(string: menu4.text)
-        menuLink4.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/jgdCBbGensD2", range: NSMakeRange(0, menu4.text.count))
+        menuLink4.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/jgdCBbGensD2", range: NSMakeRange(0, menu4.text.count))
         
         menu4.attributedText = menuLink4
         menu4.dataDetectorTypes = .link
@@ -170,7 +170,7 @@ class RestaurantVC: UIViewController {
         menu20.isScrollEnabled = false
         
         let menuLink20 = NSMutableAttributedString(string: menu20.text)
-        menuLink20.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/VG4RM5JQ3Ft", range: NSMakeRange(0, menu20.text.count))
+        menuLink20.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/VG4RM5JQ3Ft", range: NSMakeRange(0, menu20.text.count))
         
         menu20.attributedText = menuLink20
         menu20.dataDetectorTypes = .link
@@ -192,7 +192,7 @@ class RestaurantVC: UIViewController {
         menu5.isScrollEnabled = false
         
         let menuLink5 = NSMutableAttributedString(string: menu5.text)
-        menuLink5.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/VSgmQsSmMiG2", range: NSMakeRange(0, menu5.text.count))
+        menuLink5.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/VSgmQsSmMiG2", range: NSMakeRange(0, menu5.text.count))
         
         menu5.attributedText = menuLink5
         menu5.dataDetectorTypes = .link
@@ -216,7 +216,7 @@ class RestaurantVC: UIViewController {
         menu6.isScrollEnabled = false
         
         let menuLink6 = NSMutableAttributedString(string: menu6.text)
-        menuLink6.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/n4e5QDVfMir", range: NSMakeRange(0, menu6.text.count))
+        menuLink6.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/n4e5QDVfMir", range: NSMakeRange(0, menu6.text.count))
         
         menu6.attributedText = menuLink6
         menu6.dataDetectorTypes = .link
@@ -241,7 +241,7 @@ class RestaurantVC: UIViewController {
         menu7.isScrollEnabled = false
         
         let menuLink7 = NSMutableAttributedString(string: menu7.text)
-        menuLink7.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/zuCgvtysfuJ2", range: NSMakeRange(0, menu7.text.count))
+        menuLink7.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/zuCgvtysfuJ2", range: NSMakeRange(0, menu7.text.count))
         
         menu7.attributedText = menuLink7
         menu7.dataDetectorTypes = .link
@@ -265,7 +265,7 @@ class RestaurantVC: UIViewController {
         menu8.isScrollEnabled = false
         
         let menuLink8 = NSMutableAttributedString(string: menu8.text)
-        menuLink8.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/fsmPxsKVVYu", range: NSMakeRange(0, menu8.text.count))
+        menuLink8.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/fsmPxsKVVYu", range: NSMakeRange(0, menu8.text.count))
         
         menu8.attributedText = menuLink8
         menu8.dataDetectorTypes = .link
@@ -287,7 +287,7 @@ class RestaurantVC: UIViewController {
         menu9.isScrollEnabled = false
         
         let menuLink9 = NSMutableAttributedString(string: menu9.text)
-        menuLink9.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/dfig5Bd6PVy", range: NSMakeRange(0, menu9.text.count))
+        menuLink9.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/dfig5Bd6PVy", range: NSMakeRange(0, menu9.text.count))
         
         menu9.attributedText = menuLink9
         menu9.dataDetectorTypes = .link
@@ -310,7 +310,7 @@ class RestaurantVC: UIViewController {
         menu10.isScrollEnabled = false
         
         let menuLink10 = NSMutableAttributedString(string: menu10.text)
-        menuLink10.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/Autkdsh663v", range: NSMakeRange(0, menu10.text.count))
+        menuLink10.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/Autkdsh663v", range: NSMakeRange(0, menu10.text.count))
         
         menu10.attributedText = menuLink10
         menu10.dataDetectorTypes = .link
@@ -336,7 +336,7 @@ class RestaurantVC: UIViewController {
         menu11.isScrollEnabled = false
         
         let menuLink11 = NSMutableAttributedString(string: menu11.text)
-        menuLink11.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/n7uhDseURqp", range: NSMakeRange(0, menu11.text.count))
+        menuLink11.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/n7uhDseURqp", range: NSMakeRange(0, menu11.text.count))
         
         menu11.attributedText = menuLink11
         menu11.dataDetectorTypes = .link
@@ -358,7 +358,7 @@ class RestaurantVC: UIViewController {
         menu12.isScrollEnabled = false
         
         let menuLink12 = NSMutableAttributedString(string: menu12.text)
-        menuLink12.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/zHJP8viPUgA2", range: NSMakeRange(0, menu12.text.count))
+        menuLink12.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/zHJP8viPUgA2", range: NSMakeRange(0, menu12.text.count))
         
         menu12.attributedText = menuLink12
         menu12.dataDetectorTypes = .link
@@ -381,7 +381,7 @@ class RestaurantVC: UIViewController {
         menu13.isScrollEnabled = false
         
         let menuLink13 = NSMutableAttributedString(string: menu13.text)
-        menuLink13.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/Nzw9SiPaX8k", range: NSMakeRange(0, menu13.text.count))
+        menuLink13.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/Nzw9SiPaX8k", range: NSMakeRange(0, menu13.text.count))
         
         menu13.attributedText = menuLink13
         menu13.dataDetectorTypes = .link
@@ -404,7 +404,7 @@ class RestaurantVC: UIViewController {
         menu14.isScrollEnabled = false
         
         let menuLink14 = NSMutableAttributedString(string: menu14.text)
-        menuLink14.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/79LaYxjZ2QN2", range: NSMakeRange(0, menu14.text.count))
+        menuLink14.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/79LaYxjZ2QN2", range: NSMakeRange(0, menu14.text.count))
         
         menu14.attributedText = menuLink14
         menu14.dataDetectorTypes = .link
@@ -426,7 +426,7 @@ class RestaurantVC: UIViewController {
         menu15.isScrollEnabled = false
         
         let menuLink15 = NSMutableAttributedString(string: menu15.text)
-        menuLink15.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/qGZTgz2SSh92", range: NSMakeRange(0, menu15.text.count))
+        menuLink15.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/qGZTgz2SSh92", range: NSMakeRange(0, menu15.text.count))
         
         menu15.attributedText = menuLink15
         menu15.dataDetectorTypes = .link
@@ -449,7 +449,7 @@ class RestaurantVC: UIViewController {
         menu16.isScrollEnabled = false
         
         let menuLink16 = NSMutableAttributedString(string: menu16.text)
-        menuLink16.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/jsuYHUjKTm22", range: NSMakeRange(0, menu16.text.count))
+        menuLink16.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/jsuYHUjKTm22", range: NSMakeRange(0, menu16.text.count))
         
         menu16.attributedText = menuLink16
         menu16.dataDetectorTypes = .link
@@ -469,7 +469,7 @@ class RestaurantVC: UIViewController {
         menu17.isScrollEnabled = false
         
         let menuLink17 = NSMutableAttributedString(string: menu17.text)
-        menuLink17.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/Pm9Vadd1NXy", range: NSMakeRange(0, menu17.text.count))
+        menuLink17.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/Pm9Vadd1NXy", range: NSMakeRange(0, menu17.text.count))
         
         menu17.attributedText = menuLink17
         menu17.dataDetectorTypes = .link
@@ -490,7 +490,7 @@ class RestaurantVC: UIViewController {
         menu18.isScrollEnabled = false
         
         let menuLink18 = NSMutableAttributedString(string: menu18.text)
-        menuLink18.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/GH8iS3KZwQo", range: NSMakeRange(0, menu18.text.count))
+        menuLink18.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/GH8iS3KZwQo", range: NSMakeRange(0, menu18.text.count))
         
         menu18.attributedText = menuLink18
         menu18.dataDetectorTypes = .link
@@ -722,7 +722,7 @@ class RestaurantVC: UIViewController {
         
         
         let menuLink1 = NSMutableAttributedString(string: menu1.text)
-        menuLink1.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/YeJapfc1aJ42", range: NSMakeRange(0, menu1.text.count))
+        menuLink1.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/YeJapfc1aJ42", range: NSMakeRange(0, menu1.text.count))
         
         menu1.attributedText = menuLink1
         menu1.dataDetectorTypes = .link
@@ -743,7 +743,7 @@ class RestaurantVC: UIViewController {
         menu2.isScrollEnabled = false
         
         let menuLink2 = NSMutableAttributedString(string: menu2.text)
-        menuLink2.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/UgbprziLYfG2", range: NSMakeRange(0, menu2.text.count))
+        menuLink2.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/UgbprziLYfG2", range: NSMakeRange(0, menu2.text.count))
         
         menu2.attributedText = menuLink2
         menu2.dataDetectorTypes = .link
@@ -755,7 +755,7 @@ class RestaurantVC: UIViewController {
         menu2b.isScrollEnabled = false
         
         let menuLink2b = NSMutableAttributedString(string: menu2b.text)
-        menuLink2b.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/uvzLAFDDEWq", range: NSMakeRange(0, menu2b.text.count))
+        menuLink2b.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/uvzLAFDDEWq", range: NSMakeRange(0, menu2b.text.count))
         
         menu2b.attributedText = menuLink2b
         menu2b.dataDetectorTypes = .link
@@ -775,7 +775,7 @@ class RestaurantVC: UIViewController {
         menu3.isScrollEnabled = false
         
         let menuLink3 = NSMutableAttributedString(string: menu3.text)
-        menuLink3.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/SD8VivhbwGE2", range: NSMakeRange(0, menu3.text.count))
+        menuLink3.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/SD8VivhbwGE2", range: NSMakeRange(0, menu3.text.count))
         
         menu3.attributedText = menuLink3
         menu3.dataDetectorTypes = .link
@@ -799,7 +799,7 @@ class RestaurantVC: UIViewController {
         menu4.isScrollEnabled = false
         
         let menuLink4 = NSMutableAttributedString(string: menu4.text)
-        menuLink4.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/WVVBSx95Zek", range: NSMakeRange(0, menu4.text.count))
+        menuLink4.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/WVVBSx95Zek", range: NSMakeRange(0, menu4.text.count))
         
         menu4.attributedText = menuLink4
         menu4.dataDetectorTypes = .link
@@ -819,7 +819,7 @@ class RestaurantVC: UIViewController {
         menu12.isScrollEnabled = false
         
         let menuLink12 = NSMutableAttributedString(string: menu12.text)
-        menuLink12.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/8LegtvWLsg12", range: NSMakeRange(0, menu12.text.count))
+        menuLink12.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/8LegtvWLsg12", range: NSMakeRange(0, menu12.text.count))
         
         menu12.attributedText = menuLink12
         menu12.dataDetectorTypes = .link
@@ -839,7 +839,7 @@ class RestaurantVC: UIViewController {
         menu5.isScrollEnabled = false
         
         let menuLink5 = NSMutableAttributedString(string: menu5.text)
-        menuLink5.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/RHzwpDGCE7S2", range: NSMakeRange(0, menu5.text.count))
+        menuLink5.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/RHzwpDGCE7S2", range: NSMakeRange(0, menu5.text.count))
         
         menu5.attributedText = menuLink5
         menu5.dataDetectorTypes = .link
@@ -863,7 +863,7 @@ class RestaurantVC: UIViewController {
         menu6.isScrollEnabled = false
         
         let menuLink6 = NSMutableAttributedString(string: menu6.text)
-        menuLink6.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/Wg3YQ9JeU772", range: NSMakeRange(0, menu6.text.count))
+        menuLink6.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/Wg3YQ9JeU772", range: NSMakeRange(0, menu6.text.count))
         
         menu6.attributedText = menuLink6
         menu6.dataDetectorTypes = .link
@@ -888,7 +888,7 @@ class RestaurantVC: UIViewController {
         menu7.isScrollEnabled = false
         
         let menuLink7 = NSMutableAttributedString(string: menu7.text)
-        menuLink7.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/xiKUQJo3QnQ2", range: NSMakeRange(0, menu7.text.count))
+        menuLink7.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/xiKUQJo3QnQ2", range: NSMakeRange(0, menu7.text.count))
         
         menu7.attributedText = menuLink7
         menu7.dataDetectorTypes = .link
@@ -912,7 +912,7 @@ class RestaurantVC: UIViewController {
         menu8.isScrollEnabled = false
         
         let menuLink8 = NSMutableAttributedString(string: menu8.text)
-        menuLink8.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/XnnntWPmTQm", range: NSMakeRange(0, menu8.text.count))
+        menuLink8.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/XnnntWPmTQm", range: NSMakeRange(0, menu8.text.count))
         
         menu8.attributedText = menuLink8
         menu8.dataDetectorTypes = .link
@@ -934,7 +934,7 @@ class RestaurantVC: UIViewController {
         menu9.isScrollEnabled = false
         
         let menuLink9 = NSMutableAttributedString(string: menu9.text)
-        menuLink9.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/GLiDpFxjeMs", range: NSMakeRange(0, menu9.text.count))
+        menuLink9.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/GLiDpFxjeMs", range: NSMakeRange(0, menu9.text.count))
         
         menu9.attributedText = menuLink9
         menu9.dataDetectorTypes = .link
@@ -956,7 +956,7 @@ class RestaurantVC: UIViewController {
         menu10.isScrollEnabled = false
         
         let menuLink10 = NSMutableAttributedString(string: menu10.text)
-        menuLink10.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/z6CDyDQsQTF2", range: NSMakeRange(0, menu10.text.count))
+        menuLink10.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/z6CDyDQsQTF2", range: NSMakeRange(0, menu10.text.count))
         
         menu10.attributedText = menuLink10
         menu10.dataDetectorTypes = .link
@@ -968,7 +968,7 @@ class RestaurantVC: UIViewController {
         menu10b.isScrollEnabled = false
         
         let menuLink10b = NSMutableAttributedString(string: menu10b.text)
-        menuLink10b.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/eGJTMaSmp3T2", range: NSMakeRange(0, menu10b.text.count))
+        menuLink10b.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/eGJTMaSmp3T2", range: NSMakeRange(0, menu10b.text.count))
         
         menu10b.attributedText = menuLink10b
         menu10b.dataDetectorTypes = .link
@@ -991,7 +991,7 @@ class RestaurantVC: UIViewController {
         menu11.isScrollEnabled = false
         
         let menuLink11 = NSMutableAttributedString(string: menu11.text)
-        menuLink11.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/wNjCUdNPxAm", range: NSMakeRange(0, menu11.text.count))
+        menuLink11.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/wNjCUdNPxAm", range: NSMakeRange(0, menu11.text.count))
         
         menu11.attributedText = menuLink11
         menu11.dataDetectorTypes = .link
@@ -1150,7 +1150,7 @@ class RestaurantVC: UIViewController {
         
         
         let menuLink1 = NSMutableAttributedString(string: menu1.text)
-        menuLink1.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/S1noXdzb1PD2", range: NSMakeRange(0, menu1.text.count))
+        menuLink1.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/S1noXdzb1PD2", range: NSMakeRange(0, menu1.text.count))
         
         menu1.attributedText = menuLink1
         menu1.dataDetectorTypes = .link
@@ -1172,7 +1172,7 @@ class RestaurantVC: UIViewController {
         menu2.isScrollEnabled = false
         
         let menuLink2 = NSMutableAttributedString(string: menu2.text)
-        menuLink2.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/cCwYYFLm6So", range: NSMakeRange(0, menu2.text.count))
+        menuLink2.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/cCwYYFLm6So", range: NSMakeRange(0, menu2.text.count))
         
         menu2.attributedText = menuLink2
         menu2.dataDetectorTypes = .link
@@ -1191,7 +1191,7 @@ class RestaurantVC: UIViewController {
         menu3.isScrollEnabled = false
         
         let menuLink3 = NSMutableAttributedString(string: menu3.text)
-        menuLink3.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/9JYP8VdSqoJ2", range: NSMakeRange(0, menu3.text.count))
+        menuLink3.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/9JYP8VdSqoJ2", range: NSMakeRange(0, menu3.text.count))
         
         menu3.attributedText = menuLink3
         menu3.dataDetectorTypes = .link
@@ -1215,7 +1215,7 @@ class RestaurantVC: UIViewController {
         menu4.isScrollEnabled = false
         
         let menuLink4 = NSMutableAttributedString(string: menu4.text)
-        menuLink4.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/MKg1Qg1XLku", range: NSMakeRange(0, menu4.text.count))
+        menuLink4.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/MKg1Qg1XLku", range: NSMakeRange(0, menu4.text.count))
         
         menu4.attributedText = menuLink4
         menu4.dataDetectorTypes = .link
@@ -1237,7 +1237,7 @@ class RestaurantVC: UIViewController {
         menu5.isScrollEnabled = false
         
         let menuLink5 = NSMutableAttributedString(string: menu5.text)
-        menuLink5.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/z9ZB6rMtvjp", range: NSMakeRange(0, menu5.text.count))
+        menuLink5.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/z9ZB6rMtvjp", range: NSMakeRange(0, menu5.text.count))
         
         menu5.attributedText = menuLink5
         menu5.dataDetectorTypes = .link
@@ -1261,7 +1261,7 @@ class RestaurantVC: UIViewController {
         menu6.isScrollEnabled = false
         
         let menuLink6 = NSMutableAttributedString(string: menu6.text)
-        menuLink6.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/CymquCKZ8Vq", range: NSMakeRange(0, menu6.text.count))
+        menuLink6.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/CymquCKZ8Vq", range: NSMakeRange(0, menu6.text.count))
         
         menu6.attributedText = menuLink6
         menu6.dataDetectorTypes = .link
@@ -1286,7 +1286,7 @@ class RestaurantVC: UIViewController {
         menu7.isScrollEnabled = false
         
         let menuLink7 = NSMutableAttributedString(string: menu7.text)
-        menuLink7.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/dSMZT1gFpVx", range: NSMakeRange(0, menu7.text.count))
+        menuLink7.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/dSMZT1gFpVx", range: NSMakeRange(0, menu7.text.count))
         
         menu7.attributedText = menuLink7
         menu7.dataDetectorTypes = .link
@@ -1310,7 +1310,7 @@ class RestaurantVC: UIViewController {
         menu8.isScrollEnabled = false
         
         let menuLink8 = NSMutableAttributedString(string: menu8.text)
-        menuLink8.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/fSWoD53fqL22", range: NSMakeRange(0, menu8.text.count))
+        menuLink8.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/fSWoD53fqL22", range: NSMakeRange(0, menu8.text.count))
         
         menu8.attributedText = menuLink8
         menu8.dataDetectorTypes = .link
@@ -1332,7 +1332,7 @@ class RestaurantVC: UIViewController {
         menu9.isScrollEnabled = false
         
         let menuLink9 = NSMutableAttributedString(string: menu9.text)
-        menuLink9.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/atYbHXMaMUC2", range: NSMakeRange(0, menu9.text.count))
+        menuLink9.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/atYbHXMaMUC2", range: NSMakeRange(0, menu9.text.count))
         
         menu9.attributedText = menuLink9
         menu9.dataDetectorTypes = .link
@@ -1355,7 +1355,7 @@ class RestaurantVC: UIViewController {
         menu10.isScrollEnabled = false
         
         let menuLink10 = NSMutableAttributedString(string: menu10.text)
-        menuLink10.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/bvo4B7t9fEt", range: NSMakeRange(0, menu10.text.count))
+        menuLink10.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/bvo4B7t9fEt", range: NSMakeRange(0, menu10.text.count))
         
         menu10.attributedText = menuLink10
         menu10.dataDetectorTypes = .link
@@ -1381,7 +1381,7 @@ class RestaurantVC: UIViewController {
         menu11.isScrollEnabled = false
         
         let menuLink11 = NSMutableAttributedString(string: menu11.text)
-        menuLink11.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/kbzCJZW4uiK2", range: NSMakeRange(0, menu11.text.count))
+        menuLink11.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/kbzCJZW4uiK2", range: NSMakeRange(0, menu11.text.count))
         
         menu11.attributedText = menuLink11
         menu11.dataDetectorTypes = .link

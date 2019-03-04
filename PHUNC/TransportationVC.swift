@@ -34,7 +34,7 @@ class TransportationVC: UIViewController, UIWebViewDelegate, UIScrollViewDelegat
         mapView.heightAnchor.constraint(equalToConstant: screenWidth)
         
         let locLink1 = NSMutableAttributedString(string: loc1.text)
-        locLink1.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/3qaCPkPKb1w", range: NSMakeRange(0, loc1.text.count))
+        locLink1.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/3qaCPkPKb1w", range: NSMakeRange(0, loc1.text.count))
         loc1.attributedText = locLink1
         loc1.dataDetectorTypes = .link
         loc1.isEditable = false
@@ -42,7 +42,7 @@ class TransportationVC: UIViewController, UIWebViewDelegate, UIScrollViewDelegat
         loc1.font = loc1.font?.withSize(16)
         
         let locLink2 = NSMutableAttributedString(string: loc2.text)
-        locLink2.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/Mk1xcLb3BzE2", range: NSMakeRange(0, loc2.text.count))
+        locLink2.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/Mk1xcLb3BzE2", range: NSMakeRange(0, loc2.text.count))
         loc2.attributedText = locLink2
         loc2.dataDetectorTypes = .link
         loc2.isEditable = false
@@ -50,7 +50,7 @@ class TransportationVC: UIViewController, UIWebViewDelegate, UIScrollViewDelegat
         loc2.font = loc2.font?.withSize(16)
         
         let locLink3 = NSMutableAttributedString(string: loc3.text)
-        locLink3.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/f9KAmjtqpCC2", range: NSMakeRange(0, loc3.text.count))
+        locLink3.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/f9KAmjtqpCC2", range: NSMakeRange(0, loc3.text.count))
         loc3.attributedText = locLink3
         loc3.dataDetectorTypes = .link
         loc3.isEditable = false
@@ -58,7 +58,7 @@ class TransportationVC: UIViewController, UIWebViewDelegate, UIScrollViewDelegat
         loc3.font = loc3.font?.withSize(16)
         
         let locLink4 = NSMutableAttributedString(string: loc4.text)
-        locLink4.addAttribute(NSLinkAttributeName, value: "https://goo.gl/maps/2VMprkrE94o", range: NSMakeRange(0, loc4.text.count))
+        locLink4.addAttribute(NSAttributedString.Key.link, value: "https://goo.gl/maps/2VMprkrE94o", range: NSMakeRange(0, loc4.text.count))
         loc4.attributedText = locLink4
         loc4.dataDetectorTypes = .link
         loc4.isEditable = false
