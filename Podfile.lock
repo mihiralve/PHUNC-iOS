@@ -20,13 +20,11 @@ PODS:
     - FirebaseInstanceID (~> 2.0)
     - GoogleToolboxForMac/Logger (~> 2.1)
     - Protobuf (~> 3.5)
-  - GoogleToolboxForMac/Defines (2.1.4)
-  - GoogleToolboxForMac/Logger (2.1.4):
-    - GoogleToolboxForMac/Defines (= 2.1.4)
-  - "GoogleToolboxForMac/NSData+zlib (2.1.4)":
-    - GoogleToolboxForMac/Defines (= 2.1.4)
-  - ImageSlideshow (1.7.0):
-    - ImageSlideshow/Core (= 1.7.0)
+  - GoogleToolboxForMac/Defines (2.2.0)
+  - GoogleToolboxForMac/Logger (2.2.0):
+    - GoogleToolboxForMac/Defines (= 2.2.0)
+  - "GoogleToolboxForMac/NSData+zlib (2.2.0)":
+    - GoogleToolboxForMac/Defines (= 2.2.0)
   - ImageSlideshow/Core (1.7.0)
   - ImageSlideshow/SDWebImage (1.7.0):
     - ImageSlideshow/Core
@@ -37,15 +35,14 @@ PODS:
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
   - Protobuf (3.6.1)
-  - SDWebImage (4.4.2):
-    - SDWebImage/Core (= 4.4.2)
-  - SDWebImage/Core (4.4.2)
+  - SDWebImage (4.4.5):
+    - SDWebImage/Core (= 4.4.5)
+  - SDWebImage/Core (4.4.5)
 
 DEPENDENCIES:
   - Firebase/Core
   - Firebase/Messaging
   - FirebaseInstanceID (= 2.0.0)
-  - ImageSlideshow (~> 1.0)
   - ImageSlideshow/SDWebImage
   - SDWebImage (~> 4.0)
 
@@ -68,12 +65,12 @@ SPEC CHECKSUMS:
   FirebaseCore: 90cb1c53d69b556f112a1bf72b5fcfaad7650790
   FirebaseInstanceID: 9fbf536668f4d3f0880e7438456dabd1376e294b
   FirebaseMessaging: 75cdb862e86c30e0913a2ff307e48d49357c5b73
-  GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
+  GoogleToolboxForMac: ff31605b7d66400dcec09bed5861689aebadda4d
   ImageSlideshow: f8eec5e37a980f60923b585ff23b0e140fd24018
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
-  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  SDWebImage: ecc03494e973b93b80213649d32175f8d2d17d4d
 
-PODFILE CHECKSUM: 774089e1f9e7a9cf3d7dec96cc69194f398c390a
+PODFILE CHECKSUM: 3061c52be0f96c7ee792f1fa31be760121642a8d
 
 COCOAPODS: 1.5.3
