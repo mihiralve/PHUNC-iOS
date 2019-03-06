@@ -69,27 +69,27 @@ class contactVC: UIViewController {
 //        stack4.layoutMargins = UIEdgeInsets(top: 8, left: 0, bottom: 8, right: 0)
 //        stack4.isLayoutMarginsRelativeArrangement = true
         
-        contact1.sd_setImage(with: URL(string:"https://phunc.psiada.org/wp-content/uploads/2018/10/fullsizeoutput_145e-1.jpeg"), placeholderImage:#imageLiteral(resourceName: "Applogo"))
-        contact1.contentMode = .scaleAspectFill
+        contact1.sd_setImage(with: URL(string:"https://punc.psiada.org/wp-content/uploads/2019/03/Kayla.png"), placeholderImage:#imageLiteral(resourceName: "PUNC Logo (No Text)"))
+        contact1.contentMode = .scaleAspectFit
         
         contact1.topAnchor.constraint(equalTo: stack1.topAnchor, constant:8).isActive = true
         contact1.leadingAnchor.constraint(equalTo: stack1.leadingAnchor, constant:8).isActive = true
         contact1.bottomAnchor.constraint(equalTo: stack1.bottomAnchor, constant:8).isActive = true
         
-        contact2.sd_setImage(with: URL(string:"https://phunc.psiada.org/wp-content/uploads/2018/10/IMGP2944-1.jpg"), placeholderImage:#imageLiteral(resourceName: "Applogo"))
-        contact2.contentMode = .scaleAspectFill
+        contact2.sd_setImage(with: URL(string:"https://punc.psiada.org/wp-content/uploads/2019/03/Mihir.png"),placeholderImage:#imageLiteral(resourceName: "PUNC Logo (No Text)"))
+        contact2.contentMode = .scaleAspectFit
         
         contact2.topAnchor.constraint(equalTo: stack2.topAnchor, constant:8).isActive = true
         contact2.bottomAnchor.constraint(equalTo: stack2.bottomAnchor, constant:8).isActive = true
         
-        contact3.sd_setImage(with: URL(string:"https://phunc.psiada.org/wp-content/uploads/2018/10/IMGP2969-1.jpg"), placeholderImage:#imageLiteral(resourceName: "Applogo"))
-        contact3.contentMode = .scaleAspectFill
+        contact3.sd_setImage(with: URL(string:"https://punc.psiada.org/wp-content/uploads/2019/03/Ali.png"), placeholderImage:#imageLiteral(resourceName: "PUNC Logo (No Text)"))
+        contact3.contentMode = .scaleAspectFit
         
         contact3.topAnchor.constraint(equalTo: stack3.topAnchor, constant:8).isActive = true
         contact3.bottomAnchor.constraint(equalTo: stack3.bottomAnchor, constant:8).isActive = true
         
-        contact4.sd_setImage(with: URL(string:"https://phunc.psiada.org/wp-content/uploads/2018/10/IMGP2952-1.jpg"), placeholderImage:#imageLiteral(resourceName: "Applogo"))
-        contact4.contentMode = .scaleAspectFill
+        contact4.sd_setImage(with: URL(string:"https://punc.psiada.org/wp-content/uploads/2019/03/Tarrick.png"), placeholderImage:#imageLiteral(resourceName: "PUNC Logo (No Text)"))
+        contact4.contentMode = .scaleAspectFit
 
         contact4.topAnchor.constraint(equalTo: stack4.topAnchor, constant:8).isActive = true
         contact4.bottomAnchor.constraint(equalTo: stack4.bottomAnchor, constant:8).isActive = true
