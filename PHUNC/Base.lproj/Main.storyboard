@@ -1130,7 +1130,7 @@ While these events are optional, we highly encourage all delegates to attend. PH
                             <constraint firstItem="eEN-Bw-8Ru" firstAttribute="top" secondItem="oA5-sl-v79" secondAttribute="top" id="zie-lh-auM"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Dpg-up-Lqo"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="map" id="Dpg-up-Lqo" userLabel="Map"/>
                     <connections>
                         <outlet property="mapView" destination="eEN-Bw-8Ru" id="CWk-yw-brm"/>
                     </connections>
@@ -1499,5 +1499,6 @@ Visit https://shesthefirst.org for more information on how to support She’s th
         <image name="ic_build" width="24" height="24"/>
         <image name="ic_restaurant_menu" width="24" height="24"/>
         <image name="ic_schedule" width="24" height="24"/>
+        <image name="map" width="18" height="18"/>
     </resources>
 </document>

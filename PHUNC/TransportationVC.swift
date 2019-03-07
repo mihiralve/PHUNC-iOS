@@ -59,6 +59,15 @@ class TransportationVC: UIViewController {
         mapView.setRegion(zoomRegion, animated: true)
         
     }
+    
+    private func addAnnotations() {
+        
+        let businessBuildAnnotation = MKPointAnnotation()
+        businessBuildAnnotation.title = "Business Building"
+        businessBuildAnnotation.coordinate = CLLocationCoordinate2D(latitude: 40.803895, longitude: -77.865213)
+        
+        mapView.addAnnotation(businessBuildAnnotation)
+    }
 
 }
 
@@ -71,6 +80,7 @@ extension TransportationVC: CLLocationManagerDelegate{
         
         if currentCoordinate == nil{
             zoomToLatestLocation(with: latestLocation.coordinate)
+            addAnnotations()
         }
         
         currentCoordinate = latestLocation.coordinate
