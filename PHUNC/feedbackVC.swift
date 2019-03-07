@@ -22,7 +22,7 @@ class feedbackVC: UIViewController, UIWebViewDelegate {
         webView.delegate = self
         
         
-        let url = URL(string:"https://goo.gl/forms/uk5NlwDfgUnKKj5E3")
+        let url = URL(string:"https://goo.gl/forms/9GZkgpHo0QXlJPbs2")
         
         let URLReq = URLRequest(url: url!)
         
