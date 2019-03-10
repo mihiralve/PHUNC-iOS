@@ -79,30 +79,35 @@ class ScheduleVC: UIViewController, UIScrollViewDelegate{
     func loadRooms(){
         
         socialText.isHidden = true
-        socialWeb.isHidden = true
+        scheduleImg.isHidden = true
+        socialWeb.isHidden = false
         
-        scrollView.pinchGestureRecognizer?.isEnabled = true;
-        scrollView.scrollRectToVisible(CGRect(x: 0, y: 0, width: 1, height:
-            1), animated: false)
-        scrollView.zoomScale = 1.0;
+//        scrollView.pinchGestureRecognizer?.isEnabled = true;
+//        scrollView.scrollRectToVisible(CGRect(x: 0, y: 0, width: 1, height:
+//            1), animated: false)
+//        scrollView.zoomScale = 1.0;
+//
+//        let screenSize = UIScreen.main.bounds
+//        let screenWidth = screenSize.width
+//
+//        imgHeight.constant = (screenWidth - 24) * 2.4
+//        containerHeight.constant = (screenWidth - 24) * 2.4
+//
+////        scheduleImg.setShowActivityIndicator(true)
+////        scheduleImg.setIndicatorStyle(.gray)
+////
+//        scheduleImg.sd_setImage(with: URL(string: "https://phunc.psiada.org/wp-content/uploads/2018/10/Room-Assignments.png"), placeholderImage: #imageLiteral(resourceName: "Blank_button.svg"), options:.refreshCached)
+//        scheduleImg.contentMode = .scaleAspectFit
+//        scheduleImg.widthAnchor.constraint(equalToConstant: screenWidth - 24).isActive = true
+//        scrollView.minimumZoomScale = 1.0;
+//        scrollView.maximumZoomScale = 3.0;
+//        scrollView.contentSize = scheduleImg.frame.size
+//        scrollView.delegate = self
+//        scheduleImg.isHidden = false
         
-        let screenSize = UIScreen.main.bounds
-        let screenWidth = screenSize.width
-        
-        imgHeight.constant = (screenWidth - 24) * 2.4
-        containerHeight.constant = (screenWidth - 24) * 2.4
-        
-//        scheduleImg.setShowActivityIndicator(true)
-//        scheduleImg.setIndicatorStyle(.gray)
-//        
-        scheduleImg.sd_setImage(with: URL(string: "https://phunc.psiada.org/wp-content/uploads/2018/10/Room-Assignments.png"), placeholderImage: #imageLiteral(resourceName: "Blank_button.svg"), options:.refreshCached)
-        scheduleImg.contentMode = .scaleAspectFit
-        scheduleImg.widthAnchor.constraint(equalToConstant: screenWidth - 24).isActive = true
-        scrollView.minimumZoomScale = 1.0;
-        scrollView.maximumZoomScale = 3.0;
-        scrollView.contentSize = scheduleImg.frame.size
-        scrollView.delegate = self
-        scheduleImg.isHidden = false
+        let socialUrl = URL(string: "https://punc.psiada.org/app-rooms/")!
+        let socialRequest = URLRequest(url: socialUrl)
+        socialWeb.load(socialRequest)
 
     }
     
