@@ -105,7 +105,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="FGf-hw-Nxe">
                                                 <rect key="frame" x="8" y="758" width="359" height="150"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1wd-sU-S5p">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1wd-sU-S5p" customClass="ImageSlideshow" customModule="ImageSlideshow">
                                                         <rect key="frame" x="0.0" y="0.0" width="359" height="150"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </view>
@@ -182,7 +182,7 @@
                         <outlet property="Parent" destination="tsR-hK-woN" id="FiW-IO-mtC"/>
                         <outlet property="container" destination="CSc-aE-V5G" id="o18-x0-gye"/>
                         <outlet property="logoImg" destination="aqV-uc-9Eh" id="Bd3-wb-v8V"/>
-                        <outlet property="sponsors" destination="1wd-sU-S5p" id="99X-mz-PhU"/>
+                        <outlet property="sponsors" destination="1wd-sU-S5p" id="VIS-eq-4Cg"/>
                         <outlet property="textView" destination="kT1-NC-iNV" id="oLA-Jw-Rfe"/>
                         <outlet property="webView" destination="Gp4-mw-fRs" id="9Ou-z4-cq8"/>
                     </connections>
