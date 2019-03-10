@@ -44,32 +44,8 @@ class ScheduleVC: UIViewController, UIScrollViewDelegate{
     func loadSchedule(){
         
         socialText.isHidden = true
-        scheduleImg.isHidden = true
         socialWeb.isHidden = false
         
-        scrollView.pinchGestureRecognizer?.isEnabled = true;
-        scrollView.scrollRectToVisible(CGRect(x: 0, y: 0, width: 1, height:
-            1), animated: false)
-        scrollView.zoomScale = 1.0;
-        
-        let screenSize = UIScreen.main.bounds
-        let screenWidth = screenSize.width
-        
-//        imgHeight.constant = (screenWidth - 24) * 1.75
-//        containerHeight.constant = (screenWidth - 24) * 1.75
-//
-////        scheduleImg.setShowActivityIndicator(true)
-////        scheduleImg.setIndicatorStyle(.gray)
-//
-//
-//        scheduleImg.sd_setImage(with: URL(string: "https://phunc.psiada.org/wp-content/uploads/2018/01/Schedule.png"), placeholderImage: #imageLiteral(resourceName: "Blank_button.svg"), options:.refreshCached)
-//        scheduleImg.contentMode = .scaleAspectFit
-//        scheduleImg.widthAnchor.constraint(equalToConstant: screenWidth - 24).isActive = true
-//        scrollView.minimumZoomScale = 1.0;
-//        scrollView.maximumZoomScale = 6.0;
-//        scrollView.contentSize = scheduleImg.frame.size
-//        scrollView.delegate = self
-//        scheduleImg.isHidden = false
         let socialUrl = URL(string: "https://punc.psiada.org/app-schedule/")!
         let socialRequest = URLRequest(url: socialUrl)
         socialWeb.load(socialRequest)
@@ -79,63 +55,18 @@ class ScheduleVC: UIViewController, UIScrollViewDelegate{
     func loadRooms(){
         
         socialText.isHidden = true
-        scheduleImg.isHidden = true
         socialWeb.isHidden = false
         
-//        scrollView.pinchGestureRecognizer?.isEnabled = true;
-//        scrollView.scrollRectToVisible(CGRect(x: 0, y: 0, width: 1, height:
-//            1), animated: false)
-//        scrollView.zoomScale = 1.0;
-//
-//        let screenSize = UIScreen.main.bounds
-//        let screenWidth = screenSize.width
-//
-//        imgHeight.constant = (screenWidth - 24) * 2.4
-//        containerHeight.constant = (screenWidth - 24) * 2.4
-//
-////        scheduleImg.setShowActivityIndicator(true)
-////        scheduleImg.setIndicatorStyle(.gray)
-////
-//        scheduleImg.sd_setImage(with: URL(string: "https://phunc.psiada.org/wp-content/uploads/2018/10/Room-Assignments.png"), placeholderImage: #imageLiteral(resourceName: "Blank_button.svg"), options:.refreshCached)
-//        scheduleImg.contentMode = .scaleAspectFit
-//        scheduleImg.widthAnchor.constraint(equalToConstant: screenWidth - 24).isActive = true
-//        scrollView.minimumZoomScale = 1.0;
-//        scrollView.maximumZoomScale = 3.0;
-//        scrollView.contentSize = scheduleImg.frame.size
-//        scrollView.delegate = self
-//        scheduleImg.isHidden = false
-        
-        let socialUrl = URL(string: "https://punc.psiada.org/app-rooms/")!
-        let socialRequest = URLRequest(url: socialUrl)
-        socialWeb.load(socialRequest)
+        let roomUrl = URL(string: "https://punc.psiada.org/app-rooms/")!
+        let roomRequest = URLRequest(url: roomUrl)
+        socialWeb.load(roomRequest)
 
     }
     
     func loadSocial(){
         socialWeb.isHidden = true
-        
-        scrollView.pinchGestureRecognizer?.isEnabled = false;
-        scrollView.scrollRectToVisible(CGRect(x: 0, y: 0, width: 1, height:
-            1), animated: false)
-        scrollView.zoomScale = 1.0;
-        scrollView.minimumZoomScale = 1.0;
-        scrollView.maximumZoomScale = 3.0;
         socialText.isHidden = false
-        scheduleImg.isHidden = true
-        scrollView.isHidden = false
-        let screenSize = UIScreen.main.bounds
-        let screenWidth = screenSize.width
-        scheduleImg.widthAnchor.constraint(equalToConstant: screenWidth - 24).isActive = false
-        scrollView.widthAnchor.constraint(equalToConstant: screenWidth - 24).isActive = true
-        scrollView.contentSize = socialText.frame.size
-        scrollView.delegate = self
         
-        
-    }
-    
-    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
-        
-        return scheduleImg
     }
     
     
