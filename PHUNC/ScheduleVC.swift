@@ -8,6 +8,7 @@
 
 import UIKit
 import SDWebImage
+import WebKit
 
 
 class ScheduleVC: UIViewController, UIScrollViewDelegate{
@@ -17,6 +18,7 @@ class ScheduleVC: UIViewController, UIScrollViewDelegate{
     @IBOutlet weak var scheduleImg: UIImageView!
     @IBOutlet weak var socialText: UITextView!
 
+    @IBOutlet weak var socialWeb: WKWebView!
     @IBOutlet weak var imgHeight: NSLayoutConstraint!
     @IBOutlet weak var containerHeight: NSLayoutConstraint!
     
@@ -39,10 +41,11 @@ class ScheduleVC: UIViewController, UIScrollViewDelegate{
             break
         }
     }
-    
     func loadSchedule(){
         
         socialText.isHidden = true
+        scheduleImg.isHidden = true
+        socialWeb.isHidden = false
         
         scrollView.pinchGestureRecognizer?.isEnabled = true;
         scrollView.scrollRectToVisible(CGRect(x: 0, y: 0, width: 1, height:
@@ -52,26 +55,31 @@ class ScheduleVC: UIViewController, UIScrollViewDelegate{
         let screenSize = UIScreen.main.bounds
         let screenWidth = screenSize.width
         
-        imgHeight.constant = (screenWidth - 24) * 1.75
-        containerHeight.constant = (screenWidth - 24) * 1.75
+//        imgHeight.constant = (screenWidth - 24) * 1.75
+//        containerHeight.constant = (screenWidth - 24) * 1.75
+//
+////        scheduleImg.setShowActivityIndicator(true)
+////        scheduleImg.setIndicatorStyle(.gray)
+//
+//
+//        scheduleImg.sd_setImage(with: URL(string: "https://phunc.psiada.org/wp-content/uploads/2018/01/Schedule.png"), placeholderImage: #imageLiteral(resourceName: "Blank_button.svg"), options:.refreshCached)
+//        scheduleImg.contentMode = .scaleAspectFit
+//        scheduleImg.widthAnchor.constraint(equalToConstant: screenWidth - 24).isActive = true
+//        scrollView.minimumZoomScale = 1.0;
+//        scrollView.maximumZoomScale = 6.0;
+//        scrollView.contentSize = scheduleImg.frame.size
+//        scrollView.delegate = self
+//        scheduleImg.isHidden = false
+        let socialUrl = URL(string: "https://punc.psiada.org/app-schedule/")!
+        let socialRequest = URLRequest(url: socialUrl)
+        socialWeb.load(socialRequest)
         
-//        scheduleImg.setShowActivityIndicator(true)
-//        scheduleImg.setIndicatorStyle(.gray)
-        
-        
-        scheduleImg.sd_setImage(with: URL(string: "https://phunc.psiada.org/wp-content/uploads/2018/01/Schedule.png"), placeholderImage: #imageLiteral(resourceName: "Blank_button.svg"), options:.refreshCached)
-        scheduleImg.contentMode = .scaleAspectFit
-        scheduleImg.widthAnchor.constraint(equalToConstant: screenWidth - 24).isActive = true
-        scrollView.minimumZoomScale = 1.0;
-        scrollView.maximumZoomScale = 6.0;
-        scrollView.contentSize = scheduleImg.frame.size
-        scrollView.delegate = self
-        scheduleImg.isHidden = false
     }
     
     func loadRooms(){
         
         socialText.isHidden = true
+        socialWeb.isHidden = true
         
         scrollView.pinchGestureRecognizer?.isEnabled = true;
         scrollView.scrollRectToVisible(CGRect(x: 0, y: 0, width: 1, height:
@@ -99,6 +107,8 @@ class ScheduleVC: UIViewController, UIScrollViewDelegate{
     }
     
     func loadSocial(){
+        socialWeb.isHidden = true
+        
         scrollView.pinchGestureRecognizer?.isEnabled = false;
         scrollView.scrollRectToVisible(CGRect(x: 0, y: 0, width: 1, height:
             1), animated: false)

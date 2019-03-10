@@ -209,6 +209,14 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z2j-Nz-0Pg">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                                         <subviews>
+                                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z39-nQ-aZ8">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <wkWebViewConfiguration key="configuration">
+                                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                                    <wkPreferences key="preferences"/>
+                                                </wkWebViewConfiguration>
+                                            </wkWebView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="97x-M2-b6m">
                                                 <rect key="frame" x="8" y="0.0" width="359" height="1000"/>
                                                 <constraints>
@@ -289,13 +297,17 @@ While these events are optional, we highly encourage all delegates to attend. PH
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="97x-M2-b6m" secondAttribute="trailing" constant="8" id="0Gh-2Z-ZZw"/>
+                                            <constraint firstItem="z39-nQ-aZ8" firstAttribute="leading" secondItem="z2j-Nz-0Pg" secondAttribute="leading" id="2Qu-Hf-1Ok"/>
                                             <constraint firstItem="97x-M2-b6m" firstAttribute="leading" secondItem="z2j-Nz-0Pg" secondAttribute="leading" constant="8" id="2bz-KL-mLl"/>
                                             <constraint firstItem="97x-M2-b6m" firstAttribute="leading" secondItem="z2j-Nz-0Pg" secondAttribute="leading" constant="8" id="BZS-MS-rx9"/>
+                                            <constraint firstAttribute="trailing" secondItem="z39-nQ-aZ8" secondAttribute="trailing" id="DHh-iB-q3F"/>
                                             <constraint firstAttribute="trailing" secondItem="97x-M2-b6m" secondAttribute="trailing" constant="8" id="DP3-iO-xyD"/>
                                             <constraint firstItem="Q1c-zm-TO0" firstAttribute="top" secondItem="z2j-Nz-0Pg" secondAttribute="top" constant="8" id="GEa-ic-0lb"/>
                                             <constraint firstAttribute="bottom" secondItem="97x-M2-b6m" secondAttribute="bottom" id="HNq-pS-hW9"/>
                                             <constraint firstItem="97x-M2-b6m" firstAttribute="leading" secondItem="z2j-Nz-0Pg" secondAttribute="leading" constant="8" id="HdL-1H-yZn"/>
+                                            <constraint firstAttribute="bottom" secondItem="z39-nQ-aZ8" secondAttribute="bottom" id="LS5-7X-9Hy"/>
                                             <constraint firstAttribute="trailing" secondItem="Q1c-zm-TO0" secondAttribute="trailing" constant="8" id="Nd5-fY-po5"/>
+                                            <constraint firstItem="z39-nQ-aZ8" firstAttribute="top" secondItem="z2j-Nz-0Pg" secondAttribute="top" id="RFV-H4-nqX"/>
                                             <constraint firstAttribute="height" constant="1000" id="dJM-O7-KaU"/>
                                             <constraint firstAttribute="bottom" secondItem="Q1c-zm-TO0" secondAttribute="bottom" constant="8" id="hbQ-Aj-Xnc"/>
                                             <constraint firstItem="Q1c-zm-TO0" firstAttribute="leading" secondItem="z2j-Nz-0Pg" secondAttribute="leading" constant="8" id="mTC-og-rtP"/>
@@ -349,6 +361,7 @@ While these events are optional, we highly encourage all delegates to attend. PH
                         <outlet property="scrollView" destination="YPM-vn-Gmr" id="U3M-5V-g18"/>
                         <outlet property="segmentedControl" destination="hu5-q6-KVd" id="yfj-aO-VWU"/>
                         <outlet property="socialText" destination="Q1c-zm-TO0" id="nbH-pS-9VW"/>
+                        <outlet property="socialWeb" destination="z39-nQ-aZ8" id="icl-5g-X0I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
@@ -1499,6 +1512,6 @@ Visit https://shesthefirst.org for more information on how to support She’s th
         <image name="ic_build" width="24" height="24"/>
         <image name="ic_restaurant_menu" width="24" height="24"/>
         <image name="ic_schedule" width="24" height="24"/>
-        <image name="map" width="18" height="18"/>
+        <image name="map" width="24" height="24"/>
     </resources>
 </document>
