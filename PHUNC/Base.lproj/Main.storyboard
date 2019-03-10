@@ -228,6 +228,14 @@
                                             <wkPreferences key="preferences"/>
                                         </wkWebViewConfiguration>
                                     </wkWebView>
+                                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="COp-Sc-kr6">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="586"/>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <wkWebViewConfiguration key="configuration">
+                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                            <wkPreferences key="preferences"/>
+                                        </wkWebViewConfiguration>
+                                    </wkWebView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q1c-zm-TO0">
                                         <rect key="frame" x="8" y="8" width="359" height="570"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -297,15 +305,23 @@ While these events are optional, we highly encourage all delegates to attend. PH
                                         </attributedString>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="MV0-mC-w41">
+                                        <rect key="frame" x="178" y="34" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="z39-nQ-aZ8" firstAttribute="leading" secondItem="z2j-Nz-0Pg" secondAttribute="leading" id="2Qu-Hf-1Ok"/>
                                     <constraint firstAttribute="trailing" secondItem="z39-nQ-aZ8" secondAttribute="trailing" id="DHh-iB-q3F"/>
                                     <constraint firstItem="Q1c-zm-TO0" firstAttribute="top" secondItem="z2j-Nz-0Pg" secondAttribute="top" constant="8" id="GEa-ic-0lb"/>
+                                    <constraint firstItem="COp-Sc-kr6" firstAttribute="leading" secondItem="z2j-Nz-0Pg" secondAttribute="leading" id="I6x-Ow-3yV"/>
                                     <constraint firstAttribute="bottom" secondItem="z39-nQ-aZ8" secondAttribute="bottom" id="LS5-7X-9Hy"/>
                                     <constraint firstAttribute="trailing" secondItem="Q1c-zm-TO0" secondAttribute="trailing" constant="8" id="Nd5-fY-po5"/>
+                                    <constraint firstAttribute="bottom" secondItem="COp-Sc-kr6" secondAttribute="bottom" id="Nu4-x6-mwp"/>
                                     <constraint firstItem="z39-nQ-aZ8" firstAttribute="top" secondItem="z2j-Nz-0Pg" secondAttribute="top" id="RFV-H4-nqX"/>
+                                    <constraint firstItem="COp-Sc-kr6" firstAttribute="top" secondItem="z2j-Nz-0Pg" secondAttribute="top" id="SiE-xE-EPe"/>
+                                    <constraint firstAttribute="trailing" secondItem="COp-Sc-kr6" secondAttribute="trailing" id="Tgf-WP-r7u"/>
                                     <constraint firstAttribute="bottom" secondItem="Q1c-zm-TO0" secondAttribute="bottom" constant="8" id="hbQ-Aj-Xnc"/>
                                     <constraint firstItem="Q1c-zm-TO0" firstAttribute="leading" secondItem="z2j-Nz-0Pg" secondAttribute="leading" constant="8" id="mTC-og-rtP"/>
                                 </constraints>
@@ -326,6 +342,8 @@ While these events are optional, we highly encourage all delegates to attend. PH
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="650"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="MV0-mC-w41" id="YAf-gl-JW1"/>
+                        <outlet property="roomWeb" destination="COp-Sc-kr6" id="C6Z-cx-R5R"/>
                         <outlet property="segmentedControl" destination="hu5-q6-KVd" id="yfj-aO-VWU"/>
                         <outlet property="socialText" destination="Q1c-zm-TO0" id="nbH-pS-9VW"/>
                         <outlet property="socialWeb" destination="z39-nQ-aZ8" id="icl-5g-X0I"/>
