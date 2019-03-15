@@ -25,9 +25,14 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
     @IBOutlet weak var sponsors: ImageSlideshow!
     
     @IBOutlet var Parent: UIView!
-//    let sponsorSource = [SDWebImageSource(urlString: "https://phunc.psiada.org/wp-content/uploads/2017/12/CGS-logo.png")!, SDWebImageSource(urlString: "https://phunc.psiada.org/wp-content/uploads/2018/10/O_lSUAaA_400x400.jpg")!, SDWebImageSource(urlString: "https://phunc.psiada.org/wp-content/uploads/2018/10/c6IsO5zb_400x400.jpg")!, SDWebImageSource(urlString: "https://phunc.psiada.org/wp-content/uploads/2018/10/psu-agsciences-logo.png")!, SDWebImageSource(urlString: "https://phunc.psiada.org/wp-content/uploads/2018/10/German_Header_Responsive_stacked-2.png")!, SDWebImageSource(urlString: "https://phunc.psiada.org/wp-content/uploads/2018/10/logo_sia_retina.png")!, SDWebImageSource(urlString: "https://phunc.psiada.org/wp-content/uploads/2018/10/Rock-Ethics-Wordmark-1.png")!, SDWebImageSource(urlString: "https://phunc.psiada.org/wp-content/uploads/2018/10/PSUIST.png")!, SDWebImageSource(urlString: "https://phunc.psiada.org/wp-content/uploads/2018/10/psu_bwo_rgb_2c_3x_1.png")!,]
-//
-    let sponsorSource = [ImageSource(image: #imageLiteral(resourceName: "pla_logo")), ImageSource(image: #imageLiteral(resourceName: "seven_sage")), ImageSource(image: #imageLiteral(resourceName: "seton_hall")), ImageSource(image: #imageLiteral(resourceName: "SIA-logo")), ImageSource(image: #imageLiteral(resourceName: "Schreyer-Logo"))]
+    let sponsorSource = [SDWebImageSource(urlString: "https://punc.psiada.org/wp-content/uploads/2019/03/Bush-logo.jpg")!, SDWebImageSource(urlString: "https://punc.psiada.org/wp-content/uploads/2019/03/Public-Policy-PSU-CLA_Roboto-font.png")!, SDWebImageSource(urlString: "https://punc.psiada.org/wp-content/uploads/2018/03/23600769_1758399207567367_1383342331_o-1024x1024-2-copy.png")!, SDWebImageSource(urlString: "https://punc.psiada.org/wp-content/uploads/2018/01/Schreyer-Logo.png")!, SDWebImageSource(urlString: "https://punc.psiada.org/wp-content/uploads/2018/01/pla_logo-1f1uy08.png")!, SDWebImageSource(urlString: "https://punc.psiada.org/wp-content/uploads/2017/11/24259325_1779457425461545_825887776_o.jpg")!,]
+
+//    "https://punc.psiada.org/wp-content/uploads/2019/03/Bush-logo.jpg",
+//    "https://punc.psiada.org/wp-content/uploads/2019/03/Public-Policy-PSU-CLA_Roboto-font.png",
+//    "https://punc.psiada.org/wp-content/uploads/2018/03/23600769_1758399207567367_1383342331_o-1024x1024-2-copy.png",
+//    "https://punc.psiada.org/wp-content/uploads/2018/01/Schreyer-Logo.png",
+//    "https://punc.psiada.org/wp-content/uploads/2018/01/pla_logo-1f1uy08.png",
+//    "https://punc.psiada.org/wp-content/uploads/2017/11/24259325_1779457425461545_825887776_o.jpg"
     
     override func viewDidLoad() {
         super.viewDidLoad()

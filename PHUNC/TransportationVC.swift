@@ -54,7 +54,7 @@ class TransportationVC: UIViewController {
     
     private func zoomToLatestLocation(with coordinate: CLLocationCoordinate2D) {
         
-        let zoomRegion = MKCoordinateRegion(center: coordinate, latitudinalMeters: 1000, longitudinalMeters: 1000)
+        let zoomRegion = MKCoordinateRegion(center: coordinate, latitudinalMeters: 10000, longitudinalMeters: 10000)
         
         mapView.setRegion(zoomRegion, animated: true)
         
@@ -66,7 +66,22 @@ class TransportationVC: UIViewController {
         businessBuildAnnotation.title = "Business Building"
         businessBuildAnnotation.coordinate = CLLocationCoordinate2D(latitude: 40.803895, longitude: -77.865213)
         
+        let envyAnnotation = MKPointAnnotation()
+        envyAnnotation.title = "Envy"
+        envyAnnotation.coordinate = CLLocationCoordinate2D(latitude: 40.798221, longitude: -77.856230)
+        
+        let radissonAnnotation = MKPointAnnotation()
+        radissonAnnotation.title = "Radisson"
+        radissonAnnotation.coordinate = CLLocationCoordinate2D(latitude: 40.810985, longitude: -77.832877)
+        
+        let super8Annotation = MKPointAnnotation()
+        super8Annotation.title = "Super 8"
+        super8Annotation.coordinate = CLLocationCoordinate2D(latitude: 40.786302, longitude: -77.834840)
+        
         mapView.addAnnotation(businessBuildAnnotation)
+        mapView.addAnnotation(envyAnnotation)
+        mapView.addAnnotation(radissonAnnotation)
+        mapView.addAnnotation(super8Annotation)
     }
 
 }

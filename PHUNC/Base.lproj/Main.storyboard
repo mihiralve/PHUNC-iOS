@@ -305,14 +305,14 @@ While these events are optional, we highly encourage all delegates to attend. PH
                                         </attributedString>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="MV0-mC-w41">
-                                        <rect key="frame" x="178" y="34" width="20" height="20"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="MV0-mC-w41">
+                                        <rect key="frame" x="0.0" y="35" width="375" height="20"/>
                                     </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="z39-nQ-aZ8" firstAttribute="leading" secondItem="z2j-Nz-0Pg" secondAttribute="leading" id="2Qu-Hf-1Ok"/>
+                                    <constraint firstItem="MV0-mC-w41" firstAttribute="top" secondItem="z2j-Nz-0Pg" secondAttribute="top" constant="35" id="2WU-od-Lfk"/>
                                     <constraint firstAttribute="trailing" secondItem="z39-nQ-aZ8" secondAttribute="trailing" id="DHh-iB-q3F"/>
                                     <constraint firstItem="Q1c-zm-TO0" firstAttribute="top" secondItem="z2j-Nz-0Pg" secondAttribute="top" constant="8" id="GEa-ic-0lb"/>
                                     <constraint firstItem="COp-Sc-kr6" firstAttribute="leading" secondItem="z2j-Nz-0Pg" secondAttribute="leading" id="I6x-Ow-3yV"/>
@@ -324,6 +324,8 @@ While these events are optional, we highly encourage all delegates to attend. PH
                                     <constraint firstAttribute="trailing" secondItem="COp-Sc-kr6" secondAttribute="trailing" id="Tgf-WP-r7u"/>
                                     <constraint firstAttribute="bottom" secondItem="Q1c-zm-TO0" secondAttribute="bottom" constant="8" id="hbQ-Aj-Xnc"/>
                                     <constraint firstItem="Q1c-zm-TO0" firstAttribute="leading" secondItem="z2j-Nz-0Pg" secondAttribute="leading" constant="8" id="mTC-og-rtP"/>
+                                    <constraint firstAttribute="trailing" secondItem="MV0-mC-w41" secondAttribute="trailing" id="nDT-gY-vkE"/>
+                                    <constraint firstItem="MV0-mC-w41" firstAttribute="leading" secondItem="z2j-Nz-0Pg" secondAttribute="leading" id="rFg-Cd-KLD"/>
                                 </constraints>
                             </view>
                         </subviews>
