@@ -15,12 +15,14 @@ class MerchVC: UIViewController {
     @IBOutlet weak var merchImg2: UIImageView!
     @IBOutlet weak var merchImg3: UIImageView!
     @IBOutlet weak var merchImg4: UIImageView!
+    @IBOutlet weak var merchImg5: UIImageView!
     
     @IBOutlet weak var parentStack: UIStackView!
     @IBOutlet weak var stack1: UIStackView!
     @IBOutlet weak var stack2: UIStackView!
     @IBOutlet weak var stack3: UIStackView!
     @IBOutlet weak var stack4: UIStackView!
+    @IBOutlet weak var stack5: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,14 +30,17 @@ class MerchVC: UIViewController {
         merchImg1.sd_setImage(with: URL(string:"https://phunc.psiada.org/wp-content/uploads/2018/07/Pocket-Tee-1.jpg"), placeholderImage: #imageLiteral(resourceName: "Applogo"), options:.refreshCached)
         merchImg1.contentMode = .scaleAspectFit
         
-        merchImg2.sd_setImage(with: URL(string:"https://phunc.psiada.org/wp-content/uploads/2018/07/Tee.jpg"), placeholderImage: #imageLiteral(resourceName: "Applogo"), options:.refreshCached)
+        merchImg2.sd_setImage(with: URL(string:"https://punc.psiada.org/wp-content/uploads/2018/03/shot-glass.png"), placeholderImage: #imageLiteral(resourceName: "Applogo"), options:.refreshCached)
         merchImg2.contentMode = .scaleAspectFit
         
-        merchImg3.sd_setImage(with: URL(string:"https://phunc.psiada.org/wp-content/uploads/2018/07/Tee-back-1.jpg"), placeholderImage: #imageLiteral(resourceName: "Applogo"), options:.refreshCached)
+        merchImg3.sd_setImage(with: URL(string:"https://punc.psiada.org/wp-content/uploads/2018/03/bottle-opener.jpg"), placeholderImage: #imageLiteral(resourceName: "Applogo"), options:.refreshCached)
         merchImg3.contentMode = .scaleAspectFit
-
-        merchImg4.sd_setImage(with: URL(string:"https://phunc.psiada.org/wp-content/uploads/2018/03/final-logo--300x300.png"), placeholderImage: #imageLiteral(resourceName: "Applogo"), options:.refreshCached)
+        
+        merchImg4.sd_setImage(with: URL(string:"https://punc.psiada.org/wp-content/uploads/2019/03/phone-wallet.jpg"), placeholderImage: #imageLiteral(resourceName: "Applogo"), options:.refreshCached)
         merchImg4.contentMode = .scaleAspectFit
+        
+        merchImg5.sd_setImage(with: URL(string:"https://punc.psiada.org/wp-content/uploads/2019/03/package.jpg"), placeholderImage: #imageLiteral(resourceName: "Applogo"), options:.refreshCached)
+        merchImg5.contentMode = .scaleAspectFit
 
         
     }

@@ -1344,19 +1344,20 @@ Cg
                                         <rect key="frame" x="0.0" y="20" width="375" height="660"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="top" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OjM-ru-WXI">
-                                                <rect key="frame" x="8" y="8" width="359" height="650"/>
+                                                <rect key="frame" x="8" y="8" width="359" height="1000"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Qcv-6d-nxI">
-                                                        <rect key="frame" x="0.0" y="0.0" width="359" height="156.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="359" height="136"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ll1-VN-LRA">
-                                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="156.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="136"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="ll1-VN-LRA" secondAttribute="height" multiplier="179:120" id="5iS-3D-p0w"/>
+                                                                    <constraint firstAttribute="height" constant="200" id="j6q-6b-2Od"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" text="Pocket Tee $15 " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="deI-w2-dXi">
-                                                                <rect key="frame" x="179.5" y="0.0" width="179.5" height="156.5"/>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" text="Double Shot Glass $3" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="deI-w2-dXi">
+                                                                <rect key="frame" x="179.5" y="0.0" width="179.5" height="136"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="180" id="oKp-be-m1C"/>
@@ -1377,16 +1378,16 @@ Cg
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Swx-vt-5YQ">
-                                                        <rect key="frame" x="0.0" y="164.5" width="359" height="156.5"/>
+                                                        <rect key="frame" x="0.0" y="144" width="359" height="136"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WIY-ct-olT">
-                                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="156.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="136"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="WIY-ct-olT" secondAttribute="height" multiplier="179:120" id="pSh-MH-sIz"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Tee $15 " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="47J-tf-HO4">
-                                                                <rect key="frame" x="179.5" y="0.0" width="179.5" height="156.5"/>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Shot Glass $2" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="47J-tf-HO4">
+                                                                <rect key="frame" x="179.5" y="0.0" width="179.5" height="136"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="180" id="qzY-It-vbB"/>
@@ -1407,16 +1408,16 @@ Cg
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fPS-zh-Buj">
-                                                        <rect key="frame" x="0.0" y="329" width="359" height="156.5"/>
+                                                        <rect key="frame" x="0.0" y="288" width="359" height="136"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CC7-U1-edM">
-                                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="156.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="136"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="CC7-U1-edM" secondAttribute="height" multiplier="179:120" id="rL3-mn-mfw"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Back (Tee)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mFo-pE-uk6">
-                                                                <rect key="frame" x="179.5" y="0.0" width="179.5" height="156.5"/>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Bottle Opener $2" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mFo-pE-uk6">
+                                                                <rect key="frame" x="179.5" y="0.0" width="179.5" height="136"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="180" id="wuT-St-mFY"/>
@@ -1437,16 +1438,16 @@ Cg
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="UoQ-9B-7KE">
-                                                        <rect key="frame" x="0.0" y="493.5" width="359" height="156.5"/>
+                                                        <rect key="frame" x="0.0" y="432" width="359" height="136"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AA9-ih-u1y">
-                                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="156.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="136"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="AA9-ih-u1y" secondAttribute="height" multiplier="179:120" id="3qa-IR-Vvi"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Sticker $0.50" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EZ3-JO-hLi">
-                                                                <rect key="frame" x="179.5" y="0.0" width="179.5" height="156.5"/>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Phone Wallet $2" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EZ3-JO-hLi">
+                                                                <rect key="frame" x="179.5" y="0.0" width="179.5" height="136"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="180" id="7KN-WO-ETI"/>
@@ -1462,23 +1463,67 @@ Cg
                                                             <constraint firstItem="AA9-ih-u1y" firstAttribute="leading" secondItem="UoQ-9B-7KE" secondAttribute="leading" constant="8" id="qoH-eo-Zhf"/>
                                                         </constraints>
                                                     </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="RRG-Mr-MFS">
+                                                        <rect key="frame" x="0.0" y="576" width="359" height="136"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nse-Zo-eMd">
+                                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="136"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="nse-Zo-eMd" secondAttribute="height" multiplier="179:120" id="V9j-R0-HIB"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Merch Package (Shot Glass, Phone Wallet, Bottle Opener)  $5" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RrT-6K-1a0">
+                                                                <rect key="frame" x="179.5" y="0.0" width="179.5" height="136"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="180" id="RjM-0G-jj9"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                                                            </textView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="nse-Zo-eMd" firstAttribute="top" secondItem="RRG-Mr-MFS" secondAttribute="top" constant="8" id="U4R-8t-y03"/>
+                                                            <constraint firstAttribute="height" constant="200" id="WlQ-gl-VXn"/>
+                                                            <constraint firstItem="nse-Zo-eMd" firstAttribute="leading" secondItem="RRG-Mr-MFS" secondAttribute="leading" constant="8" id="lnu-3P-jsl"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Venmo @Trevor-Bergqvist with your name and committee to purchase!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5n5-Hv-SkP">
+                                                        <rect key="frame" x="0.0" y="720" width="359" height="136"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pKH-uK-CBB">
+                                                        <rect key="frame" x="0.0" y="864" width="359" height="136"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstItem="UoQ-9B-7KE" firstAttribute="top" secondItem="fPS-zh-Buj" secondAttribute="bottom" id="1fr-pc-ltk"/>
                                                     <constraint firstItem="UoQ-9B-7KE" firstAttribute="top" secondItem="fPS-zh-Buj" secondAttribute="bottom" constant="8" id="2xC-yQ-qvE"/>
-                                                    <constraint firstAttribute="height" constant="650" id="6Wn-sV-Cnu"/>
+                                                    <constraint firstAttribute="bottom" secondItem="pKH-uK-CBB" secondAttribute="bottom" id="5Eo-B2-DXp"/>
+                                                    <constraint firstAttribute="height" constant="1000" id="6Wn-sV-Cnu"/>
                                                     <constraint firstItem="UoQ-9B-7KE" firstAttribute="top" secondItem="fPS-zh-Buj" secondAttribute="bottom" id="967-Lo-QcC"/>
+                                                    <constraint firstAttribute="trailing" secondItem="pKH-uK-CBB" secondAttribute="trailing" id="9IK-rE-Hop"/>
                                                     <constraint firstItem="Swx-vt-5YQ" firstAttribute="top" secondItem="Qcv-6d-nxI" secondAttribute="bottom" id="ASp-1M-czF"/>
                                                     <constraint firstItem="UoQ-9B-7KE" firstAttribute="top" secondItem="fPS-zh-Buj" secondAttribute="bottom" constant="8" id="GDB-b1-bpK"/>
                                                     <constraint firstItem="Qcv-6d-nxI" firstAttribute="top" secondItem="OjM-ru-WXI" secondAttribute="top" constant="8" id="H77-z7-edX"/>
                                                     <constraint firstItem="fPS-zh-Buj" firstAttribute="top" secondItem="Swx-vt-5YQ" secondAttribute="bottom" id="HcO-pp-Rmu"/>
+                                                    <constraint firstItem="pKH-uK-CBB" firstAttribute="leading" secondItem="OjM-ru-WXI" secondAttribute="leading" id="JtR-pT-22a"/>
                                                     <constraint firstItem="fPS-zh-Buj" firstAttribute="top" secondItem="Swx-vt-5YQ" secondAttribute="bottom" constant="8" id="PvE-S7-Mjg"/>
+                                                    <constraint firstItem="5n5-Hv-SkP" firstAttribute="top" secondItem="RRG-Mr-MFS" secondAttribute="bottom" constant="8" id="Unc-Rt-mHx"/>
                                                     <constraint firstItem="Swx-vt-5YQ" firstAttribute="top" secondItem="Qcv-6d-nxI" secondAttribute="bottom" constant="8" id="X6F-y4-MlM"/>
                                                     <constraint firstAttribute="width" constant="359" id="ZBx-kV-S2i"/>
+                                                    <constraint firstItem="pKH-uK-CBB" firstAttribute="top" secondItem="5n5-Hv-SkP" secondAttribute="bottom" constant="8" id="byP-Ws-sdc"/>
                                                     <constraint firstItem="UoQ-9B-7KE" firstAttribute="top" secondItem="fPS-zh-Buj" secondAttribute="bottom" constant="8" id="dXp-nI-f0d"/>
-                                                    <constraint firstAttribute="bottom" secondItem="UoQ-9B-7KE" secondAttribute="bottom" constant="8" id="hGm-wF-399"/>
+                                                    <constraint firstItem="RRG-Mr-MFS" firstAttribute="top" secondItem="UoQ-9B-7KE" secondAttribute="bottom" constant="8" id="f7X-3Q-3l5"/>
+                                                    <constraint firstItem="RRG-Mr-MFS" firstAttribute="top" secondItem="UoQ-9B-7KE" secondAttribute="bottom" constant="8" id="gKa-AQ-r8M"/>
+                                                    <constraint firstItem="pKH-uK-CBB" firstAttribute="top" secondItem="5n5-Hv-SkP" secondAttribute="bottom" constant="8" id="kgM-aY-OBI"/>
                                                     <constraint firstItem="Swx-vt-5YQ" firstAttribute="top" secondItem="Qcv-6d-nxI" secondAttribute="bottom" id="mah-1B-oCz"/>
                                                     <constraint firstItem="fPS-zh-Buj" firstAttribute="top" secondItem="Swx-vt-5YQ" secondAttribute="bottom" id="s2K-9T-SxF"/>
+                                                    <constraint firstItem="5n5-Hv-SkP" firstAttribute="top" secondItem="RRG-Mr-MFS" secondAttribute="bottom" constant="8" id="txZ-1y-d5b"/>
                                                     <constraint firstItem="Swx-vt-5YQ" firstAttribute="top" secondItem="Qcv-6d-nxI" secondAttribute="bottom" constant="8" id="vau-Gu-VZQ"/>
                                                     <constraint firstItem="fPS-zh-Buj" firstAttribute="top" secondItem="Swx-vt-5YQ" secondAttribute="bottom" constant="8" id="xJz-S5-vCb"/>
                                                 </constraints>
@@ -1515,12 +1560,14 @@ Cg
                         <outlet property="merchImg2" destination="WIY-ct-olT" id="ESK-nA-SLI"/>
                         <outlet property="merchImg3" destination="CC7-U1-edM" id="fbo-cV-SFV"/>
                         <outlet property="merchImg4" destination="AA9-ih-u1y" id="tVU-PB-zkb"/>
+                        <outlet property="merchImg5" destination="nse-Zo-eMd" id="liW-3i-JLF"/>
                         <outlet property="parentStack" destination="OjM-ru-WXI" id="1lV-ql-YUS"/>
                         <outlet property="parentView" destination="lch-ES-G94" id="laa-M6-Bq3"/>
                         <outlet property="stack1" destination="Qcv-6d-nxI" id="bV7-GY-c8i"/>
                         <outlet property="stack2" destination="Swx-vt-5YQ" id="ql7-mI-Oij"/>
                         <outlet property="stack3" destination="fPS-zh-Buj" id="UWU-UX-Dd9"/>
                         <outlet property="stack4" destination="UoQ-9B-7KE" id="wXi-om-db5"/>
+                        <outlet property="stack5" destination="RRG-Mr-MFS" id="LD5-zg-VLy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jlq-61-8Uh" userLabel="First Responder" sceneMemberID="firstResponder"/>
