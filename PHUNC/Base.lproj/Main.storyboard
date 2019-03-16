@@ -1337,222 +1337,217 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rd8-ld-1IT">
-                                <rect key="frame" x="0.0" y="20" width="375" height="800"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rd8-ld-1IT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1020"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lch-ES-G94">
-                                        <rect key="frame" x="0.0" y="20" width="375" height="660"/>
+                                    <stackView opaque="NO" contentMode="top" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OjM-ru-WXI">
+                                        <rect key="frame" x="0.0" y="10" width="375" height="1000"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="top" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OjM-ru-WXI">
-                                                <rect key="frame" x="8" y="8" width="359" height="1000"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Qcv-6d-nxI">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Qcv-6d-nxI">
-                                                        <rect key="frame" x="0.0" y="0.0" width="359" height="136"/>
-                                                        <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ll1-VN-LRA">
-                                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="136"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" secondItem="ll1-VN-LRA" secondAttribute="height" multiplier="179:120" id="5iS-3D-p0w"/>
-                                                                    <constraint firstAttribute="height" constant="200" id="j6q-6b-2Od"/>
-                                                                </constraints>
-                                                            </imageView>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" text="Double Shot Glass $3" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="deI-w2-dXi">
-                                                                <rect key="frame" x="179.5" y="0.0" width="179.5" height="136"/>
-                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="180" id="oKp-be-m1C"/>
-                                                                </constraints>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
-                                                            </textView>
-                                                        </subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ll1-VN-LRA">
+                                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="160"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="200" id="CmZ-VX-Oba"/>
-                                                            <constraint firstItem="deI-w2-dXi" firstAttribute="leading" secondItem="ll1-VN-LRA" secondAttribute="trailing" constant="8" id="UcF-Fc-34I"/>
-                                                            <constraint firstItem="ll1-VN-LRA" firstAttribute="top" secondItem="Qcv-6d-nxI" secondAttribute="top" constant="8" id="hRL-bp-3zB"/>
-                                                            <constraint firstItem="deI-w2-dXi" firstAttribute="leading" secondItem="ll1-VN-LRA" secondAttribute="trailing" constant="8" id="hrz-mV-osa"/>
-                                                            <constraint firstItem="ll1-VN-LRA" firstAttribute="leading" secondItem="Qcv-6d-nxI" secondAttribute="leading" constant="8" id="qpf-i3-O9n"/>
-                                                            <constraint firstItem="ll1-VN-LRA" firstAttribute="leading" secondItem="Qcv-6d-nxI" secondAttribute="leading" constant="8" id="y0n-ZQ-l85"/>
-                                                            <constraint firstAttribute="bottom" secondItem="ll1-VN-LRA" secondAttribute="bottom" constant="8" id="y2I-ni-eQr"/>
+                                                            <constraint firstAttribute="width" secondItem="ll1-VN-LRA" secondAttribute="height" multiplier="179:120" id="5iS-3D-p0w"/>
+                                                            <constraint firstAttribute="height" constant="200" id="j6q-6b-2Od"/>
                                                         </constraints>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Swx-vt-5YQ">
-                                                        <rect key="frame" x="0.0" y="144" width="359" height="136"/>
-                                                        <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WIY-ct-olT">
-                                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="136"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" secondItem="WIY-ct-olT" secondAttribute="height" multiplier="179:120" id="pSh-MH-sIz"/>
-                                                                </constraints>
-                                                            </imageView>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Shot Glass $2" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="47J-tf-HO4">
-                                                                <rect key="frame" x="179.5" y="0.0" width="179.5" height="136"/>
-                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="180" id="qzY-It-vbB"/>
-                                                                </constraints>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
-                                                            </textView>
-                                                        </subviews>
+                                                    </imageView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" text="Double Shot Glass $3" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="deI-w2-dXi">
+                                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="160"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="200" id="4Xb-YI-Uq8"/>
-                                                            <constraint firstItem="WIY-ct-olT" firstAttribute="top" secondItem="Swx-vt-5YQ" secondAttribute="top" constant="8" id="Cja-9P-Apf"/>
-                                                            <constraint firstItem="WIY-ct-olT" firstAttribute="leading" secondItem="Swx-vt-5YQ" secondAttribute="leading" constant="8" id="HWY-Ih-wIA"/>
-                                                            <constraint firstItem="47J-tf-HO4" firstAttribute="leading" secondItem="WIY-ct-olT" secondAttribute="trailing" constant="8" id="JIS-F1-i8r"/>
-                                                            <constraint firstItem="WIY-ct-olT" firstAttribute="leading" secondItem="Swx-vt-5YQ" secondAttribute="leading" constant="8" id="lcL-iu-5tj"/>
-                                                            <constraint firstItem="47J-tf-HO4" firstAttribute="leading" secondItem="WIY-ct-olT" secondAttribute="trailing" constant="8" id="mbp-RX-wWk"/>
-                                                            <constraint firstAttribute="bottom" secondItem="WIY-ct-olT" secondAttribute="bottom" constant="8" id="wJK-R0-tzD"/>
+                                                            <constraint firstAttribute="height" constant="180" id="oKp-be-m1C"/>
                                                         </constraints>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fPS-zh-Buj">
-                                                        <rect key="frame" x="0.0" y="288" width="359" height="136"/>
-                                                        <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CC7-U1-edM">
-                                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="136"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" secondItem="CC7-U1-edM" secondAttribute="height" multiplier="179:120" id="rL3-mn-mfw"/>
-                                                                </constraints>
-                                                            </imageView>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Bottle Opener $2" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mFo-pE-uk6">
-                                                                <rect key="frame" x="179.5" y="0.0" width="179.5" height="136"/>
-                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="180" id="wuT-St-mFY"/>
-                                                                </constraints>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
-                                                            </textView>
-                                                        </subviews>
-                                                        <constraints>
-                                                            <constraint firstItem="CC7-U1-edM" firstAttribute="top" secondItem="fPS-zh-Buj" secondAttribute="top" constant="8" id="42O-Jg-Hqf"/>
-                                                            <constraint firstItem="CC7-U1-edM" firstAttribute="leading" secondItem="fPS-zh-Buj" secondAttribute="leading" constant="8" id="GnO-pH-mmQ"/>
-                                                            <constraint firstItem="mFo-pE-uk6" firstAttribute="leading" secondItem="CC7-U1-edM" secondAttribute="trailing" constant="8" id="WrX-L4-C2U"/>
-                                                            <constraint firstItem="CC7-U1-edM" firstAttribute="leading" secondItem="fPS-zh-Buj" secondAttribute="leading" constant="8" id="h7L-vl-Q9s"/>
-                                                            <constraint firstItem="mFo-pE-uk6" firstAttribute="leading" secondItem="CC7-U1-edM" secondAttribute="trailing" constant="8" id="jJG-2V-Onr"/>
-                                                            <constraint firstAttribute="bottom" secondItem="CC7-U1-edM" secondAttribute="bottom" constant="8" id="lju-Sx-gLh"/>
-                                                            <constraint firstAttribute="height" constant="200" id="uLg-zf-eSC"/>
-                                                        </constraints>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="UoQ-9B-7KE">
-                                                        <rect key="frame" x="0.0" y="432" width="359" height="136"/>
-                                                        <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AA9-ih-u1y">
-                                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="136"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" secondItem="AA9-ih-u1y" secondAttribute="height" multiplier="179:120" id="3qa-IR-Vvi"/>
-                                                                </constraints>
-                                                            </imageView>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Phone Wallet $2" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EZ3-JO-hLi">
-                                                                <rect key="frame" x="179.5" y="0.0" width="179.5" height="136"/>
-                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="180" id="7KN-WO-ETI"/>
-                                                                </constraints>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
-                                                            </textView>
-                                                        </subviews>
-                                                        <constraints>
-                                                            <constraint firstItem="AA9-ih-u1y" firstAttribute="top" secondItem="UoQ-9B-7KE" secondAttribute="top" constant="8" id="R0i-HB-ft9"/>
-                                                            <constraint firstAttribute="height" constant="200" id="RHl-k1-yea"/>
-                                                            <constraint firstItem="AA9-ih-u1y" firstAttribute="leading" secondItem="UoQ-9B-7KE" secondAttribute="leading" constant="8" id="qoH-eo-Zhf"/>
-                                                        </constraints>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="RRG-Mr-MFS">
-                                                        <rect key="frame" x="0.0" y="576" width="359" height="136"/>
-                                                        <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nse-Zo-eMd">
-                                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="136"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" secondItem="nse-Zo-eMd" secondAttribute="height" multiplier="179:120" id="V9j-R0-HIB"/>
-                                                                </constraints>
-                                                            </imageView>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Merch Package (Shot Glass, Phone Wallet, Bottle Opener)  $5" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RrT-6K-1a0">
-                                                                <rect key="frame" x="179.5" y="0.0" width="179.5" height="136"/>
-                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="180" id="RjM-0G-jj9"/>
-                                                                </constraints>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
-                                                            </textView>
-                                                        </subviews>
-                                                        <constraints>
-                                                            <constraint firstItem="nse-Zo-eMd" firstAttribute="top" secondItem="RRG-Mr-MFS" secondAttribute="top" constant="8" id="U4R-8t-y03"/>
-                                                            <constraint firstAttribute="height" constant="200" id="WlQ-gl-VXn"/>
-                                                            <constraint firstItem="nse-Zo-eMd" firstAttribute="leading" secondItem="RRG-Mr-MFS" secondAttribute="leading" constant="8" id="lnu-3P-jsl"/>
-                                                        </constraints>
-                                                    </stackView>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Venmo @Trevor-Bergqvist with your name and committee to purchase!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5n5-Hv-SkP">
-                                                        <rect key="frame" x="0.0" y="720" width="359" height="136"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
                                                     </textView>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pKH-uK-CBB">
-                                                        <rect key="frame" x="0.0" y="864" width="359" height="136"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </view>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstItem="UoQ-9B-7KE" firstAttribute="top" secondItem="fPS-zh-Buj" secondAttribute="bottom" id="1fr-pc-ltk"/>
-                                                    <constraint firstItem="UoQ-9B-7KE" firstAttribute="top" secondItem="fPS-zh-Buj" secondAttribute="bottom" constant="8" id="2xC-yQ-qvE"/>
-                                                    <constraint firstAttribute="bottom" secondItem="pKH-uK-CBB" secondAttribute="bottom" id="5Eo-B2-DXp"/>
-                                                    <constraint firstAttribute="height" constant="1000" id="6Wn-sV-Cnu"/>
-                                                    <constraint firstItem="UoQ-9B-7KE" firstAttribute="top" secondItem="fPS-zh-Buj" secondAttribute="bottom" id="967-Lo-QcC"/>
-                                                    <constraint firstAttribute="trailing" secondItem="pKH-uK-CBB" secondAttribute="trailing" id="9IK-rE-Hop"/>
-                                                    <constraint firstItem="Swx-vt-5YQ" firstAttribute="top" secondItem="Qcv-6d-nxI" secondAttribute="bottom" id="ASp-1M-czF"/>
-                                                    <constraint firstItem="UoQ-9B-7KE" firstAttribute="top" secondItem="fPS-zh-Buj" secondAttribute="bottom" constant="8" id="GDB-b1-bpK"/>
-                                                    <constraint firstItem="Qcv-6d-nxI" firstAttribute="top" secondItem="OjM-ru-WXI" secondAttribute="top" constant="8" id="H77-z7-edX"/>
-                                                    <constraint firstItem="fPS-zh-Buj" firstAttribute="top" secondItem="Swx-vt-5YQ" secondAttribute="bottom" id="HcO-pp-Rmu"/>
-                                                    <constraint firstItem="pKH-uK-CBB" firstAttribute="leading" secondItem="OjM-ru-WXI" secondAttribute="leading" id="JtR-pT-22a"/>
-                                                    <constraint firstItem="fPS-zh-Buj" firstAttribute="top" secondItem="Swx-vt-5YQ" secondAttribute="bottom" constant="8" id="PvE-S7-Mjg"/>
-                                                    <constraint firstItem="5n5-Hv-SkP" firstAttribute="top" secondItem="RRG-Mr-MFS" secondAttribute="bottom" constant="8" id="Unc-Rt-mHx"/>
-                                                    <constraint firstItem="Swx-vt-5YQ" firstAttribute="top" secondItem="Qcv-6d-nxI" secondAttribute="bottom" constant="8" id="X6F-y4-MlM"/>
-                                                    <constraint firstAttribute="width" constant="359" id="ZBx-kV-S2i"/>
-                                                    <constraint firstItem="pKH-uK-CBB" firstAttribute="top" secondItem="5n5-Hv-SkP" secondAttribute="bottom" constant="8" id="byP-Ws-sdc"/>
-                                                    <constraint firstItem="UoQ-9B-7KE" firstAttribute="top" secondItem="fPS-zh-Buj" secondAttribute="bottom" constant="8" id="dXp-nI-f0d"/>
-                                                    <constraint firstItem="RRG-Mr-MFS" firstAttribute="top" secondItem="UoQ-9B-7KE" secondAttribute="bottom" constant="8" id="f7X-3Q-3l5"/>
-                                                    <constraint firstItem="RRG-Mr-MFS" firstAttribute="top" secondItem="UoQ-9B-7KE" secondAttribute="bottom" constant="8" id="gKa-AQ-r8M"/>
-                                                    <constraint firstItem="pKH-uK-CBB" firstAttribute="top" secondItem="5n5-Hv-SkP" secondAttribute="bottom" constant="8" id="kgM-aY-OBI"/>
-                                                    <constraint firstItem="Swx-vt-5YQ" firstAttribute="top" secondItem="Qcv-6d-nxI" secondAttribute="bottom" id="mah-1B-oCz"/>
-                                                    <constraint firstItem="fPS-zh-Buj" firstAttribute="top" secondItem="Swx-vt-5YQ" secondAttribute="bottom" id="s2K-9T-SxF"/>
-                                                    <constraint firstItem="5n5-Hv-SkP" firstAttribute="top" secondItem="RRG-Mr-MFS" secondAttribute="bottom" constant="8" id="txZ-1y-d5b"/>
-                                                    <constraint firstItem="Swx-vt-5YQ" firstAttribute="top" secondItem="Qcv-6d-nxI" secondAttribute="bottom" constant="8" id="vau-Gu-VZQ"/>
-                                                    <constraint firstItem="fPS-zh-Buj" firstAttribute="top" secondItem="Swx-vt-5YQ" secondAttribute="bottom" constant="8" id="xJz-S5-vCb"/>
+                                                    <constraint firstAttribute="height" constant="200" id="CmZ-VX-Oba"/>
+                                                    <constraint firstItem="deI-w2-dXi" firstAttribute="leading" secondItem="ll1-VN-LRA" secondAttribute="trailing" constant="8" id="UcF-Fc-34I"/>
+                                                    <constraint firstItem="ll1-VN-LRA" firstAttribute="top" secondItem="Qcv-6d-nxI" secondAttribute="top" constant="8" id="hRL-bp-3zB"/>
+                                                    <constraint firstItem="deI-w2-dXi" firstAttribute="leading" secondItem="ll1-VN-LRA" secondAttribute="trailing" constant="8" id="hrz-mV-osa"/>
+                                                    <constraint firstItem="ll1-VN-LRA" firstAttribute="leading" secondItem="Qcv-6d-nxI" secondAttribute="leading" constant="8" id="qpf-i3-O9n"/>
+                                                    <constraint firstItem="ll1-VN-LRA" firstAttribute="leading" secondItem="Qcv-6d-nxI" secondAttribute="leading" constant="8" id="y0n-ZQ-l85"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ll1-VN-LRA" secondAttribute="bottom" constant="8" id="y2I-ni-eQr"/>
                                                 </constraints>
                                             </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Swx-vt-5YQ">
+                                                <rect key="frame" x="0.0" y="168" width="375" height="160"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WIY-ct-olT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="160"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="WIY-ct-olT" secondAttribute="height" multiplier="179:120" id="pSh-MH-sIz"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Shot Glass $2" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="47J-tf-HO4">
+                                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="160"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="180" id="qzY-It-vbB"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                                                    </textView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="4Xb-YI-Uq8"/>
+                                                    <constraint firstItem="WIY-ct-olT" firstAttribute="top" secondItem="Swx-vt-5YQ" secondAttribute="top" constant="8" id="Cja-9P-Apf"/>
+                                                    <constraint firstItem="WIY-ct-olT" firstAttribute="leading" secondItem="Swx-vt-5YQ" secondAttribute="leading" constant="8" id="HWY-Ih-wIA"/>
+                                                    <constraint firstItem="47J-tf-HO4" firstAttribute="leading" secondItem="WIY-ct-olT" secondAttribute="trailing" constant="8" id="JIS-F1-i8r"/>
+                                                    <constraint firstItem="WIY-ct-olT" firstAttribute="leading" secondItem="Swx-vt-5YQ" secondAttribute="leading" constant="8" id="lcL-iu-5tj"/>
+                                                    <constraint firstItem="47J-tf-HO4" firstAttribute="leading" secondItem="WIY-ct-olT" secondAttribute="trailing" constant="8" id="mbp-RX-wWk"/>
+                                                    <constraint firstAttribute="bottom" secondItem="WIY-ct-olT" secondAttribute="bottom" constant="8" id="wJK-R0-tzD"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fPS-zh-Buj">
+                                                <rect key="frame" x="0.0" y="336" width="375" height="160"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CC7-U1-edM">
+                                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="160"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="CC7-U1-edM" secondAttribute="height" multiplier="179:120" id="rL3-mn-mfw"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Bottle Opener $2" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mFo-pE-uk6">
+                                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="160"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="180" id="wuT-St-mFY"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                                                    </textView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="CC7-U1-edM" firstAttribute="top" secondItem="fPS-zh-Buj" secondAttribute="top" constant="8" id="42O-Jg-Hqf"/>
+                                                    <constraint firstItem="CC7-U1-edM" firstAttribute="leading" secondItem="fPS-zh-Buj" secondAttribute="leading" constant="8" id="GnO-pH-mmQ"/>
+                                                    <constraint firstItem="mFo-pE-uk6" firstAttribute="leading" secondItem="CC7-U1-edM" secondAttribute="trailing" constant="8" id="WrX-L4-C2U"/>
+                                                    <constraint firstItem="CC7-U1-edM" firstAttribute="leading" secondItem="fPS-zh-Buj" secondAttribute="leading" constant="8" id="h7L-vl-Q9s"/>
+                                                    <constraint firstItem="mFo-pE-uk6" firstAttribute="leading" secondItem="CC7-U1-edM" secondAttribute="trailing" constant="8" id="jJG-2V-Onr"/>
+                                                    <constraint firstAttribute="bottom" secondItem="CC7-U1-edM" secondAttribute="bottom" constant="8" id="lju-Sx-gLh"/>
+                                                    <constraint firstAttribute="height" constant="200" id="uLg-zf-eSC"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="UoQ-9B-7KE">
+                                                <rect key="frame" x="0.0" y="504" width="375" height="160"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AA9-ih-u1y">
+                                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="160"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="AA9-ih-u1y" secondAttribute="height" multiplier="179:120" id="3qa-IR-Vvi"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Phone Wallet $2" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="EZ3-JO-hLi">
+                                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="160"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="180" id="7KN-WO-ETI"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                                                    </textView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="AA9-ih-u1y" firstAttribute="top" secondItem="UoQ-9B-7KE" secondAttribute="top" constant="8" id="R0i-HB-ft9"/>
+                                                    <constraint firstAttribute="height" constant="200" id="RHl-k1-yea"/>
+                                                    <constraint firstItem="AA9-ih-u1y" firstAttribute="leading" secondItem="UoQ-9B-7KE" secondAttribute="leading" constant="8" id="qoH-eo-Zhf"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="RRG-Mr-MFS">
+                                                <rect key="frame" x="0.0" y="672" width="375" height="160"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nse-Zo-eMd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="160"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="nse-Zo-eMd" secondAttribute="height" multiplier="179:120" id="V9j-R0-HIB"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Merch Package (Shot Glass, Phone Wallet, Bottle Opener)  $5" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RrT-6K-1a0">
+                                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="160"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="180" id="RjM-0G-jj9"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                                                    </textView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="nse-Zo-eMd" firstAttribute="top" secondItem="RRG-Mr-MFS" secondAttribute="top" constant="8" id="U4R-8t-y03"/>
+                                                    <constraint firstAttribute="height" constant="200" id="WlQ-gl-VXn"/>
+                                                    <constraint firstItem="nse-Zo-eMd" firstAttribute="leading" secondItem="RRG-Mr-MFS" secondAttribute="leading" constant="8" id="lnu-3P-jsl"/>
+                                                </constraints>
+                                            </stackView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Venmo @Trevor-Bergqvist with your name and committee to purchase merchandise!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5n5-Hv-SkP">
+                                                <rect key="frame" x="0.0" y="840" width="375" height="160"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="OjM-ru-WXI" firstAttribute="leading" secondItem="lch-ES-G94" secondAttribute="leading" constant="8" id="0zG-LA-UZB"/>
-                                            <constraint firstItem="OjM-ru-WXI" firstAttribute="top" secondItem="lch-ES-G94" secondAttribute="top" constant="8" id="CC8-Oc-H65"/>
-                                            <constraint firstAttribute="trailing" secondItem="OjM-ru-WXI" secondAttribute="trailing" constant="8" id="CmK-4W-1pa"/>
+                                            <constraint firstItem="UoQ-9B-7KE" firstAttribute="top" secondItem="fPS-zh-Buj" secondAttribute="bottom" id="1fr-pc-ltk"/>
+                                            <constraint firstItem="UoQ-9B-7KE" firstAttribute="top" secondItem="fPS-zh-Buj" secondAttribute="bottom" constant="8" id="2xC-yQ-qvE"/>
+                                            <constraint firstItem="fPS-zh-Buj" firstAttribute="leading" secondItem="OjM-ru-WXI" secondAttribute="leading" id="5UQ-Sw-kFK"/>
+                                            <constraint firstAttribute="height" constant="1000" id="6Wn-sV-Cnu"/>
+                                            <constraint firstItem="UoQ-9B-7KE" firstAttribute="top" secondItem="fPS-zh-Buj" secondAttribute="bottom" id="967-Lo-QcC"/>
+                                            <constraint firstAttribute="bottom" secondItem="5n5-Hv-SkP" secondAttribute="bottom" id="9bI-VT-kB4"/>
+                                            <constraint firstAttribute="trailing" secondItem="fPS-zh-Buj" secondAttribute="trailing" id="9fL-lE-zOw"/>
+                                            <constraint firstAttribute="trailing" secondItem="5n5-Hv-SkP" secondAttribute="trailing" id="9me-tO-rpw"/>
+                                            <constraint firstItem="UoQ-9B-7KE" firstAttribute="leading" secondItem="OjM-ru-WXI" secondAttribute="leading" id="AJk-aI-VTD"/>
+                                            <constraint firstItem="Swx-vt-5YQ" firstAttribute="top" secondItem="Qcv-6d-nxI" secondAttribute="bottom" id="ASp-1M-czF"/>
+                                            <constraint firstItem="RRG-Mr-MFS" firstAttribute="leading" secondItem="OjM-ru-WXI" secondAttribute="leading" id="Fep-03-rxd"/>
+                                            <constraint firstItem="UoQ-9B-7KE" firstAttribute="top" secondItem="fPS-zh-Buj" secondAttribute="bottom" constant="8" id="GDB-b1-bpK"/>
+                                            <constraint firstItem="Qcv-6d-nxI" firstAttribute="top" secondItem="OjM-ru-WXI" secondAttribute="top" constant="8" id="H77-z7-edX"/>
+                                            <constraint firstItem="fPS-zh-Buj" firstAttribute="top" secondItem="Swx-vt-5YQ" secondAttribute="bottom" id="HcO-pp-Rmu"/>
+                                            <constraint firstAttribute="trailing" secondItem="UoQ-9B-7KE" secondAttribute="trailing" id="LTC-hF-uJ8"/>
+                                            <constraint firstItem="Qcv-6d-nxI" firstAttribute="leading" secondItem="OjM-ru-WXI" secondAttribute="leading" id="LpW-Cw-YlK"/>
+                                            <constraint firstItem="fPS-zh-Buj" firstAttribute="top" secondItem="Swx-vt-5YQ" secondAttribute="bottom" constant="8" id="PvE-S7-Mjg"/>
+                                            <constraint firstItem="Swx-vt-5YQ" firstAttribute="top" secondItem="Qcv-6d-nxI" secondAttribute="bottom" constant="8" id="X6F-y4-MlM"/>
+                                            <constraint firstAttribute="trailing" secondItem="Qcv-6d-nxI" secondAttribute="trailing" id="aFz-hB-LXo"/>
+                                            <constraint firstItem="UoQ-9B-7KE" firstAttribute="top" secondItem="fPS-zh-Buj" secondAttribute="bottom" constant="8" id="dXp-nI-f0d"/>
+                                            <constraint firstItem="RRG-Mr-MFS" firstAttribute="top" secondItem="UoQ-9B-7KE" secondAttribute="bottom" constant="8" id="f7X-3Q-3l5"/>
+                                            <constraint firstItem="RRG-Mr-MFS" firstAttribute="top" secondItem="UoQ-9B-7KE" secondAttribute="bottom" constant="8" id="gKa-AQ-r8M"/>
+                                            <constraint firstItem="Swx-vt-5YQ" firstAttribute="top" secondItem="Qcv-6d-nxI" secondAttribute="bottom" id="mah-1B-oCz"/>
+                                            <constraint firstItem="5n5-Hv-SkP" firstAttribute="leading" secondItem="OjM-ru-WXI" secondAttribute="leading" id="pHk-uR-4xm"/>
+                                            <constraint firstAttribute="trailing" secondItem="RRG-Mr-MFS" secondAttribute="trailing" id="rWQ-zf-YTm"/>
+                                            <constraint firstItem="fPS-zh-Buj" firstAttribute="top" secondItem="Swx-vt-5YQ" secondAttribute="bottom" id="s2K-9T-SxF"/>
+                                            <constraint firstItem="5n5-Hv-SkP" firstAttribute="top" secondItem="RRG-Mr-MFS" secondAttribute="bottom" constant="8" id="sFD-dE-mu1"/>
+                                            <constraint firstItem="Swx-vt-5YQ" firstAttribute="leading" secondItem="OjM-ru-WXI" secondAttribute="leading" id="tVw-2Z-lZ7"/>
+                                            <constraint firstItem="Swx-vt-5YQ" firstAttribute="top" secondItem="Qcv-6d-nxI" secondAttribute="bottom" constant="8" id="vau-Gu-VZQ"/>
+                                            <constraint firstItem="fPS-zh-Buj" firstAttribute="top" secondItem="Swx-vt-5YQ" secondAttribute="bottom" constant="8" id="xJz-S5-vCb"/>
+                                            <constraint firstAttribute="trailing" secondItem="Swx-vt-5YQ" secondAttribute="trailing" id="yRe-XZ-fMl"/>
                                         </constraints>
-                                    </view>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="lch-ES-G94" firstAttribute="centerY" secondItem="Rd8-ld-1IT" secondAttribute="centerY" id="Hjw-Ff-qJj"/>
-                                    <constraint firstAttribute="bottom" secondItem="lch-ES-G94" secondAttribute="bottom" constant="20" id="NRg-aD-Dkh"/>
-                                    <constraint firstAttribute="height" constant="700" id="hE2-x2-fX7"/>
-                                    <constraint firstAttribute="trailing" secondItem="lch-ES-G94" secondAttribute="trailing" id="jOK-Sx-oZP"/>
-                                    <constraint firstItem="lch-ES-G94" firstAttribute="top" secondItem="Rd8-ld-1IT" secondAttribute="top" constant="20" id="viP-7f-Rtm"/>
-                                    <constraint firstItem="lch-ES-G94" firstAttribute="leading" secondItem="Rd8-ld-1IT" secondAttribute="leading" id="yof-Ft-vLY"/>
+                                    <constraint firstAttribute="trailing" secondItem="OjM-ru-WXI" secondAttribute="trailing" id="0o5-30-GKA"/>
+                                    <constraint firstAttribute="bottom" secondItem="OjM-ru-WXI" secondAttribute="bottom" constant="10" id="E5e-jS-dvK"/>
+                                    <constraint firstItem="OjM-ru-WXI" firstAttribute="top" secondItem="Rd8-ld-1IT" secondAttribute="top" constant="10" id="GPz-Nh-gGT"/>
+                                    <constraint firstAttribute="height" constant="1020" id="JiJ-IF-FKI"/>
+                                    <constraint firstItem="OjM-ru-WXI" firstAttribute="leading" secondItem="Rd8-ld-1IT" secondAttribute="leading" id="XJj-53-2tQ"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="OjM-ru-WXI" firstAttribute="width" secondItem="gSa-Zv-6XB" secondAttribute="width" id="JYP-ur-AEy"/>
+                            <constraint firstItem="Rd8-ld-1IT" firstAttribute="width" secondItem="gSa-Zv-6XB" secondAttribute="width" id="NXP-BN-vvP"/>
+                            <constraint firstAttribute="trailing" secondItem="Rd8-ld-1IT" secondAttribute="trailing" id="TJ1-4E-DPl"/>
+                            <constraint firstItem="Rd8-ld-1IT" firstAttribute="leading" secondItem="gSa-Zv-6XB" secondAttribute="leading" id="Zaa-id-XOt"/>
+                            <constraint firstItem="Rd8-ld-1IT" firstAttribute="top" secondItem="gSa-Zv-6XB" secondAttribute="top" id="m0O-CT-szD"/>
                             <constraint firstAttribute="trailing" secondItem="Rd8-ld-1IT" secondAttribute="trailing" id="mgH-x8-wr8"/>
                             <constraint firstItem="Rd8-ld-1IT" firstAttribute="top" secondItem="gSa-Zv-6XB" secondAttribute="top" id="oJB-2s-Sgf"/>
                             <constraint firstItem="Rd8-ld-1IT" firstAttribute="leading" secondItem="gSa-Zv-6XB" secondAttribute="leading" id="ufy-hj-UVs"/>
-                            <constraint firstItem="Rd8-ld-1IT" firstAttribute="bottom" secondItem="pMO-i0-Zir" secondAttribute="top" id="wvi-Jc-IlS"/>
+                            <constraint firstItem="Rd8-ld-1IT" firstAttribute="bottom" secondItem="gSa-Zv-6XB" secondAttribute="bottom" id="wvi-Jc-IlS"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1562,7 +1557,6 @@ Cg
                         <outlet property="merchImg4" destination="AA9-ih-u1y" id="tVU-PB-zkb"/>
                         <outlet property="merchImg5" destination="nse-Zo-eMd" id="liW-3i-JLF"/>
                         <outlet property="parentStack" destination="OjM-ru-WXI" id="1lV-ql-YUS"/>
-                        <outlet property="parentView" destination="lch-ES-G94" id="laa-M6-Bq3"/>
                         <outlet property="stack1" destination="Qcv-6d-nxI" id="bV7-GY-c8i"/>
                         <outlet property="stack2" destination="Swx-vt-5YQ" id="ql7-mI-Oij"/>
                         <outlet property="stack3" destination="fPS-zh-Buj" id="UWU-UX-Dd9"/>
