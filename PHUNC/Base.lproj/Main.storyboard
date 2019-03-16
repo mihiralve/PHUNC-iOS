@@ -1155,7 +1155,7 @@ While these events are optional, we highly encourage all delegates to attend. PH
                                 <rect key="frame" x="8" y="20" width="359" height="639"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="She’s the First">
+                                    <fragment content="Adopt-A-Future">
                                         <attributes>
                                             <font key="NSFont" size="25" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
@@ -1180,35 +1180,69 @@ CQo
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">She’s the First (STF) is a not-for-profit organization that sponsors programs to support girls education across the world. According to their website, She's the First strives to fight gender inequality by supporting girls who will be the first in their families to graduate high school and by training students everywhere to be global citizens.
+                                        <mutableString key="content">UNA-USA, the UN Refugee Agency (UNHCR), and USA for UNHCR are working to prevent a lost generation by giving refugee children the education they need to build a better future. 
+68.5 million people around the world have been forced to flee their homes in search of refuge from conflict and persecution. 25.4 million of these displaced are refugees, more than half of whom are children. The UN Refugee Agency (UNHCR) is working to prevent a lost generation by educating refugee children in camps and other settings around the world, but they need our help.
 	
-The organization takes a three-pronged approach to shape young women into changemakers: education, mentorship, and global leadership training. By providing first-generation high school students with funding and leadership training organized through local-level NGOs, connecting students and Campus Chapter Members to trained mentors, and implementing global leadership curriculum for students and Campus Chapters, She’s the First is working to make educated girls the norm, not the exception. In 2017 alone, She’s the First raised over $1.5 million for girls around the world.
+Questions? Ask your Chair or Head of Committee for more information!
 	
-</string>
+Visit https://unausa.org/adopt-a-future/ to learn more about the cause! </mutableString>
                                         <attributes>
                                             <font key="NSFont" metaFont="system" size="16"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="What can I do to help?">
-                                        <attributes>
-                                            <font key="NSFont" size="19" name=".AppleSystemUIFont"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">
-	
-Throughout the weekend, we will be hosting Penny Wars! The top three winning committees will have the opportunity to pie both their Head of Committee and Chair during the Delegate Social on Saturday Night. Additionally, staffers will compete to pie one of the Secretariat members. Don’t forget to bring your coins and dollar bills to participate!
-	
-Questions? Ask your Chair or Head of Committee for more information!
-	
-How can I support STF after PHUNC VI is over?
-Visit https://shesthefirst.org for more information on how to support She’s the First’s mission to promote girls education across the globe!
+                                        <string key="content" base64-UTF8="YES">
+Cg
 </string>
                                         <attributes>
-                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Venmo our Director of Finances @Trevor-Bergqvist to donate!">
+                                        <attributes>
+                                            <font key="NSFont" size="19" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="84">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="112">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="140">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="168">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="196">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="224">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="252">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="280">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="308">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="336">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
