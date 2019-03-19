@@ -58,7 +58,7 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
         
         webView.loadRequest(URLReq)
         
-        logoImg.sd_setImage(with: URL(string: "https://punc.psiada.org/wp-content/uploads/2018/03/sticker.jpg"), placeholderImage:#imageLiteral(resourceName: "Applogo"))
+        logoImg.sd_setImage(with: URL(string: "https://punc.psiada.org/wp-content/uploads/2018/03/sticker.jpg"), placeholderImage:#imageLiteral(resourceName: "PUNC Logo (No Text)"))
 
         logoImg.contentMode = .scaleAspectFit
 

@@ -14,21 +14,22 @@ import WebKit
 class ScheduleVC: UIViewController, WKNavigationDelegate, WKUIDelegate{
 
     @IBOutlet weak var segmentedControl: UISegmentedControl!
-    @IBOutlet weak var socialText: UITextView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    @IBOutlet weak var socialWeb: WKWebView!
+    @IBOutlet weak var scheduleWeb: WKWebView!
     @IBOutlet weak var roomWeb: WKWebView!
+    @IBOutlet weak var socialWeb: WKWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        socialWeb.navigationDelegate = self
-        socialWeb.uiDelegate = self
-
-        let socialUrl = URL(string: "https://punc.psiada.org/app-schedule/")!
-        let socialRequest = URLRequest(url: socialUrl)
-        socialWeb.load(socialRequest)
+        scheduleWeb.navigationDelegate = self
+        scheduleWeb.uiDelegate = self
+        
+        let scheduleUrl = URL(string: "https://punc.psiada.org/app-schedule/")!
+        let scheduleRequest = URLRequest(url: scheduleUrl)
+        scheduleWeb.load(scheduleRequest)
+        
         
         roomWeb.navigationDelegate = self
         roomWeb.uiDelegate = self
@@ -36,6 +37,13 @@ class ScheduleVC: UIViewController, WKNavigationDelegate, WKUIDelegate{
         let roomUrl = URL(string: "https://punc.psiada.org/app-rooms/")!
         let roomRequest = URLRequest(url: roomUrl)
         roomWeb.load(roomRequest)
+        
+        socialWeb.navigationDelegate = self
+        socialWeb.uiDelegate = self
+        
+        let socialUrl = URL(string: "https://punc.psiada.org/app-social/")!
+        let socialRequest = URLRequest(url: socialUrl)
+        socialWeb.load(socialRequest)
         
         loadSchedule()
         
@@ -56,9 +64,9 @@ class ScheduleVC: UIViewController, WKNavigationDelegate, WKUIDelegate{
     }
     func loadSchedule(){
         
-        socialText.isHidden = true
+        socialWeb.isHidden = true
         roomWeb.isHidden = true
-        socialWeb.isHidden = false
+        scheduleWeb.isHidden = false
         
         
         
@@ -66,18 +74,16 @@ class ScheduleVC: UIViewController, WKNavigationDelegate, WKUIDelegate{
     
     func loadRooms(){
         
-        socialText.isHidden = true
         socialWeb.isHidden = true
+        scheduleWeb.isHidden = true
         roomWeb.isHidden = false
         
     }
     
     func loadSocial(){
-        socialWeb.isHidden = true
+        scheduleWeb.isHidden = true
         roomWeb.isHidden = true
-        socialText.isHidden = false
-        activityIndicator.isHidden = true
-        
+        socialWeb.isHidden = false        
     }
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {

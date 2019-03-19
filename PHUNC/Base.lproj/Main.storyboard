@@ -236,75 +236,14 @@
                                             <wkPreferences key="preferences"/>
                                         </wkWebViewConfiguration>
                                     </wkWebView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q1c-zm-TO0">
-                                        <rect key="frame" x="8" y="8" width="359" height="570"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <attributedString key="attributedText">
-                                            <fragment content="PHUN Phest">
-                                                <attributes>
-                                                    <font key="NSFont" size="20" name="HelveticaNeue"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                                <attributes>
-                                                    <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                                <attributes>
-                                                    <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content">After a crazy weekend of crisis notes, unmods and debate, take a break and join us on Saturday November 3 from 9:30pm - 11pm for the first ever PHUN PHEST! Friendship, Berkey Creamery Ice Cream, and lots of PHUN are guaranteed!
-
-This year, PHUN Phest will take place in Willard Building and will include the following activities:
-
-</string>
-                                                <attributes>
-                                                    <font key="NSFont" metaFont="system" size="14"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content">- Movie Room
-- Karaoke
-- Merch Sale
-- Photo Booth
-- Game Room
-- Trivia Room
-</string>
-                                                <attributes>
-                                                    <font key="NSFont" metaFont="system" size="14"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content">
-Each delegate who participates in three activities gets to pick a small prize AND gets one free ticket to enter to win one of our prize baskets!
-
-At 10:30pm, we will be pieing the Heads of Committees and Chairs of the Penny Wars winners -- so make sure to stop by!
-
-
-
-PLEASE NOTE: In order to participate in the social event, all delegates MUST have their name tags. We will be checking at the door. 
-
-While these events are optional, we highly encourage all delegates to attend. PHUNC is about learning and growing both inside and outside the committee room, and these socials are a great way to make lasting friendships! (Plus, we don’t want you to miss out on the all the phun!)</string>
-                                                <attributes>
-                                                    <font key="NSFont" metaFont="system" size="14"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
+                                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uAG-Kv-Xd8">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="586"/>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <wkWebViewConfiguration key="configuration">
+                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                            <wkPreferences key="preferences"/>
+                                        </wkWebViewConfiguration>
+                                    </wkWebView>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="MV0-mC-w41">
                                         <rect key="frame" x="0.0" y="35" width="375" height="20"/>
                                     </activityIndicatorView>
@@ -314,16 +253,16 @@ While these events are optional, we highly encourage all delegates to attend. PH
                                     <constraint firstItem="z39-nQ-aZ8" firstAttribute="leading" secondItem="z2j-Nz-0Pg" secondAttribute="leading" id="2Qu-Hf-1Ok"/>
                                     <constraint firstItem="MV0-mC-w41" firstAttribute="top" secondItem="z2j-Nz-0Pg" secondAttribute="top" constant="35" id="2WU-od-Lfk"/>
                                     <constraint firstAttribute="trailing" secondItem="z39-nQ-aZ8" secondAttribute="trailing" id="DHh-iB-q3F"/>
-                                    <constraint firstItem="Q1c-zm-TO0" firstAttribute="top" secondItem="z2j-Nz-0Pg" secondAttribute="top" constant="8" id="GEa-ic-0lb"/>
+                                    <constraint firstAttribute="bottom" secondItem="uAG-Kv-Xd8" secondAttribute="bottom" id="FGA-0Z-J35"/>
+                                    <constraint firstItem="uAG-Kv-Xd8" firstAttribute="top" secondItem="z2j-Nz-0Pg" secondAttribute="top" id="GxI-bX-yQj"/>
                                     <constraint firstItem="COp-Sc-kr6" firstAttribute="leading" secondItem="z2j-Nz-0Pg" secondAttribute="leading" id="I6x-Ow-3yV"/>
                                     <constraint firstAttribute="bottom" secondItem="z39-nQ-aZ8" secondAttribute="bottom" id="LS5-7X-9Hy"/>
-                                    <constraint firstAttribute="trailing" secondItem="Q1c-zm-TO0" secondAttribute="trailing" constant="8" id="Nd5-fY-po5"/>
                                     <constraint firstAttribute="bottom" secondItem="COp-Sc-kr6" secondAttribute="bottom" id="Nu4-x6-mwp"/>
                                     <constraint firstItem="z39-nQ-aZ8" firstAttribute="top" secondItem="z2j-Nz-0Pg" secondAttribute="top" id="RFV-H4-nqX"/>
                                     <constraint firstItem="COp-Sc-kr6" firstAttribute="top" secondItem="z2j-Nz-0Pg" secondAttribute="top" id="SiE-xE-EPe"/>
                                     <constraint firstAttribute="trailing" secondItem="COp-Sc-kr6" secondAttribute="trailing" id="Tgf-WP-r7u"/>
-                                    <constraint firstAttribute="bottom" secondItem="Q1c-zm-TO0" secondAttribute="bottom" constant="8" id="hbQ-Aj-Xnc"/>
-                                    <constraint firstItem="Q1c-zm-TO0" firstAttribute="leading" secondItem="z2j-Nz-0Pg" secondAttribute="leading" constant="8" id="mTC-og-rtP"/>
+                                    <constraint firstAttribute="trailing" secondItem="uAG-Kv-Xd8" secondAttribute="trailing" id="ZRw-fu-bVY"/>
+                                    <constraint firstItem="uAG-Kv-Xd8" firstAttribute="leading" secondItem="z2j-Nz-0Pg" secondAttribute="leading" id="gtU-bl-eot"/>
                                     <constraint firstAttribute="trailing" secondItem="MV0-mC-w41" secondAttribute="trailing" id="nDT-gY-vkE"/>
                                     <constraint firstItem="MV0-mC-w41" firstAttribute="leading" secondItem="z2j-Nz-0Pg" secondAttribute="leading" id="rFg-Cd-KLD"/>
                                 </constraints>
@@ -346,9 +285,9 @@ While these events are optional, we highly encourage all delegates to attend. PH
                     <connections>
                         <outlet property="activityIndicator" destination="MV0-mC-w41" id="YAf-gl-JW1"/>
                         <outlet property="roomWeb" destination="COp-Sc-kr6" id="C6Z-cx-R5R"/>
+                        <outlet property="scheduleWeb" destination="z39-nQ-aZ8" id="em9-tB-ccX"/>
                         <outlet property="segmentedControl" destination="hu5-q6-KVd" id="yfj-aO-VWU"/>
-                        <outlet property="socialText" destination="Q1c-zm-TO0" id="nbH-pS-9VW"/>
-                        <outlet property="socialWeb" destination="z39-nQ-aZ8" id="icl-5g-X0I"/>
+                        <outlet property="socialWeb" destination="uAG-Kv-Xd8" id="xMp-5A-xrz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
@@ -1180,12 +1119,12 @@ CQo
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <mutableString key="content">UNA-USA, the UN Refugee Agency (UNHCR), and USA for UNHCR are working to prevent a lost generation by giving refugee children the education they need to build a better future. 
+                                        <string key="content">UNA-USA, the UN Refugee Agency (UNHCR), and USA for UNHCR are working to prevent a lost generation by giving refugee children the education they need to build a better future. 
 68.5 million people around the world have been forced to flee their homes in search of refuge from conflict and persecution. 25.4 million of these displaced are refugees, more than half of whom are children. The UN Refugee Agency (UNHCR) is working to prevent a lost generation by educating refugee children in camps and other settings around the world, but they need our help.
 	
 Questions? Ask your Chair or Head of Committee for more information!
 	
-Visit https://unausa.org/adopt-a-future/ to learn more about the cause! </mutableString>
+Visit https://unausa.org/adopt-a-future/ to learn more about the cause! </string>
                                         <attributes>
                                             <font key="NSFont" metaFont="system" size="16"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -1203,46 +1142,7 @@ Cg
                                     <fragment content="Venmo our Director of Finances @Trevor-Bergqvist to donate!">
                                         <attributes>
                                             <font key="NSFont" size="19" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="56">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="84">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="112">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="140">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="168">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="196">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="224">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="252">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="280">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="308">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="336">
-                                                        <options/>
-                                                    </textTab>
-                                                </tabStops>
-                                            </paragraphStyle>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>

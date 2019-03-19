@@ -23,12 +23,12 @@
 		0410C0031F04A17F000B7BC3 /* feedbackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410C0021F04A17F000B7BC3 /* feedbackVC.swift */; };
 		0444CC841F031852004A5A89 /* munVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444CC821F031851004A5A89 /* munVC.swift */; };
 		0447D4E7204DCC030045ED1F /* ScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447D4E6204DCC030045ED1F /* ScheduleVC.swift */; };
-		0461B87321882E2F00B8B7EE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0461B87221882E2F00B8B7EE /* GoogleService-Info.plist */; };
 		046F00CE204F90E800E20603 /* CharityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F00CD204F90E800E20603 /* CharityVC.swift */; };
 		046F00D2204F919000E20603 /* MerchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F00D1204F919000E20603 /* MerchVC.swift */; };
 		047380091F00A648009E2F97 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047380081F00A648009E2F97 /* ThirdViewController.swift */; };
 		0473E51C203A80F000A9062A /* TransportationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473E51B203A80F000A9062A /* TransportationVC.swift */; };
 		048F67CF204CC88100A967C3 /* guideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F67CE204CC88100A967C3 /* guideVC.swift */; };
+		04C9252D223F22020048DF0E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C9252C223F22020048DF0E /* GoogleService-Info.plist */; };
 		04D585D22230C4B100182CA2 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D585D12230C4B100182CA2 /* FourthViewController.swift */; };
 		04EA0E701F9A737000111AB8 /* RestaurantVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA0E6F1F9A737000111AB8 /* RestaurantVC.swift */; };
 		33305CE20903E5FF2BC3D602 /* Pods_PHUNC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5293CCD5BE1C7524AFAA6B /* Pods_PHUNC.framework */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -66,7 +66,6 @@
 		0410C0021F04A17F000B7BC3 /* feedbackVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = feedbackVC.swift; sourceTree = "<group>"; };
 		0444CC821F031851004A5A89 /* munVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = munVC.swift; sourceTree = "<group>"; };
 		0447D4E6204DCC030045ED1F /* ScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleVC.swift; sourceTree = "<group>"; };
-		0461B87221882E2F00B8B7EE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Users/mihir/Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0461B8742188379B00B8B7EE /* PHUNC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PHUNC.entitlements; sourceTree = "<group>"; };
 		046F00CD204F90E800E20603 /* CharityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityVC.swift; sourceTree = "<group>"; };
 		046F00D1204F919000E20603 /* MerchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchVC.swift; sourceTree = "<group>"; };
@@ -74,6 +73,7 @@
 		0473E51B203A80F000A9062A /* TransportationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportationVC.swift; sourceTree = "<group>"; };
 		048F67CE204CC88100A967C3 /* guideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = guideVC.swift; sourceTree = "<group>"; };
 		04C40E21553B9FF9A01E9074 /* Pods-PHUNCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PHUNCTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PHUNCTests/Pods-PHUNCTests.release.xcconfig"; sourceTree = "<group>"; };
+		04C9252C223F22020048DF0E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Users/mihir/Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		04D585D12230C4B100182CA2 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		04EA0E6F1F9A737000111AB8 /* RestaurantVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantVC.swift; sourceTree = "<group>"; };
 		10DB27E7F82F55A968FCF17A /* Pods-PHUNC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PHUNC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PHUNC/Pods-PHUNC.debug.xcconfig"; sourceTree = "<group>"; };
@@ -150,7 +150,7 @@
 				04041A581EF36F2E0030A000 /* Assets.xcassets */,
 				04041A5A1EF36F2E0030A000 /* LaunchScreen.storyboard */,
 				04041A5D1EF36F2E0030A000 /* Info.plist */,
-				0461B87221882E2F00B8B7EE /* GoogleService-Info.plist */,
+				04C9252C223F22020048DF0E /* GoogleService-Info.plist */,
 			);
 			path = PHUNC;
 			sourceTree = "<group>";
@@ -282,8 +282,8 @@
 			files = (
 				04041A5C1EF36F2E0030A000 /* LaunchScreen.storyboard in Resources */,
 				04041A591EF36F2E0030A000 /* Assets.xcassets in Resources */,
+				04C9252D223F22020048DF0E /* GoogleService-Info.plist in Resources */,
 				04041A571EF36F2E0030A000 /* Main.storyboard in Resources */,
-				0461B87321882E2F00B8B7EE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,12 +546,12 @@
 				INFOPLIST_FILE = PHUNC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.PSIADA.APP;
+				PRODUCT_BUNDLE_IDENTIFIER = org.PSIADA.PUNC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -568,12 +568,12 @@
 				INFOPLIST_FILE = PHUNC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.PSIADA.APP;
+				PRODUCT_BUNDLE_IDENTIFIER = org.PSIADA.PUNC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
