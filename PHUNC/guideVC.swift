@@ -21,7 +21,7 @@ class guideVC: UIViewController, UIWebViewDelegate {
         webView.delegate = self
         
         
-        let url = URL(string:"https://docs.google.com/viewer?embedded=true&url=https://phunc.psiada.org/wp-content/uploads/2018/10/PHUNC-VI-Conference-Guide.pdf")
+        let url = URL(string:"https://punc.psiada.org/wp-content/plugins/pdfjs-viewer-shortcode/pdfjs/web/viewer.php?file=https://punc.psiada.org/wp-content/uploads/2019/03/PUNC-XII-Conference-Guide-Final-1.pdf&download=true&print=true&openfile=false")
         
         let URLReq = URLRequest(url: url!)
         
