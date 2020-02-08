@@ -14,7 +14,7 @@ class TransportationVC: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
     private let locationManager = CLLocationManager()
-    private var currentCoordinate: CLLocationCoordinate2D?
+    var currentCoordinate: CLLocationCoordinate2D?
     
     
     override func viewDidLoad() {
@@ -46,22 +46,22 @@ class TransportationVC: UIViewController {
         
     }
     
-    private func beginLocationUpdates(locationManager: CLLocationManager) {
+    func beginLocationUpdates(locationManager: CLLocationManager) {
         mapView.showsUserLocation = true
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.startUpdatingLocation()
     }
     
-    private func zoomToLatestLocation(with coordinate: CLLocationCoordinate2D) {
+    func zoomToLatestLocation(with coordinate: CLLocationCoordinate2D) {
         
-        let zoomRegion = MKCoordinateRegion(center: coordinate, latitudinalMeters: 5000, longitudinalMeters: 5000)
+        let zoomRegion = MKCoordinateRegionMakeWithDistance(coordinate, 5000, 5000)
         
         mapView.setRegion(zoomRegion, animated: true)
         addAnnotations()
         
     }
     
-    private func addAnnotations() {
+    func addAnnotations() {
         
         let businessBuildAnnotation = MKPointAnnotation()
         businessBuildAnnotation.title = "Business Building"

@@ -47,7 +47,7 @@ DEPENDENCIES:
   - SDWebImage (~> 4.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Firebase
     - FirebaseAnalytics
     - FirebaseCore
@@ -71,6 +71,6 @@ SPEC CHECKSUMS:
   Protobuf: 7a877b7f3e5964e3fce995e2eb323dbc6831bb5a
   SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
 
-PODFILE CHECKSUM: 3061c52be0f96c7ee792f1fa31be760121642a8d
+PODFILE CHECKSUM: 7a95d533b9e9143efee2de4deb8130e16ef3b30c
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4
